@@ -1,18 +1,22 @@
-# IdentityServer4AspNetCoreIdentityTemplate
+# An ASP.NET Core IdentityServer4 Identity Template with Bootstrap 4 and localization
 
-# install
+## npm
+
+https://www.nuget.org/packages/IdentityServer4AspNetCoreIdentityTemplate/
+
+## install
 
 dotnet new -i IdentityServer4AspNetCoreIdentityTemplate.1.0.0.nupkg
 
-# run 
+## run 
 
 dotnet new id4identity
 
-# uninstall
+## uninstall
 
 dotnet new -u IdentityServer4AspNetCoreIdentityTemplate.1.0.0.nupkg
 
-# build
+## build
 
 https://docs.microsoft.com/en-us/dotnet/core/tutorials/create-custom-template
 
