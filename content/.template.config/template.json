@@ -1,0 +1,12 @@
+{
+    "author": "Damien Bowden",
+    "classifications": [ "AspNetCore", "IdentityServer4", "Identity" ],
+    "name": "Secure Token Server template using IdentityServer4, ASP.NET Core Identity and ASP.NET Core",
+    "identity": "IdentityServer4AspNetCoreIdentityTemplate",
+    "shortName": "id4identity",
+    "tags": {
+        "language": "C#"
+    },
+    "sourceName": "IdentityServer4AspNetCoreIdentityTemplate",
+    "preferNameDirectory" : "true"
+}
