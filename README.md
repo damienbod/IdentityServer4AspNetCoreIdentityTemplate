@@ -1,6 +1,6 @@
 # An ASP.NET Core IdentityServer4 Identity Template with Bootstrap 4 and localization
 
-## npm
+## NuGet package
 
 https://www.nuget.org/packages/IdentityServer4AspNetCoreIdentityTemplate/
 
@@ -10,7 +10,7 @@ dotnet new -i IdentityServer4AspNetCoreIdentityTemplate.1.0.1.nupkg
 
 ## run 
 
-dotnet new id4identity
+dotnet new sts
 
 ## uninstall
 
