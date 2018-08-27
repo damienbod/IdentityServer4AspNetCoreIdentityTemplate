@@ -41,18 +41,18 @@ dotnet new sts
 
 ### Setup, Using the application for your System
 
-1. Change the EF Core code from SQLite to your required database
-2. Install the npm packages, either using the cmd with NodeJS, or Visual Studio 
-3. Change the ApplicationUser class as required, remove/add the properties
-4. Add the migrations and create the database
-5. Define the deployment URLs, create the certs, and use these in your applicaiton (Startup, config files)
-6. Add the external providers for login as required, or remove
-7. Remove the UI views which are not required
-8. Add remove the resource file localizations and also in the Startup.
-9. Add the client configuration to the Config.cs class (dev, test, staging, prod, or whatever)
-10. Update the claims in the IdentityWithAdditionalClaimsProfileService
-11. Add the security headers as required, CSP, IFrame, XSS, HSTS, ...
-12. If you deploy in a multi instance environment, add the sesssion data to a database using the IdentityServer4.EntityFramework NuGet package
+- Change the EF Core code from SQLite to your required database
+- Install the npm packages, either using the cmd with NodeJS, or Visual Studio 
+- Change the ApplicationUser class as required, remove/add the properties
+- Add the migrations and create the database
+- Define the deployment URLs, create the certs, and use these in your applicaiton (Startup, config files)
+- Add the external providers for login as required, or remove
+- Remove the UI views which are not required
+- Add remove the resource file localizations and also in the Startup.
+- Add the client configuration to the Config.cs class (dev, test, staging, prod, or whatever)
+- Update the claims in the IdentityWithAdditionalClaimsProfileService
+- Add the security headers as required, CSP, IFrame, XSS, HSTS, ...
+- If you deploy in a multi instance environment, add the sesssion data to a database using the IdentityServer4.EntityFramework NuGet package
 
 ### uninstall
 
