@@ -1,0 +1,8 @@
+# An ASP.NET Core IdentityServer4 Identity Template with Bootstrap 4 and localization
+
+[Readme](https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/README.md) 
+
+2018-08-27 1.0.1
+- Initial release
+
+
