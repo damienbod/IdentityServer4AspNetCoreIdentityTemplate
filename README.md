@@ -30,7 +30,7 @@ dotnet new sts
 
 ### Setup, Using the application for your System
 
-1. Change the EF Core from SQLite to your required database
+1. Change the EF Core code from SQLite to your required database
 2. Install the npm packages, either using the cmd with NodeJS, or Visual Studio 
 3. Change the ApplicationUser class as required, remove/add the properties
 4. Add the migrations and create the database
