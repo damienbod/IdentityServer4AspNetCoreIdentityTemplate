@@ -8,5 +8,6 @@
         "language": "C#"
     },
     "sourceName": "IdentityServer4AspNetCoreIdentityTemplate",
-    "preferNameDirectory" : "true"
+    "preferNameDirectory" : "true",
+	"shortName": "sts"
 }
