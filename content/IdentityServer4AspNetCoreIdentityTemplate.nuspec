@@ -2,13 +2,24 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>IdentityServer4AspNetCoreIdentityTemplate</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
+	<title>IdentityServer4.Identity.Template</title>
     <description>
-      Creates a ASP.NET Core STS application using IdentityServer4 and Identity with localisation, TOTP, personal data, bootstrap4
+      Creates an ASP.NET Core STS application using IdentityServer4 and Identity with localisation, TOTP, personal data, Bootstrap 4
     </description>
-    <authors>Damien Bowden</authors>
+	  <projectUrl>https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate</projectUrl>
+    <authors>damienbod</authors>
+	<owners>damienbod</owners>
+	<iconUrl>http://www.gravatar.com/avatar/61d005637f57b5c3da8ba662cf04a9d6.png</iconUrl>
+	<language>en-US</language>
+	<tags>ASP.NET Core Identity IdentityServer4 STS oidc openid bootstrap4</tags>
+	<requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageTypes>
       <packageType name="Template" />
     </packageTypes>
   </metadata>
 </package>
+
+    
+
+	
