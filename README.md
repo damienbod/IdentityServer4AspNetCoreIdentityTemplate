@@ -22,7 +22,7 @@
 
 ### install
 
-dotnet new -i IdentityServer4AspNetCoreIdentityTemplate.1.0.1.nupkg
+dotnet new -i IdentityServer4AspNetCoreIdentityTemplate.1.0.2.nupkg
 
 ### run 
 
@@ -45,7 +45,7 @@ dotnet new sts
 
 ### uninstall
 
-dotnet new -u IdentityServer4AspNetCoreIdentityTemplate.1.0.1.nupkg
+dotnet new -u IdentityServer4AspNetCoreIdentityTemplate.1.02.nupkg
 
 ## Development
 
