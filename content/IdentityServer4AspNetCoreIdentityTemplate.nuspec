@@ -18,9 +18,6 @@
 			<packageType name="Template" />
 		</packageTypes>
 	</metadata>
-	<files>
-		<file src="content/**" exclude="**\bin\**\*;**\obj\**\*;**\*.user;**\*.lock.json;**\.DS_Store" target="content" />
-	</files>
 </package>
 
     

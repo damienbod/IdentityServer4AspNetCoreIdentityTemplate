@@ -6,7 +6,7 @@ https://www.nuget.org/packages/IdentityServer4AspNetCoreIdentityTemplate/
 
 ## install
 
-dotnet new -i IdentityServer4AspNetCoreIdentityTemplate.1.0.0.nupkg
+dotnet new -i IdentityServer4AspNetCoreIdentityTemplate.1.0.1.nupkg
 
 ## run 
 
@@ -14,7 +14,7 @@ dotnet new id4identity
 
 ## uninstall
 
-dotnet new -u IdentityServer4AspNetCoreIdentityTemplate.1.0.0.nupkg
+dotnet new -u IdentityServer4AspNetCoreIdentityTemplate.1.0.1.nupkg
 
 ## build
 
