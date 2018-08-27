@@ -45,7 +45,7 @@ dotnet new sts
 
 ### uninstall
 
-dotnet new -u IdentityServer4AspNetCoreIdentityTemplate.1.02.nupkg
+dotnet new -u IdentityServer4AspNetCoreIdentityTemplate.1.0.2.nupkg
 
 ## Development
 
