@@ -12,8 +12,12 @@
 		<owners>damienbod</owners>
 		<iconUrl>http://www.gravatar.com/avatar/61d005637f57b5c3da8ba662cf04a9d6.png</iconUrl>
 		<language>en-US</language>
-		<tags>ASP.NET Core Identity IdentityServer4 STS oidc openid bootstrap4</tags>
+		<tags>ASP.NET Core Identity IdentityServer4 STS OIDC OpenID Bootstrap4</tags>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<copyright>2018 damienbod</copyright>
+		<summary>This template provides a simle getting started for IdentityServer4 with Identity. Identity is Localized and the UI uses Bootstrap 4</summary>
+		<releaseNotes>init release</releaseNotes>
+		<licenseUrl>https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/LICENSE</licenseUrl>
 		<packageTypes>
 			<packageType name="Template" />
 		</packageTypes>
