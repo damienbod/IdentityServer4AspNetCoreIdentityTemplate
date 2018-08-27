@@ -41,7 +41,7 @@ dotnet new sts
 9. Add the client configuration to the Config.cs class (dev, test, staging, prod, or whatever)
 10. Update the claims in the IdentityWithAdditionalClaimsProfileService
 11. Add the security headers as required, CSP, IFrame, XSS, HSTS, ...
-12. If you deploy in a multi instance env, add the sesssion data to a database using the IdentityServer4.EntityFramework pNuGet package
+12. If you deploy in a multi instance env, add the sesssion data to a database using the IdentityServer4.EntityFramework NuGet package
 
 ### uninstall
 
@@ -65,7 +65,7 @@ dotnet ef migrations add sts_init --context ApplicationDbContext --verbose
 
 dotnet ef database update  --verbose
 
-##Links
+## Links
 
 https://getbootstrap.com/
 
