@@ -20,6 +20,15 @@
 
 ### install
 
+From NuGet:
+
+```
+dotnet new -i IdentityServer4AspNetCoreIdentityTemplate
+```
+
+Locally built nupkg:
+
+
 ```
 dotnet new -i IdentityServer4AspNetCoreIdentityTemplate.1.0.2.nupkg
 ```
