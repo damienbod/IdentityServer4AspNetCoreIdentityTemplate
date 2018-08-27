@@ -67,6 +67,10 @@ dotnet ef database update  --verbose
 
 ## Links
 
+http://docs.identityserver.io/en/release/
+
+https://github.com/IdentityServer/IdentityServer4
+
 https://getbootstrap.com/
 
 https://nodejs.org/en/
