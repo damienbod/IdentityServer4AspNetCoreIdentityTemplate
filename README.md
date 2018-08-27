@@ -1,0 +1,1 @@
+# IdentityServer4AspNetCoreIdentityTemplate
