@@ -1,5 +1,5 @@
 {
-    "author": "Damien Bowden",
+    "author": "damienbod",
     "classifications": [ "AspNetCore", "IdentityServer4", "Identity" ],
     "name": "ASP.NET Core IdentityServer4 Identity",
     "identity": "IdentityServer4AspNetCoreIdentityTemplate",
