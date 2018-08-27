@@ -18,6 +18,7 @@
 		<summary>This template provides a simle getting started for IdentityServer4 with Identity. Identity is Localized and the UI uses Bootstrap 4</summary>
 		<releaseNotes>init release</releaseNotes>
 		<licenseUrl>https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/LICENSE</licenseUrl>
+		<repository type="git" url="https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate" />
 		<packageTypes>
 			<packageType name="Template" />
 		</packageTypes>
