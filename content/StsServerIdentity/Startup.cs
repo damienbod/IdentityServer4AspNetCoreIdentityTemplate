@@ -104,11 +104,11 @@ namespace StsServerIdentity
                     var supportedCultures = new List<CultureInfo>
                         {
                             new CultureInfo("en-US"),
-                            new CultureInfo("de-CH"),
+                            new CultureInfo("de-DE"),
                             new CultureInfo("it-IT")
                         };
 
-                    options.DefaultRequestCulture = new RequestCulture(culture: "de-CH", uiCulture: "de-CH");
+                    options.DefaultRequestCulture = new RequestCulture(culture: "de-DE", uiCulture: "de-DE");
                     options.SupportedCultures = supportedCultures;
                     options.SupportedUICultures = supportedCultures;
 
