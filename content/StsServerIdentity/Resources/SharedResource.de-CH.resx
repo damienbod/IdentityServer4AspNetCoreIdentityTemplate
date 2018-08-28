@@ -136,10 +136,10 @@
     <value>Verwenden Sie einen lokalen Benutzer um sich anzumelden.</value>
   </data>
   <data name="CONFIRM_EMAIL" xml:space="preserve">
-    <value>E-Mail Adresse Bestätigung</value>
+    <value>E-Mail-Adresse Bestätigung</value>
   </data>
   <data name="CONFIRM_EMAIL_TEXT" xml:space="preserve">
-    <value>Vielen Dank für die Bestätigung Ihrer E-Mail.</value>
+    <value>Vielen Dank für die Bestätigung Ihrer E-Mail-Adresse.</value>
   </data>
   <data name="CONFIRM_PASSWORD" xml:space="preserve">
     <value>Passwort bestätigen</value>
@@ -148,7 +148,7 @@
     <value>Passwort und Passwortbestätigung stimmen nicht überein.</value>
   </data>
   <data name="CONFIRM_YOUR_EMAIL" xml:space="preserve">
-    <value>Bestätigen Sie Ihre E-Mail Adresse</value>
+    <value>Bestätigen Sie Ihre E-Mail-Adresse</value>
   </data>
   <data name="CONFIRM_YOUR_EMAIL_TEXT" xml:space="preserve">
     <value>Bitte bestätigen Sie Ihr Konto, indem Sie hier &lt;a href='{0}'&gt;klicken&lt;/a&gt;. </value>
@@ -160,31 +160,31 @@
     <value>E-Mail</value>
   </data>
   <data name="EMAIL_INVALID" xml:space="preserve">
-    <value>Email-Adresse ungultig.</value>
+    <value>E-Mail-Adresse ungültig.</value>
   </data>
   <data name="EMAIL_REQUIRED" xml:space="preserve">
-    <value>Email-Adresse erforderlich</value>
+    <value>E-Mail-Adresse erforderlich</value>
   </data>
   <data name="FORGOT_PASSWORD_CONFIRMATION" xml:space="preserve">
-    <value>Passwort vergessen Bestätigung</value>
+    <value>Bestätigung Passwort vergessen</value>
   </data>
   <data name="FORGOT_PASSWORD_CONFIRMATION_TEXT" xml:space="preserve">
-    <value>Bitte überprüfen Sie Ihre E-Mail, um Ihr Passwort zurückzusetzen.</value>
+    <value>Bitte überprüfen Sie Ihre E-Mail-Adresse, um Ihr Passwort zurückzusetzen.</value>
   </data>
   <data name="FORGOT_YOUR_PASSWORD" xml:space="preserve">
-    <value>Haben Sie Ihr Passwort vergessen</value>
+    <value>Passwort vergessen</value>
   </data>
   <data name="FORGOT_YOUR_PASSWORD_ENTER_EMAIL" xml:space="preserve">
-    <value>Geben sie ihre E-Mail Adresse ein.</value>
+    <value>Geben Sie Ihre E-Mail-Adresse ein.</value>
   </data>
   <data name="INVALID_LOGIN_ATTEMPT" xml:space="preserve">
     <value>Ungültiger Anmeldeversuch.</value>
   </data>
   <data name="LOCKED_OUT" xml:space="preserve">
-    <value>Ausgeschlossen</value>
+    <value>Gesperrt</value>
   </data>
   <data name="LOCKED_OUT_TEXT" xml:space="preserve">
-    <value>Dieser Account wurde gesperrt. Bitte versuchen Sie es später erneut.</value>
+    <value>Dieses Konto wurde gesperrt. Bitte versuchen Sie es später erneut.</value>
   </data>
   <data name="LOGOUT" xml:space="preserve">
     <value>Ausloggen</value>
@@ -199,7 +199,7 @@
     <value>Registrieren</value>
   </data>
   <data name="REGISTER_AS_NEW_USER" xml:space="preserve">
-    <value>Als neuer Benutzer/in registrieren</value>
+    <value>Als neuer Benutzer/-in registrieren</value>
   </data>
   <data name="REMEMBER_ME" xml:space="preserve">
     <value>Login merken</value>
@@ -208,19 +208,19 @@
     <value>Zurücksetzen</value>
   </data>
   <data name="RESET_YOUR_PASSWORD" xml:space="preserve">
-    <value>Setze dein Passwort zurück</value>
+    <value>Setzen Sie Ihr Passwort zurück</value>
   </data>
   <data name="RESET_PASSWORD" xml:space="preserve">
-    <value>Zurücksetzen Passwort</value>
+    <value>Passwort zurücksetzen</value>
   </data>
   <data name="RESET_PASSWORD_EMAIL_TEXT" xml:space="preserve">
     <value>Bitte setzen Sie Ihr Passwort zurück, indem Sie hier &lt;a href='{0}'&gt;klicken&lt;/a&gt;.</value>
   </data>
   <data name="SUBMIT" xml:space="preserve">
-    <value>Einreichen</value>
+    <value>Bestätigen</value>
   </data>
   <data name="EXTERNAL_LOGIN_ASSOCIATE_ACCOUNT" xml:space="preserve">
-    <value>Associate your {0} account</value>
+    <value>Verbinden Sie Ihr {0} Konto</value>
   </data>
   <data name="EXTERNAL_LOGIN_TEXT" xml:space="preserve">
     <value>Sie haben sich erfolgreich mit {0} authentifiziert. Bitte geben Sie unten eine E-Mail-Adresse für diese Seite ein und klicken Sie auf die Registrierenknopf, um die Anmeldung abzuschließen.</value>
@@ -244,7 +244,7 @@
     <value>Einloggen mit einem Wiederherstellungscode</value>
   </data>
   <data name="ACCOUNT_LOGIN_2FA_REMEMBER_MC" xml:space="preserve">
-    <value>Maschine merken</value>
+    <value>Gerät merken</value>
   </data>
   <data name="ACCOUNT_LOGIN_2FA_TEXT" xml:space="preserve">
     <value>Ihr Login ist mit einer Authenticator App geschützt. Geben Sie unten Ihren Authentifizierungscode ein.</value>
@@ -262,7 +262,7 @@
     <value>Überprüfung des Wiederherstellungscodes</value>
   </data>
   <data name="ACCOUNT_RECOVERY_CODE_VERIFICATION_TEXT" xml:space="preserve">
-    <value>Sie haben sich mit einem Wiederherstellungscode angemeldet. Diese Anmeldung wird nicht gespeichert, bis Sie beim Anmelden einen authenticator-App-Code angeben oder 2FA deaktivieren und sich erneut anmelden.</value>
+    <value>Sie haben sich mit einem Wiederherstellungscode angemeldet. Diese Anmeldung wird nicht gespeichert, bis Sie beim Anmelden einen Authenticator-App-Code angeben oder 2FA deaktivieren und sich erneut anmelden.</value>
   </data>
   <data name="INVALID_AUTHENTICATOR_CODE" xml:space="preserve">
     <value>Ungültiger Authentifizierungscode</value>
@@ -280,10 +280,10 @@
     <value>Klicken Sie hier, um sich einzuloggen</value>
   </data>
   <data name="RESET_PASSWORD_CONFIRMATION_TEXT1" xml:space="preserve">
-    <value>Dein Passwort wurde zurück gesetzt. Bitte</value>
+    <value>Ihr Passwort wurde zurückgesetzt. Bitte</value>
   </data>
   <data name="The {0} must be at least {2} and at max {1} characters long." xml:space="preserve">
-    <value>Das  {0} muss mindestens  {2} und darf höchstens  {1} Zeichen lang sein.</value>
+    <value>Das {0} muss mindestens {2} und darf höchstens {1} Zeichen lang sein.</value>
   </data>
   <data name="2FA" xml:space="preserve">
     <value>Zwei-Faktor-Authentifizierung</value>
@@ -346,7 +346,7 @@
     <value>Scannen Sie den QR-Code oder geben Sie diesen Schlüssel </value>
   </data>
   <data name="CONFIGURE_AUTHENTICATOR_APP_SCAN2" xml:space="preserve">
-    <value>in Ihre Zwei-Faktor-Authenticator-App ein. Leerzeichen und Gehäuse spielen keine Rolle.</value>
+    <value>in Ihre Zwei-Faktor-Authenticator-App ein. Leerzeichen, Groß- und Kleinschreibung spielen keine Rolle.</value>
   </data>
   <data name="CONFIGURE_AUTHENTICATOR_APP_SCAN_ALERT" xml:space="preserve">
     <value>Zur Aktivierung der QR-Code-Generierung lesen Sie bitte unsere </value>
@@ -505,7 +505,7 @@
     <value>Speichern</value>
   </data>
   <data name="SEND_VERIFICATION_EMAIL" xml:space="preserve">
-    <value>Senden Sie E-Mail-Verifizierung</value>
+    <value>E-Mail-Verifizierung senden</value>
   </data>
   <data name="SET_PASSWORD" xml:space="preserve">
     <value>Passwort festlegen</value>
@@ -514,10 +514,10 @@
     <value>Ihr Passwort wurde festgelegt.</value>
   </data>
   <data name="SET_PASSWORD_TEXT" xml:space="preserve">
-    <value>Sie haben keinen lokalen Benutzernamen / Passwort für diese Site. Fügen Sie ein lokales Konto hinzu, damit Sie sich ohne externe Anmeldung anmelden können.</value>
+    <value>Sie haben keinen lokalen Benutzernamen / Passwort für diese Seite. Fügen Sie ein lokales Konto hinzu, damit Sie sich ohne externe Anmeldung anmelden können.</value>
   </data>
   <data name="SET_YOUR_PASSWORD" xml:space="preserve">
-    <value>Lege ein Passwort fest</value>
+    <value>Lege Sie ein Passwort fest</value>
   </data>
   <data name="STATUS_EXTERNAL_LOGIN_ADDED" xml:space="preserve">
     <value>Die externe Anmeldung wurde hinzugefügt.</value>
@@ -532,7 +532,7 @@
     <value>Ihr Profil wurde aktualisiert</value>
   </data>
   <data name="STATUS_UPDATE_PROFILE_EMAIL_SEND" xml:space="preserve">
-    <value>Bestätigungs-E-Mail gesendet Bitte überprüfen Sie Ihre E-Mail.</value>
+    <value>Bestätigungs-E-Mail gesendet Bitte überprüfen Sie Ihre E-Mails.</value>
   </data>
   <data name="USERNAME" xml:space="preserve">
     <value>Benutzername</value>
@@ -553,31 +553,31 @@
     <value>Ja</value>
   </data>
   <data name="CONSENT_APPLICATION_ACCESS" xml:space="preserve">
-    <value>Applikation Zugriff</value>
+    <value>Applikationszugriff</value>
   </data>
   <data name="CONSENT_IS_CHECK_UNREQUIRED" xml:space="preserve">
-    <value>Uncheck the permissions you do not wish to grant. DE</value>
+    <value>Wählen Sie die Berechtigung ab, welche Sie nicht geben möchten.</value>
   </data>
   <data name="CONSENT_IS_REQUESTING_YOUR_PERMISSION" xml:space="preserve">
-    <value>is requesting your permission DE</value>
+    <value>erfordert Ihre Berechtigung</value>
   </data>
   <data name="CONSENT_NO_NOT_ALLOWED" xml:space="preserve">
-    <value>No, Do Not Allow DE</value>
+    <value>Nein, nicht erlauben</value>
   </data>
   <data name="CONSENT_PERSONAL_INFORMATION" xml:space="preserve">
-    <value>Personal Information DE</value>
+    <value>Persönliche Informationen</value>
   </data>
   <data name="CONSENT_REMEMBER_MY_DECISION" xml:space="preserve">
-    <value>Remember My Decision DE</value>
+    <value>Einstellungen merken</value>
   </data>
   <data name="CONSENT_REQUIRED" xml:space="preserve">
-    <value>(required DE)</value>
+    <value>(Pflichtfeld)</value>
   </data>
   <data name="CONSENT_YES_ALLOWED" xml:space="preserve">
-    <value>Ja, ist Ok</value>
+    <value>Ja, erlauben</value>
   </data>
   <data name="LOGOUT_RETURN_TO" xml:space="preserve">
-    <value>Return to DE</value>
+    <value>Zurück zu</value>
   </data>
   <data name="WOULD_YOU_LIKE_TO_LOGOUT" xml:space="preserve">
     <value>Möchten Sie sich von IdentityServer abmelden?</value>
@@ -592,7 +592,7 @@
     <value>Klicken Sie hier, um sich einzuloggen</value>
   </data>
   <data name="RESET_PASSWORD_YOUR_PASSWORD_HAS_BEEN_RESET" xml:space="preserve">
-    <value>Dein Passwort wurde zurück gesetzt.</value>
+    <value>Ihr Passwort wurde zurückgesetzt.</value>
   </data>
   <data name="SEND_VERIFICATION_CODE" xml:space="preserve">
     <value>Bestätigungscode senden</value>
@@ -601,7 +601,7 @@
     <value>Wählen Sie den Zwei-Faktor-Authentifizierungsanbieter aus:</value>
   </data>
   <data name="UNSUCCESSFUL_LOGIN_WITH_SERVICE" xml:space="preserve">
-    <value>Nicht erfolgreiche Anmeldung mit Service.</value>
+    <value>Nicht erfolgreiche Anmeldung mit Dienst.</value>
   </data>
   <data name="CODE_REQUIRED" xml:space="preserve">
     <value>Code ist erforderlich</value>
