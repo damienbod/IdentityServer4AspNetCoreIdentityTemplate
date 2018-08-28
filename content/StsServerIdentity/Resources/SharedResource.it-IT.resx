@@ -523,7 +523,7 @@
     <value>Non hai nessuno account per questo sito. Aggiungi un account per eseguire il login senza login esterni.</value>
   </data>
   <data name="SET_YOUR_PASSWORD" xml:space="preserve">
-    <value>Imposta la password/value>
+    <value>Imposta la password</value>
   </data>
   <data name="STATUS_EXTERNAL_LOGIN_ADDED" xml:space="preserve">
     <value>Il login esterno è stato aggiunto.</value>
