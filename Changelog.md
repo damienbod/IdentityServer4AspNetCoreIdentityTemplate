@@ -2,6 +2,9 @@
 
 [Readme](https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/README.md) 
 
+2018-08-28 1.0.3
+- Added it-IT translations
+
 2018-08-27 1.0.2
 - Removing Cookie Localization provider
 - Adding docs
