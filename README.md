@@ -7,7 +7,7 @@
 - ASP.NET Core 2.1
 - Latest ASP.NET Core Identity
 - Bootstrap 4 UI
-- Localization en-US, de-CH
+- Localization en-US, de-CH, it-IT
 - TOTP
 - Personal data, download, delete (part of Identity)
 - Azure AD, Cert, key vault deployments API
@@ -30,7 +30,7 @@ Locally built nupkg:
 
 
 ```
-dotnet new -i IdentityServer4AspNetCoreIdentityTemplate.1.0.2.nupkg
+dotnet new -i IdentityServer4AspNetCoreIdentityTemplate.1.0.3.nupkg
 ```
 
 ### run 
@@ -57,7 +57,7 @@ dotnet new sts
 ### uninstall
 
 ```
-dotnet new -u IdentityServer4AspNetCoreIdentityTemplate.1.0.2.nupkg
+dotnet new -u IdentityServer4AspNetCoreIdentityTemplate.1.0.3.nupkg
 ```
 
 ## Development
