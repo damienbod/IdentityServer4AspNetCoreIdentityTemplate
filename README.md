@@ -16,7 +16,10 @@
 - EF Core 
 - Suppport for ui_locales using OIDC logins
 
+some print screens:
+
 it-IT
+
 <img src="it-IT_template.png" alt=""  />
 
 de-CH
@@ -24,6 +27,7 @@ de-CH
 <img src="de-CH_template.png" alt="" />
 
 en-US
+
 <img src="en-US_template.png" alt=""  />
 
 ## Using the template
