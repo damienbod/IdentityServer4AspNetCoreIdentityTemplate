@@ -22,9 +22,9 @@ it-IT
 
 <img src="it-IT_template.png" alt=""  />
 
-de-CH
+de-DE
 
-<img src="de-CH_template.png" alt="" />
+<img src="de-DE_template.png" alt="" />
 
 en-US
 
