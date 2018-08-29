@@ -2,7 +2,7 @@
 
 [Readme](https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/README.md) 
 
-2018-08-28 1.0.4
+2018-08-29 1.0.4
 - Improved de translations
 - switched from de-CH to de-DE
 - added de-CH (dialect)
