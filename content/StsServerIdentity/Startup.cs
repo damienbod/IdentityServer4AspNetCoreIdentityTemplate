@@ -105,7 +105,8 @@ namespace StsServerIdentity
                         {
                             new CultureInfo("en-US"),
                             new CultureInfo("de-DE"),
-                            new CultureInfo("it-IT")
+                            new CultureInfo("it-IT"),
+                            new CultureInfo("de-CH")
                         };
 
                     options.DefaultRequestCulture = new RequestCulture(culture: "de-DE", uiCulture: "de-DE");
