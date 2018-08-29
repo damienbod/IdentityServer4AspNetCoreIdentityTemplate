@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
 	<metadata>
 		<id>IdentityServer4AspNetCoreIdentityTemplate</id>
-		<version>1.0.3</version>
+		<version>1.0.4</version>
 		<title>IdentityServer4.Identity.Template</title>
 		<description>
 		  Creates an ASP.NET Core STS application using IdentityServer4 and Identity with localisation, TOTP, personal data, Bootstrap 4
