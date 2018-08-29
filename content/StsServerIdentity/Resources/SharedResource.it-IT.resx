@@ -481,10 +481,10 @@
     <value>Generate Recovery Codes</value>
   </data>
   <data name="PERSONAL_DATA_DELETEINFO" xml:space="preserve">
-    <value>Deleting this data will permanently remove your account, and this cannot be recovered.</value>
+    <value>Eliminando questi dati, rimuoverai il tuo account in modo permanente e non sarà possibile recuperarlo.</value>
   </data>
   <data name="PERSONAL_DATA_INFO" xml:space="preserve">
-    <value>Your account contains personal data that you have given us. This page allows you to download or delete that data.</value>
+    <value>Il tuo account contiene dati personali che ci hai fornito. Questa pagina ti permette di scaricare questi dati o di eliminarli.</value>
   </data>
   <data name="PHONE_NUMBER" xml:space="preserve">
     <value>Telefono</value>
