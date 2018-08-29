@@ -5,6 +5,7 @@
 2018-08-28 1.0.4
 - Improved de translations
 - switched from de-CH to de-DE
+- added de-CH (dialect)
 
 2018-08-28 1.0.3
 - Added it-IT translations
