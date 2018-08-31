@@ -223,7 +223,7 @@
     <value>Verbinden Sie Ihr {0} Konto</value>
   </data>
   <data name="EXTERNAL_LOGIN_TEXT" xml:space="preserve">
-    <value>Sie haben sich erfolgreich mit {0} authentifiziert. Bitte geben Sie unten eine E-Mail-Adresse für diese Seite ein und klicken Sie auf die Registrierenknopf, um die Anmeldung abzuschließen.</value>
+    <value>Sie haben sich erfolgreich mit {0} authentifiziert. Bitte geben Sie unten eine E-Mail-Adresse für diese Seite ein und klicken Sie auf die Registrierenknopf, um die Anmeldung abzuschliessen.</value>
   </data>
   <data name="EXTERNAL_PROVIDER_ERROR" xml:space="preserve">
     <value>Fehler von externem Anbieter: {0}</value>
@@ -346,7 +346,7 @@
     <value>Scannen Sie den QR-Code oder geben Sie diesen Schlüssel </value>
   </data>
   <data name="CONFIGURE_AUTHENTICATOR_APP_SCAN2" xml:space="preserve">
-    <value>in Ihre Zwei-Faktor-Authentifizierungs-App ein. Leerzeichen, Groß- und Kleinschreibung spielen keine Rolle.</value>
+    <value>in Ihre Zwei-Faktor-Authentifizierungs-App ein. Leerzeichen, Gross- und Kleinschreibung spielen keine Rolle.</value>
   </data>
   <data name="CONFIGURE_AUTHENTICATOR_APP_SCAN_ALERT" xml:space="preserve">
     <value>Zur Aktivierung der QR-Code-Generierung lesen Sie bitte unsere </value>
@@ -364,7 +364,7 @@
     <value>Persönliche Daten löschen</value>
   </data>
   <data name="DELETE_PERSONAL_DATA_AND_CLOSE" xml:space="preserve">
-    <value>Daten löschen und mein Konto schließen</value>
+    <value>Daten löschen und mein Konto schliessen</value>
   </data>
   <data name="DELETE_PERSONAL_DATA_TEXT" xml:space="preserve">
     <value>Durch das Löschen dieser Daten wird Ihr Konto dauerhaft gelöscht. Dies kann nicht wiederhergestellt werden.</value>
@@ -496,7 +496,7 @@
     <value>Ihr Authentifikator-App-Schlüssel wurde zurückgesetzt. Sie müssen Ihre Authentifikator-App mit dem neuen Schlüssel konfigurieren.</value>
   </data>
   <data name="RESET_AUTHENTICATOR_TEXT" xml:space="preserve">
-    <value>Dieser Prozess deaktiviert 2FA, bis Sie Ihre Authentifikator-App überprüft haben. Wenn Sie Ihre Authentifikator-App-Konfiguration nicht abschließen, verlieren Sie möglicherweise den Zugriff auf Ihr Konto.</value>
+    <value>Dieser Prozess deaktiviert 2FA, bis Sie Ihre Authentifikator-App überprüft haben. Wenn Sie Ihre Authentifikator-App-Konfiguration nicht abschliessen, verlieren Sie möglicherweise den Zugriff auf Ihr Konto.</value>
   </data>
   <data name="RESET_RECOVERY_CODES" xml:space="preserve">
     <value>Wiederherstellungscodes zurücksetzen</value>
