@@ -364,7 +364,7 @@
     <value>Persönliche Daten löschen</value>
   </data>
   <data name="DELETE_PERSONAL_DATA_AND_CLOSE" xml:space="preserve">
-    <value>Daten löschen und mein Konto schließen</value>
+    <value>Daten löschen und mein Konto schliessen</value>
   </data>
   <data name="DELETE_PERSONAL_DATA_TEXT" xml:space="preserve">
     <value>Durch das Löschen dieser Daten wird Ihr Konto dauerhaft gelöscht. Dies kann nicht wiederhergestellt werden.</value>
