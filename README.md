@@ -30,6 +30,10 @@ en-US
 
 <img src="en-US_template.png" alt=""  />
 
+fr-FR
+
+<img src="fr-FR_template.png" alt=""  />
+
 ## Using the template
 
 ### install
