@@ -2,6 +2,9 @@
 
 [Readme](https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/README.md) 
 
+2018-08-31 1.0.5
+- de-DE fixes, added de-CH localization
+
 2018-08-29 
 - renamed from Zurich german version to gsw-CH_ZH
 - added gsw-CH Bern
