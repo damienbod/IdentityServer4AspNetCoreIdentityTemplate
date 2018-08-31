@@ -172,7 +172,7 @@
     <value>Bitte überprüfen Sie Ihre E-Mail-Adresse, um Ihr Passwort zurückzusetzen.</value>
   </data>
   <data name="FORGOT_YOUR_PASSWORD" xml:space="preserve">
-    <value>Passwort vergessen</value>
+    <value>Passwort vergessen?</value>
   </data>
   <data name="FORGOT_YOUR_PASSWORD_ENTER_EMAIL" xml:space="preserve">
     <value>Geben Sie Ihre E-Mail-Adresse ein.</value>
