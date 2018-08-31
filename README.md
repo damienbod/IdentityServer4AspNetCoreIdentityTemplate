@@ -59,14 +59,14 @@ dotnet new sts
 - Install the npm packages, either using the cmd with NodeJS, or Visual Studio 
 - Change the ApplicationUser class as required, remove/add the properties
 - Add the migrations and create the database
-- Define the deployment URLs, create the certs, and use these in your applicaiton (Startup, config files)
+- Define the deployment URLs, create the certs, and use these in your application (Startup, config files)
 - Add the external providers for login as required, or remove
 - Remove the UI views which are not required
 - Add remove the resource file localizations and also in the Startup.
 - Add the client configuration to the Config.cs class (dev, test, staging, prod, or whatever)
 - Update the claims in the IdentityWithAdditionalClaimsProfileService
 - Add the security headers as required, CSP, IFrame, XSS, HSTS, ...
-- If you deploy in a multi instance environment, add the sesssion data to a database using the IdentityServer4.EntityFramework NuGet package
+- If you deploy in a multi instance environment, add the session data to a database using the IdentityServer4.EntityFramework NuGet package
 
 ### uninstall
 
