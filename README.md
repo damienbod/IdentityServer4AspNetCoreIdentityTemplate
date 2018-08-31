@@ -14,7 +14,7 @@
 - SendGrid Email API
 - npm with bundleconfig used for frontend packages
 - EF Core 
-- Suppport for ui_locales using OIDC logins
+- Support for ui_locales using OIDC logins
 
 some print screens:
 
