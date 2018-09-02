@@ -1,12 +1,11 @@
 # An ASP.NET Core IdentityServer4 Identity Template with Bootstrap 4 and Localization
 
-|                           | Build                                                                                                                                                       | Localization.SqlLocalizer                                                                                                                                   |
-| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ASP.Net Core              | [![Build status](https://ci.appveyor.com/api/projects/status/ibm36ev49bpjf3o9?svg=true)](https://ci.appveyor.com/project/damienbod/identityserver4aspnetcoreidentitytemplate)      | [![NuGet Status](http://img.shields.io/nuget/v/IdentityServer4AspNetCoreIdentityTemplate.svg?style=flat-square)](https://www.nuget.org/packages/IdentityServer4AspNetCoreIdentityTemplate/) |
+|                           | Build                                                                                                                                                                              | Localization.SqlLocalizer                                                                                                                                                                   |                                                                                                              |
+| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| ASP.NET Core              | [![Build status](https://ci.appveyor.com/api/projects/status/ibm36ev49bpjf3o9?svg=true)](https://ci.appveyor.com/project/damienbod/identityserver4aspnetcoreidentitytemplate)      | [![NuGet Status](http://img.shields.io/nuget/v/IdentityServer4AspNetCoreIdentityTemplate.svg?style=flat-square)](https://www.nuget.org/packages/IdentityServer4AspNetCoreIdentityTemplate/) | [Changelog](https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/Changelog.md) |
 
-========================
 
-[NuGet](https://www.nuget.org/packages/IdentityServer4AspNetCoreIdentityTemplate/) | [Changelog](https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/Changelog.md) 
+[Changelog](https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/Changelog.md) 
 
 ## Features
 
