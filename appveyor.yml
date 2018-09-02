@@ -4,6 +4,7 @@ init:
 install:
   - ECHO %APPVEYOR_BUILD_WORKER_IMAGE%
   - dotnet --version
+  - cd content/StsServerIdentity
   - dotnet restore
 build_script:
 - cd content/StsServerIdentity
