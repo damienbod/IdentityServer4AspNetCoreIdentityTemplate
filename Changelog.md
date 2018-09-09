@@ -2,6 +2,9 @@
 
 [Readme](https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/README.md) 
 
+2018-09-09 1.0.6
+- fix language switch to keep query parameters
+
 2018-08-31 1.0.5
 - de-DE fixes, added de-CH localization
 - Added fr-FR
