@@ -20,19 +20,19 @@ some print screens:
 
 it-IT
 
-<img src="it-IT_template.png" alt=""  />
+<img src="images/it-IT_template.png" alt=""  />
 
 de-DE
 
-<img src="de-DE_template.png" alt="" />
+<img src="https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/images/de-DE_template.png" alt="" />
 
 en-US
 
-<img src="en-US_template.png" alt=""  />
+<img src="images/en-US_template.png" alt=""  />
 
 fr-FR
 
-<img src="fr-FR_template.png" alt=""  />
+<img src="images/fr-FR_template.png" alt=""  />
 
 ## Using the template
 
