@@ -100,6 +100,14 @@ dotnet ef migrations add sts_init --context ApplicationDbContext --verbose
 dotnet ef database update  --verbose
 ```
 
+## Extra NuGet packages + ASP.NET Core 2.1 standard packages
+
+- IdentityServer4
+- IdentityServer4.AspNetIdentity
+- Microsoft.Azure.KeyVault
+- Microsoft.IdentityModel.Clients.ActiveDirectory
+- Sendgrid
+	
 ## Links
 
 http://docs.identityserver.io/en/release/
