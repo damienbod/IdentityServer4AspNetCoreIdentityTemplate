@@ -72,3 +72,12 @@ textarea {
 .page-consent .consent-form .consent-remember {
   padding-left: 16px;
 }
+
+.paddingright5px {
+    padding-right: 5px;
+}
+
+.big_checkbox {
+    width: 30px !important;
+    height: 30px !important;
+}
