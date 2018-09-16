@@ -20,7 +20,7 @@ some print screens:
 
 it-IT
 
-<img src="images/it-IT_template.png" alt=""  />
+<img src="https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/images/it-IT_template.png" alt=""  />
 
 de-DE
 
@@ -28,11 +28,11 @@ de-DE
 
 en-US
 
-<img src="images/en-US_template.png" alt=""  />
+<img src="https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/images/en-US_template.png" alt=""  />
 
 fr-FR
 
-<img src="images/fr-FR_template.png" alt=""  />
+<img src="https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/images/fr-FR_template.png" alt=""  />
 
 ## Using the template
 
