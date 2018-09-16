@@ -2,6 +2,11 @@
 
 [Readme](https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/README.md) 
 
+2018-09-16 1.0.7
+- Updated NuGet packages
+- fixed CSP issue
+- cleaned up styles
+
 2018-09-09 1.0.6
 - fix language switch to keep query parameters
 
