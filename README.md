@@ -100,7 +100,7 @@ dotnet ef migrations add sts_init --context ApplicationDbContext --verbose
 dotnet ef database update  --verbose
 ```
 
-## Extra NuGet packages + ASP.NET Core 2.1 standard packages
+## Credits, Used NuGet packages + ASP.NET Core 2.1 standard packages
 
 - IdentityServer4
 - IdentityServer4.AspNetIdentity
