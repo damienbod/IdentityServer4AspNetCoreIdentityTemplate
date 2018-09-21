@@ -60,7 +60,6 @@ dotnet new sts
 ### Setup, Using the application for your System
 
 - Change the EF Core code from SQLite to your required database
-- Install the npm packages, either using the cmd with NodeJS, or Visual Studio 
 - Change the ApplicationUser class as required, remove/add the properties
 - Add the migrations and create the database
 - Define the deployment URLs, create the certs, and use these in your application (Startup, config files)
