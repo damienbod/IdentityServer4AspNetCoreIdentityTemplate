@@ -5,6 +5,7 @@
 2018-09-21 1.0.8
 - add custom user properties to personal data download
 - eliminate need for npm install
+- Remove AllowAnonymous from the logout
 
 2018-09-16 1.0.7
 - Updated NuGet packages
