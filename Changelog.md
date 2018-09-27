@@ -5,6 +5,7 @@
 2018-09-27 1.0.9
 - added Serilog
 - clean up STS Configuration model
+- added new dev cert
 
 2018-09-21 1.0.8
 - add custom user properties to personal data download
