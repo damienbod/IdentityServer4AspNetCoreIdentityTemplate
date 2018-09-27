@@ -75,7 +75,7 @@ namespace StsServerIdentity
             }
             else
             {
-                cert = new X509Certificate2(Path.Combine(_environment.ContentRootPath, "damienbodserver.pfx"), "");
+                cert = new X509Certificate2(Path.Combine(_environment.ContentRootPath, "sts_dev_cert.pfx"), "1234");
             }
 
             services.AddDbContext<ApplicationDbContext>(options =>
