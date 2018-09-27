@@ -47,13 +47,6 @@ namespace StsServerIdentity
 
         public void ConfigureServices(IServiceCollection services)
         {
-            var config = new LoggerConfiguration()
-                .ReadFrom.Configuration(Configuration)
-                .Enrich.FromLogContext()
-                .WriteTo.Console(theme: AnsiConsoleTheme.Code);
-
-            Log.Logger = config.CreateLogger();
-
             var stsConfig = Configuration.GetSection("StsConfig");
             var useLocalCertStore = Convert.ToBoolean(Configuration["UseLocalCertStore"]);
             var certificateThumbprint = Configuration["CertificateThumbprint"];
@@ -158,9 +151,6 @@ namespace StsServerIdentity
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
-            loggerFactory.AddConsole(Configuration.GetSection("Logging"));
-            loggerFactory.AddDebug();
-
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
