@@ -99,6 +99,15 @@ dotnet ef migrations add sts_init --context ApplicationDbContext --verbose
 dotnet ef database update  --verbose
 ```
 
+## Using Powershell to create the self signed certs:
+
+New-SelfSignedCertificate -DnsName "sts.dev.cert.com", "sts.dev.cert.com" -CertStoreLocation "cert:\LocalMachine\My"
+
+$mypwd = ConvertTo-SecureString -String "1234" -Force -AsPlainText
+
+Get-ChildItem -Path cert:\localMachine\my\"The thumbprint..." | Export-PfxCertificate -FilePath C:\git\sts_dev_cert.pfx -Password $mypwd
+
+
 ## Credits, Used NuGet packages + ASP.NET Core 2.1 standard packages
 
 - IdentityServer4
