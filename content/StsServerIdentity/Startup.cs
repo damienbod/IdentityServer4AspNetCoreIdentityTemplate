@@ -21,6 +21,8 @@ using StsServerIdentity.Data;
 using StsServerIdentity.Resources;
 using StsServerIdentity.Services;
 using Microsoft.IdentityModel.Tokens;
+using Serilog;
+using Serilog.Sinks.SystemConsole.Themes;
 
 namespace StsServerIdentity
 {
@@ -34,7 +36,7 @@ namespace StsServerIdentity
                 .SetBasePath(env.ContentRootPath)
                 .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
                 .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true);
-				
+
             _environment = env;
 
             builder.AddEnvironmentVariables();
@@ -45,13 +47,20 @@ namespace StsServerIdentity
 
         public void ConfigureServices(IServiceCollection services)
         {
+            var config = new LoggerConfiguration()
+                .ReadFrom.Configuration(Configuration)
+                .Enrich.FromLogContext()
+                .WriteTo.Console(theme: AnsiConsoleTheme.Code);
+
+            Log.Logger = config.CreateLogger();
+
             var stsConfig = Configuration.GetSection("StsConfig");
             var useLocalCertStore = Convert.ToBoolean(Configuration["UseLocalCertStore"]);
             var certificateThumbprint = Configuration["CertificateThumbprint"];
 
             X509Certificate2 cert;
 
-            if (_environment.IsProduction() )
+            if (_environment.IsProduction())
             {
                 if (useLocalCertStore)
                 {
