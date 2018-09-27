@@ -2,6 +2,9 @@
 
 [Readme](https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/README.md) 
 
+2018-09-27 1.0.9
+- added Serilog
+
 2018-09-21 1.0.8
 - add custom user properties to personal data download
 - eliminate need for npm install
