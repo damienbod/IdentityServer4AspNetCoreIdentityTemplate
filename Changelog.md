@@ -2,6 +2,10 @@
 
 [Readme](https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/README.md) 
 
+2018-09-27 1.0.10
+- resetPassword => ConfirmEmail fix
+- Updating packages
+
 2018-09-27 1.0.9
 - added Serilog
 - clean up STS Configuration model
