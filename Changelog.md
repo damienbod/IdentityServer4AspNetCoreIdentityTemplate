@@ -2,9 +2,12 @@
 
 [Readme](https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/README.md) 
 
-2018-09-27 1.0.10
+2018-10-16 1.0.11
 - resetPassword => ConfirmEmail fix
 - Updating packages
+
+2018-09-27 1.0.10
+- Updating bundles, npm packages
 
 2018-09-27 1.0.9
 - added Serilog
