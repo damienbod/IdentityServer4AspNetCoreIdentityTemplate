@@ -6,6 +6,8 @@
 - resetPassword => ConfirmEmail fix
 - Updating packages
 - fix CSP bug
+- adding font awesome
+- fixing consent page layout
 
 2018-09-27 1.0.10
 - Updating bundles, npm packages
