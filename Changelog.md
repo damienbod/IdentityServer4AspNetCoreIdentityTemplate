@@ -5,6 +5,7 @@
 2018-10-16 1.0.11
 - resetPassword => ConfirmEmail fix
 - Updating packages
+- fix CSP bug
 
 2018-09-27 1.0.10
 - Updating bundles, npm packages
