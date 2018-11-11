@@ -8,6 +8,7 @@
 - Latest ASP.NET Core Identity
 - Bootstrap 4 UI
 - Localization en-US, de-DE, it-IT, fr-FR, de-CH, gsw-CH
+- 2FA
 - TOTP
 - Personal data, download, delete (part of Identity)
 - Azure AD, Cert, key vault deployments API
