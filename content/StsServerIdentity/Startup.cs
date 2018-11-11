@@ -164,7 +164,25 @@ namespace StsServerIdentity
             var locOptions = app.ApplicationServices.GetService<IOptions<RequestLocalizationOptions>>();
             app.UseRequestLocalization(locOptions.Value);
 
-            app.UseStaticFiles();
+            app.UseStaticFiles(new StaticFileOptions()
+            {
+                OnPrepareResponse = context =>
+                {
+                    if (context.Context.Response.Headers["feature-policy"].Count == 0)
+                    {
+                        var featurePolicy = "accelerometer 'none'; camera 'none'; geolocation 'none'; gyroscope 'none'; magnetometer 'none'; microphone 'none'; payment 'none'; usb 'none'";
+
+                        context.Context.Response.Headers["feature-policy"] = featurePolicy;
+                    }
+
+                    if (context.Context.Response.Headers["X-Content-Security-Policy"].Count == 0)
+                    {
+                        var csp = "script-src 'self';style-src 'self';img-src 'self' data:;font-src 'self';form-action 'self';frame-ancestors 'self';block-all-mixed-content";
+                        // IE
+                        context.Context.Response.Headers["X-Content-Security-Policy"] = csp;
+                    }
+                }
+            });
             app.UseIdentityServer();
 
             app.UseMvc(routes =>
