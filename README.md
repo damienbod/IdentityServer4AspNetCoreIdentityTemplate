@@ -117,6 +117,7 @@ Get-ChildItem -Path cert:\localMachine\my\"The thumbprint..." | Export-PfxCertif
 - Microsoft.Azure.KeyVault
 - Microsoft.IdentityModel.Clients.ActiveDirectory
 - Sendgrid
+- NWebsec.AspNetCore.Middleware
 	
 ## Links
 

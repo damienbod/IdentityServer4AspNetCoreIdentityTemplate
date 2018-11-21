@@ -2,6 +2,10 @@
 
 [Readme](https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/README.md) 
 
+2018-11-21 1.0.13
+- Added NWebsec.AspNetCore.Middleware
+- commented out example clients
+
 2018-11-21 1.0.12
 - adding feature-policy to the headers
 - fix CSP bug
