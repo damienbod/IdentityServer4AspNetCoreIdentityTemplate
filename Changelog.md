@@ -2,9 +2,10 @@
 
 [Readme](https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/README.md) 
 
-2018-11-11 1.0.12
+2018-11-21 1.0.12
 - adding feature-policy to the headers
 - fix CSP bug
+- updated nuget packages
 
 2018-10-16 1.0.11
 - resetPassword => ConfirmEmail fix
