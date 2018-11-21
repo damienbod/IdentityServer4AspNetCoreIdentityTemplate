@@ -165,6 +165,23 @@ namespace StsServerIdentity
                 app.UseExceptionHandler("/Home/Error");
             }
 
+            app.UseHsts(hsts => hsts.MaxAge(365).IncludeSubdomains());
+            app.UseXContentTypeOptions();
+            app.UseReferrerPolicy(opts => opts.NoReferrer());
+            app.UseXXssProtection(options => options.EnabledWithBlockMode());
+
+            app.UseCsp(opts => opts
+                .BlockAllMixedContent()
+                .StyleSources(s => s.Self())
+                .StyleSources(s => s.UnsafeInline())
+                .FontSources(s => s.Self())
+                .FrameAncestors(s => s.Self())
+                .ImageSources(imageSrc => imageSrc.Self())
+                .ImageSources(imageSrc => imageSrc.CustomSources("data:"))
+                .ScriptSources(s => s.Self())
+                .ScriptSources(s => s.UnsafeInline())
+            );
+
             var locOptions = app.ApplicationServices.GetService<IOptions<RequestLocalizationOptions>>();
             app.UseRequestLocalization(locOptions.Value);
 
