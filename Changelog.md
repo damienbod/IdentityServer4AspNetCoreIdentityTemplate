@@ -5,6 +5,7 @@
 2018-11-21 1.0.13
 - Added NWebsec.AspNetCore.Middleware
 - commented out example clients
+- updated ui packages
 
 2018-11-21 1.0.12
 - adding feature-policy to the headers
