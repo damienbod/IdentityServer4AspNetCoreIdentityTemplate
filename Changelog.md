@@ -2,6 +2,9 @@
 
 [Readme](https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/README.md) 
 
+2018-11-27 1.0.14
+- Localize identity error messages
+
 2018-11-21 1.0.13
 - Added NWebsec.AspNetCore.Middleware
 - commented out example clients
