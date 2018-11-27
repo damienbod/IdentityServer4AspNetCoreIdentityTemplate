@@ -108,7 +108,7 @@ namespace Microsoft.AspNetCore.Identity
             return new IdentityError
             {
                 Code = nameof(InvalidUserName),
-                Description = _sharedLocalizer.GetLocalizedHtmlString($"FormatInvalidUserName({userName})")
+                Description = _sharedLocalizer.GetLocalizedHtmlString("InvalidUserName", userName)
             };
         }
 
@@ -122,7 +122,7 @@ namespace Microsoft.AspNetCore.Identity
             return new IdentityError
             {
                 Code = nameof(InvalidEmail),
-                Description = _sharedLocalizer.GetLocalizedHtmlString($"FormatInvalidEmail({email})")
+                Description = _sharedLocalizer.GetLocalizedHtmlString("InvalidEmail", email)
             };
         }
 
@@ -164,7 +164,7 @@ namespace Microsoft.AspNetCore.Identity
             return new IdentityError
             {
                 Code = nameof(InvalidRoleName),
-                Description = _sharedLocalizer.GetLocalizedHtmlString($"FormatInvalidRoleName({role})")
+                Description = _sharedLocalizer.GetLocalizedHtmlString("InvalidRoleName", role)
             };
         }
 
@@ -178,7 +178,7 @@ namespace Microsoft.AspNetCore.Identity
             return new IdentityError
             {
                 Code = nameof(DuplicateRoleName),
-                Description = _sharedLocalizer.GetLocalizedHtmlString($"FormatDuplicateRoleName({role})")
+                Description = _sharedLocalizer.GetLocalizedHtmlString("DuplicateRoleName", role)
             };
         }
 
@@ -191,7 +191,7 @@ namespace Microsoft.AspNetCore.Identity
             return new IdentityError
             {
                 Code = nameof(UserAlreadyHasPassword),
-                Description = _sharedLocalizer.GetLocalizedHtmlString($"UserlreadyHasPassword")
+                Description = _sharedLocalizer.GetLocalizedHtmlString("UserlreadyHasPassword")
             };
         }
 
@@ -218,7 +218,7 @@ namespace Microsoft.AspNetCore.Identity
             return new IdentityError
             {
                 Code = nameof(UserAlreadyInRole),
-                Description = _sharedLocalizer.GetLocalizedHtmlString($"FormatUserAlreadyInRole({role})")
+                Description = _sharedLocalizer.GetLocalizedHtmlString("UserAlreadyInRole", role)
             };
         }
 
@@ -232,7 +232,7 @@ namespace Microsoft.AspNetCore.Identity
             return new IdentityError
             {
                 Code = nameof(UserNotInRole),
-                Description = _sharedLocalizer.GetLocalizedHtmlString($"FormatUserNotInRole({role})")
+                Description = _sharedLocalizer.GetLocalizedHtmlString("UserNotInRole", role)
             };
         }
 
@@ -246,7 +246,7 @@ namespace Microsoft.AspNetCore.Identity
             return new IdentityError
             {
                 Code = nameof(PasswordTooShort),
-                Description = _sharedLocalizer.GetLocalizedHtmlString($"FormatPasswordTooShort({length})")
+                Description = _sharedLocalizer.GetLocalizedHtmlString("PasswordTooShort", length.ToString())
             };
         }
 
@@ -260,7 +260,7 @@ namespace Microsoft.AspNetCore.Identity
             return new IdentityError
             {
                 Code = nameof(PasswordRequiresUniqueChars),
-                Description = _sharedLocalizer.GetLocalizedHtmlString($"FormatPasswordRequiresUniqueChars({uniqueChars})")
+                Description = _sharedLocalizer.GetLocalizedHtmlString("PasswordRequiresUniqueChars", uniqueChars.ToString())
             };
         }
 
