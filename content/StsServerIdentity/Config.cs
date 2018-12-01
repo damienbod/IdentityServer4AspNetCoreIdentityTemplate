@@ -43,14 +43,11 @@ namespace StsServerIdentity
             };
         }
 
-        // clients want to access resources (aka scopes)
         public static IEnumerable<Client> GetClients(IConfigurationSection stsConfig)
         {
-            var angularClientIdTokenOnlyUrl = stsConfig["AngularClientIdTokenOnlyUrl"];
-            var angularClientUrl = stsConfig["AngularClientUrl"];
             // TODO use configs in app
+            //var yourConfig = stsConfig["ClientUrl"];
 
-            // client credentials client
             return new List<Client>
             {
                 // example code
