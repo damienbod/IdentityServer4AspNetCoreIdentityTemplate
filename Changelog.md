@@ -5,6 +5,7 @@
 2018-11-28 1.0.14
 - Localize identity error messages
 - Use Html.PartialAsync instead of Html.Partial
+- Add zh-Hans translation
 
 2018-11-21 1.0.13
 - Added NWebsec.AspNetCore.Middleware

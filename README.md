@@ -7,7 +7,7 @@
 - ASP.NET Core 2.1
 - Latest ASP.NET Core Identity
 - Bootstrap 4 UI
-- Localization en-US, de-DE, it-IT, fr-FR, de-CH, gsw-CH
+- Localization en-US, de-DE, it-IT, fr-FR, zh-Hans, de-CH, gsw-CH
 - 2FA
 - TOTP
 - Personal data, download, delete (part of Identity)
@@ -34,6 +34,11 @@ en-US
 fr-FR
 
 <img src="https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/images/fr-FR_template.png" alt=""  />
+
+zh-Hans
+
+<img src="https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/images/zh-Hans_template.png" alt=""  />
+
 
 ## Using the template
 
