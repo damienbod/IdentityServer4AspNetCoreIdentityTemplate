@@ -2,7 +2,7 @@
 
 [Readme](https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/README.md) 
 
-2018-11-28 1.0.14
+2018-12-02 1.0.14
 - Localize identity error messages
 - Use Html.PartialAsync instead of Html.Partial
 - Add zh-Hans translation
