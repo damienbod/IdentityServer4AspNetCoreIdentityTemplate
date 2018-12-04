@@ -4,7 +4,7 @@
 
 ## Features
 
-- ASP.NET Core 2.1
+- ASP.NET Core 2.2
 - Latest ASP.NET Core Identity
 - Bootstrap 4 UI
 - Localization en-US, de-DE, it-IT, fr-FR, zh-Hans, de-CH, gsw-CH

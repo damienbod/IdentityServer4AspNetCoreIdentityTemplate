@@ -16,7 +16,7 @@
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<copyright>2018 damienbod</copyright>
 		<summary>This template provides a simle getting started for IdentityServer4 with Identity. Identity is Localized and the UI uses Bootstrap 4, Remove AllowAnonymous from the logout</summary>
-		<releaseNotes>Added NWebsec.AspNetCore.Middleware, commented out example clients, updated ui packages</releaseNotes>
+		<releaseNotes> Localize identity error messages, Use Html.PartialAsync instead of Html.Partial, Add zh-Hans translation, .NET Core 2.2</releaseNotes>
 		<licenseUrl>https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/LICENSE</licenseUrl>
 		<repository type="git" url="https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate" />
 		<packageTypes>
