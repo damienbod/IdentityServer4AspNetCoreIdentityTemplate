@@ -5,7 +5,7 @@
 2018-12-04 1.0.14
 - Localize identity error messages
 - Use Html.PartialAsync instead of Html.Partial
-- Add zh-Hans translation
+- Added zh-Hans translation
 - .NET Core 2.2
 
 2018-11-21 1.0.13
