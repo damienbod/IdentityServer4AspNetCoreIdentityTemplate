@@ -115,7 +115,7 @@ $mypwd = ConvertTo-SecureString -String "1234" -Force -AsPlainText
 Get-ChildItem -Path cert:\localMachine\my\"The thumbprint..." | Export-PfxCertificate -FilePath C:\git\sts_dev_cert.pfx -Password $mypwd
 ```
 
-## Credits, Used NuGet packages + ASP.NET Core 2.1 standard packages
+## Credits, Used NuGet packages + ASP.NET Core 2.2 standard packages
 
 - IdentityServer4
 - IdentityServer4.AspNetIdentity
