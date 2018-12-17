@@ -820,5 +820,6 @@
   <data name="UserNotInRole" xml:space="preserve">
     <value>L'utente non ha il ruolo '{0}'.</value>
     <comment>Utente senza ruolo corretto</comment>
-  </data>
+</data>
+   
 </root>

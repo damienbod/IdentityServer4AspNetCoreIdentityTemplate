@@ -1,0 +1,13 @@
+image: Visual Studio 2017 Preview
+init:
+  - git config --global core.autocrlf true
+install:
+  - ECHO %APPVEYOR_BUILD_WORKER_IMAGE%
+  - dotnet --version
+  - cd content/StsServerIdentity
+  - dotnet restore
+build_script:
+- dotnet build
+before_build:
+- appveyor-retry dotnet restore -v Minimal
+
