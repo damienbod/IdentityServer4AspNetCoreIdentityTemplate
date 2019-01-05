@@ -3,7 +3,8 @@
 [Readme](https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/README.md) 
 
 2019-01-05 1.0.16
-- Resolve typo in class attribute
+- UI Resolve typo in class attribute
+- UI Remove comma from button text
 
 2018-12-19 1.0.15
 - Localize identity error messages IT
