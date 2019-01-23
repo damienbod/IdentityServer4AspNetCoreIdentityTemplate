@@ -2,13 +2,11 @@
 
 [Readme](https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/README.md) 
 
-2019-01-05 1.0.19
-- Localize identity error messages IT
-- update packages, npm and nuget
-
 2019-01-05 1.0.16
 - UI Resolve typo in class attribute
 - UI Remove comma from button text
+- Localize identity error messages IT
+- update packages, npm and nuget
 
 2018-12-19 1.0.15
 - Localize identity error messages IT
