@@ -16,7 +16,7 @@
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<copyright>2018 damienbod</copyright>
 		<summary>This template provides a simle getting started for IdentityServer4 with Identity. Identity is Localized and the UI uses Bootstrap 4, Remove AllowAnonymous from the logout</summary>
-		<releaseNotes>Localize identity error messages IT, updated npm packages, updated Nuget packages</releaseNotes>
+		<releaseNotes>UI Resolve typo in class attribute, UI Remove comma from button text, Localize identity error messages IT, update packages, npm and nuget</releaseNotes>
 		<repository type="git" url="https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate" />
 		<packageTypes>
 			<packageType name="Template" />
