@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
 	<metadata>
 		<id>IdentityServer4AspNetCoreIdentityTemplate</id>
-		<version>1.0.16</version>
+		<version>1.0.17</version>
 		<title>IdentityServer4.Identity.Template</title>
 		<description>
 		  Creates an ASP.NET Core STS application using IdentityServer4 and Identity with localisation, TOTP, personal data, Bootstrap 4
@@ -14,9 +14,9 @@
 		<language>en-US</language>
 		<tags>ASP.NET Core Identity IdentityServer4 STS OIDC OpenID Bootstrap4</tags>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
-		<copyright>2018 damienbod</copyright>
+		<copyright>2019 damienbod</copyright>
 		<summary>This template provides a simle getting started for IdentityServer4 with Identity. Identity is Localized and the UI uses Bootstrap 4, Remove AllowAnonymous from the logout</summary>
-		<releaseNotes>UI Resolve typo in class attribute, UI Remove comma from button text, Localize identity error messages IT, update packages, npm and nuget</releaseNotes>
+		<releaseNotes>Adding support for Device Flow, update packages, npm and nuget</releaseNotes>
 		<repository type="git" url="https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate" />
 		<packageTypes>
 			<packageType name="Template" />
