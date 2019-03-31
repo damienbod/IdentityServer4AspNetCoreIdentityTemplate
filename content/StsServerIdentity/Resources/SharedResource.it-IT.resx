@@ -304,7 +304,7 @@
     <value>Login esterni</value>
   </data>
   <data name="MANAGE_CHANGE_ACCOUNT_SETTINGS" xml:space="preserve">
-    <value>Cambia le impostazione del tuo account</value>
+    <value>Cambia le impostazioni del tuo account</value>
   </data>
   <data name="MANAGE_YOUR_ACCOUNT" xml:space="preserve">
     <value>Gestisci account</value>
