@@ -21,8 +21,6 @@ using StsServerIdentity.Data;
 using StsServerIdentity.Resources;
 using StsServerIdentity.Services;
 using Microsoft.IdentityModel.Tokens;
-using Serilog;
-using Serilog.Sinks.SystemConsole.Themes;
 using StsServerIdentity.Filters;
 
 namespace StsServerIdentity
@@ -33,9 +31,10 @@ namespace StsServerIdentity
 
         public IConfiguration Configuration { get; }
 
-        public Startup(IConfiguration configuration)
+        public Startup(IConfiguration configuration, IHostingEnvironment env)
         {
             Configuration = configuration;
+            _environment = env;
         }
 
         public void ConfigureServices(IServiceCollection services)
