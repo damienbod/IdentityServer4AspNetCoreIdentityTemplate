@@ -2,6 +2,12 @@
 
 [Readme](https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/README.md) 
 
+2019-04-30 1.0.19
+- Using InProcess Hosting
+- clean up application configuration, now in the program.cs
+- Added support for IAM Azure Key vault Configuration
+- update packages, npm and nuget
+
 2019-02-19 1.0.17
 - Adding support for Device Flow
 - update packages, npm and nuget
