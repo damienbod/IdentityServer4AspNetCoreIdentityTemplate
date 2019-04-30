@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
 	<metadata>
 		<id>IdentityServer4AspNetCoreIdentityTemplate</id>
-		<version>1.0.18</version>
+		<version>1.0.19</version>
 		<title>IdentityServer4.Identity.Template</title>
 		<description>
 		  Creates an ASP.NET Core STS application using IdentityServer4 and Identity with localisation, TOTP, personal data, Bootstrap 4
@@ -16,7 +16,7 @@
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<copyright>2019 damienbod</copyright>
 		<summary>This template provides a simle getting started for IdentityServer4 with Identity. Identity is Localized and the UI uses Bootstrap 4, Remove AllowAnonymous from the logout</summary>
-		<releaseNotes>Update NuGet packages</releaseNotes>
+		<releaseNotes>Using InProcess Hosting, clean up application configuration, now in the program.cs,, Added support for IAM Azure Key vault Configuration, update packages, npm and nuget</releaseNotes>
 		<repository type="git" url="https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate" />
 		<packageTypes>
 			<packageType name="Template" />
