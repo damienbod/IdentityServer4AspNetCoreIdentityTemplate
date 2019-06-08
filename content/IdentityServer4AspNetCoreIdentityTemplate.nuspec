@@ -4,6 +4,7 @@
 		<id>IdentityServer4AspNetCoreIdentityTemplate</id>
 		<version>1.0.20</version>
 		<title>IdentityServer4.Identity.Template</title>
+		<license type="file">LICENSE</license>
 		<description>
 		  Creates an ASP.NET Core STS application using IdentityServer4 and Identity with localisation, TOTP, personal data, Bootstrap 4
 		</description>
