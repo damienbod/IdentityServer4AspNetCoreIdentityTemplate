@@ -16,7 +16,7 @@
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<copyright>2019 damienbod</copyright>
 		<summary>This template provides a simle getting started for IdentityServer4 with Identity. Identity is Localized and the UI uses Bootstrap 4, Remove AllowAnonymous from the logout</summary>
-		<releaseNotes>Using InProcess Hosting, clean up application configuration, now in the program.cs,, Added support for IAM Azure Key vault Configuration, update packages, npm and nuget</releaseNotes>
+		<releaseNotes>update packages, npm and nuget, ajax fix jquery.unobtrusive-ajax, UI fixes ExternalLoginConfirmation</releaseNotes>
 		<repository type="git" url="https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate" />
 		<packageTypes>
 			<packageType name="Template" />
