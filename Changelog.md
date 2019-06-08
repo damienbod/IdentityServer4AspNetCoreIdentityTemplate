@@ -2,6 +2,9 @@
 
 [Readme](https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/README.md) 
 
+2019-06-08 1.0.20
+- update packages, npm and nuget
+
 2019-04-30 1.0.19
 - Using InProcess Hosting
 - clean up application configuration, now in the program.cs
