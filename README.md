@@ -54,7 +54,7 @@ Locally built nupkg:
 
 
 ```
-dotnet new -i IdentityServer4AspNetCoreIdentityTemplate.1.0.20.nupkg
+dotnet new -i IdentityServer4AspNetCoreIdentityTemplate.1.0.21.nupkg
 ```
 
 ### run 
