@@ -2,6 +2,9 @@
 
 [Readme](https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/README.md) 
 
+2019-09-01 1.0.22
+- updated nuget packages
+
 2019-06-08 1.0.21
 - update packages, npm and nuget
 
