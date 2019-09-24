@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
 using IdentityServer4.Services;
 using System.Security.Cryptography.X509Certificates;
 using System.IO;
@@ -22,20 +21,20 @@ using StsServerIdentity.Resources;
 using StsServerIdentity.Services;
 using Microsoft.IdentityModel.Tokens;
 using StsServerIdentity.Filters;
+using Microsoft.Extensions.Hosting;
 
 namespace StsServerIdentity
 {
     public class Startup
     {
-        private readonly IHostingEnvironment _environment;
-
-        public IConfiguration Configuration { get; }
-
-        public Startup(IConfiguration configuration, IHostingEnvironment env)
+        public Startup(IConfiguration configuration, IWebHostEnvironment env)
         {
             Configuration = configuration;
             _environment = env;
         }
+
+        public IConfiguration Configuration { get; }
+        public IWebHostEnvironment _environment { get; }
 
         public void ConfigureServices(IServiceCollection services)
         {
@@ -75,6 +74,8 @@ namespace StsServerIdentity
 
             services.Configure<StsConfig>(Configuration.GetSection("StsConfig"));
             services.Configure<EmailSettings>(Configuration.GetSection("EmailSettings"));
+            services.AddTransient<IProfileService, IdentityWithAdditionalClaimsProfileService>();
+            services.AddTransient<IEmailSender, EmailSender>();
 
             services.AddSingleton<LocService>();
             services.AddLocalization(options => options.ResourcesPath = "Resources");
@@ -119,10 +120,11 @@ namespace StsServerIdentity
                     options.RequestCultureProviders.Insert(0, providerQuery);
                 });
 
-            services.AddMvc(options =>
-            {
-                options.Filters.Add(new SecurityHeadersAttribute());
-            }).SetCompatibilityVersion(CompatibilityVersion.Version_2_2)
+            services.AddControllersWithViews(options =>
+                {
+                    options.Filters.Add(new SecurityHeadersAttribute());
+                })
+                .SetCompatibilityVersion(CompatibilityVersion.Version_3_0)
                 .AddViewLocalization()
                 .AddDataAnnotationsLocalization(options =>
                 {
@@ -133,10 +135,6 @@ namespace StsServerIdentity
                     };
                 });
 
-            services.AddTransient<IProfileService, IdentityWithAdditionalClaimsProfileService>();
-
-            services.AddTransient<IEmailSender, EmailSender>();
-
             services.AddIdentityServer()
                 .AddSigningCredential(cert)
                 .AddInMemoryIdentityResources(Config.GetIdentityResources())
@@ -146,7 +144,7 @@ namespace StsServerIdentity
                 .AddProfileService<IdentityWithAdditionalClaimsProfileService>();
         }
 
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
@@ -197,13 +195,19 @@ namespace StsServerIdentity
                     }
                 }
             });
+
             app.UseIdentityServer();
 
-            app.UseMvc(routes =>
+            app.UseRouting();
+
+            app.UseAuthentication();
+            app.UseAuthorization();
+
+            app.UseEndpoints(endpoints =>
             {
-                routes.MapRoute(
+                endpoints.MapControllerRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
             });
         }
     }
