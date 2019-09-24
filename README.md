@@ -4,7 +4,7 @@
 
 ## Features
 
-- ASP.NET Core 2.2
+- ASP.NET Core 3.0
 - Latest ASP.NET Core Identity
 - Bootstrap 4 UI
 - Localization en-US, de-DE, it-IT, fr-FR, zh-Hans, de-CH, gsw-CH
@@ -54,7 +54,7 @@ Locally built nupkg:
 
 
 ```
-dotnet new -i IdentityServer4AspNetCoreIdentityTemplate.1.0.22.nupkg
+dotnet new -i IdentityServer4AspNetCoreIdentityTemplate.2.0.0.nupkg
 ```
 
 ### run 
@@ -115,7 +115,7 @@ $mypwd = ConvertTo-SecureString -String "1234" -Force -AsPlainText
 Get-ChildItem -Path cert:\localMachine\my\"The thumbprint..." | Export-PfxCertificate -FilePath C:\git\sts_dev_cert.pfx -Password $mypwd
 ```
 
-## Credits, Used NuGet packages + ASP.NET Core 2.2 standard packages
+## Credits, Used NuGet packages + ASP.NET Core 3.0 standard packages
 
 - IdentityServer4
 - IdentityServer4.AspNetIdentity
