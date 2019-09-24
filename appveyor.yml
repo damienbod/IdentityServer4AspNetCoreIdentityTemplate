@@ -1,8 +1,12 @@
-image: Visual Studio 2017 Preview
+image: Visual Studio 2019 Preview
 init:
   - git config --global core.autocrlf true
+environment:
+  nodejs_version: "12"
 install:
   - ECHO %APPVEYOR_BUILD_WORKER_IMAGE%
+  - ps: Install-Product node $env:nodejs_version
+  - cmd: choco install dotnetcore-sdk --pre
   - dotnet --version
   - cd content/StsServerIdentity
   - dotnet restore
