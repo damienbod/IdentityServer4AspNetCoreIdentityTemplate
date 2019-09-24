@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Azure.KeyVault;
 using Microsoft.Azure.Services.AppAuthentication;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Hosting;
 using Serilog;
 using Serilog.Events;
 using Serilog.Sinks.SystemConsole.Themes;
@@ -24,7 +25,7 @@ namespace StsServerIdentity
             try
             {
                 Log.Information("Starting web host");
-                CreateWebHostBuilder(args).Build().Run();
+                CreateHostBuilder(args).Build().Run();
                 return 0;
             }
             catch (Exception ex)
@@ -38,9 +39,8 @@ namespace StsServerIdentity
             }
         }
 
-        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>()
+        public static IHostBuilder CreateHostBuilder(string[] args) =>
+            Host.CreateDefaultBuilder(args)
                 .ConfigureAppConfiguration((context, config) =>
                 {
                     var builder = config.Build();
@@ -54,18 +54,22 @@ namespace StsServerIdentity
                     }
                     else
                     {
-                        IHostingEnvironment env = context.HostingEnvironment;
+                        IHostEnvironment env = context.HostingEnvironment;
 
                         config.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
                             .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true, reloadOnChange: true)
                             .AddEnvironmentVariables();
-                            //.AddUserSecrets("your user secret....");
+                        //.AddUserSecrets("your user secret....");
                     }
                 })
-                .UseSerilog((hostingContext, loggerConfiguration) => loggerConfiguration
-                    .ReadFrom.Configuration(hostingContext.Configuration)
-                    .Enrich.FromLogContext()
-                    .WriteTo.Console(theme: AnsiConsoleTheme.Code)
+                .ConfigureWebHostDefaults(webBuilder =>
+                {
+                    webBuilder.UseStartup<Startup>()
+                        .UseSerilog((hostingContext, loggerConfiguration) => loggerConfiguration
+                        .ReadFrom.Configuration(hostingContext.Configuration)
+                        .Enrich.FromLogContext()
+                        .WriteTo.Console(theme: AnsiConsoleTheme.Code)
                 );
+            });
     }
 }
