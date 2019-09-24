@@ -1,6 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
+    <Version>2.0.0</Version>
+    <Description>IdentityServer4 template with ASP.NET Core 3.0 and ASP.NET Core Identity</Description>
+    <PackageProjectUrl>https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate</PackageProjectUrl>
+    <PackageIconUrl>http://www.gravatar.com/avatar/61d005637f57b5c3da8ba662cf04a9d6.png</PackageIconUrl>
+    <RepositoryUrl>https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate</RepositoryUrl>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="BuildBundlerMinifier" Version="3.0.415" />
