@@ -17,7 +17,7 @@
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<copyright>2019 damienbod</copyright>
 		<summary>This template provides a simle getting started for IdentityServer4 with Identity. Identity is Localized and the UI uses Bootstrap 4, Remove AllowAnonymous from the logout</summary>
-		<releaseNotes>update nuget packages</releaseNotes>
+		<releaseNotes>updated to ASP.NET Core 3.0</releaseNotes>
 		<repository type="git" url="https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate" />
 		<packageTypes>
 			<packageType name="Template" />
