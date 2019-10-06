@@ -15,32 +15,39 @@ using StsServerIdentity.Services;
 using Microsoft.IdentityModel.Tokens;
 using StsServerIdentity.Filters;
 using Microsoft.Extensions.Hosting;
+using StsServerIdentity.Services.Certificate;
+using System;
+using System.IO;
+using System.Security.Cryptography.X509Certificates;
+using System.Globalization;
+using Microsoft.AspNetCore.Localization;
+using System.Collections.Generic;
 
 namespace StsServerIdentity
 {
     public class Startup
     {
-        public IConfiguration Configuration { get; }
-        public IWebHostEnvironment _environment { get; }
+        private IConfiguration _configuration { get; }
+        private IWebHostEnvironment _environment { get; }
 
         public Startup(IConfiguration configuration, IWebHostEnvironment env)
         {
-            Configuration = configuration;
+            _configuration = configuration;
             _environment = env;
         }
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.Configure<StsConfig>(Configuration.GetSection("StsConfig"));
-            services.Configure<EmailSettings>(Configuration.GetSection("EmailSettings"));
+            services.Configure<StsConfig>(_configuration.GetSection("StsConfig"));
+            services.Configure<EmailSettings>(_configuration.GetSection("EmailSettings"));
             services.AddTransient<IProfileService, IdentityWithAdditionalClaimsProfileService>();
             services.AddTransient<IEmailSender, EmailSender>();
 
-            var x509Certificate2 = StartupCertificateConfiguations.GetCertificate(_environment, Configuration);
-            services.AddLocalizationConfigurations();
+            var x509Certificate2 = GetCertificate(_environment, _configuration);
+            AddLocalizationConfigurations(services);
 
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
+                options.UseSqlite(_configuration.GetConnectionString("DefaultConnection")));
 
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
@@ -71,7 +78,7 @@ namespace StsServerIdentity
                     };
                 });
 
-            var stsConfig = Configuration.GetSection("StsConfig");
+            var stsConfig = _configuration.GetSection("StsConfig");
             services.AddIdentityServer()
                 .AddSigningCredential(x509Certificate2)
                 .AddInMemoryIdentityResources(Config.GetIdentityResources())
@@ -146,6 +153,72 @@ namespace StsServerIdentity
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+        }
+
+        private static X509Certificate2 GetCertificate(IWebHostEnvironment environment, IConfiguration configuration)
+        {
+            X509Certificate2 cert;
+            var useLocalCertStore = Convert.ToBoolean(configuration["UseLocalCertStore"]);
+            var certificateThumbprint = configuration["CertificateThumbprint"];
+
+            if (environment.IsProduction())
+            {
+                if (useLocalCertStore)
+                {
+                    using (X509Store store = new X509Store(StoreName.My, StoreLocation.LocalMachine))
+                    {
+                        store.Open(OpenFlags.ReadOnly);
+                        var certs = store.Certificates.Find(X509FindType.FindByThumbprint, certificateThumbprint, false);
+                        cert = certs[0];
+                        store.Close();
+                    }
+                }
+                else
+                {
+                    // Azure deployment, will be used if deployed to Azure
+                    var vaultConfigSection = configuration.GetSection("Vault");
+                    var keyVaultService = new KeyVaultCertificateService(vaultConfigSection["Url"], vaultConfigSection["ClientId"], vaultConfigSection["ClientSecret"]);
+                    cert = keyVaultService.GetCertificateFromKeyVault(vaultConfigSection["CertificateName"]);
+                }
+            }
+            else
+            {
+                cert = new X509Certificate2(Path.Combine(environment.ContentRootPath, "sts_dev_cert.pfx"), "1234");
+            }
+
+            return cert;
+        }
+
+        private static void AddLocalizationConfigurations(IServiceCollection services)
+        {
+            services.AddSingleton<LocService>();
+            services.AddLocalization(options => options.ResourcesPath = "Resources");
+
+            services.Configure<RequestLocalizationOptions>(
+                options =>
+                {
+                    var supportedCultures = new List<CultureInfo>
+                        {
+                            new CultureInfo("en-US"),
+                            new CultureInfo("de-DE"),
+                            new CultureInfo("de-CH"),
+                            new CultureInfo("it-IT"),
+                            new CultureInfo("gsw-CH"),
+                            new CultureInfo("fr-FR"),
+                            new CultureInfo("zh-Hans")
+                        };
+
+                    options.DefaultRequestCulture = new RequestCulture(culture: "de-DE", uiCulture: "de-DE");
+                    options.SupportedCultures = supportedCultures;
+                    options.SupportedUICultures = supportedCultures;
+
+                    var providerQuery = new LocalizationQueryProvider
+                    {
+                        QureyParamterName = "ui_locales"
+                    };
+
+                    options.RequestCultureProviders.Insert(0, providerQuery);
+                });
         }
     }
 }
