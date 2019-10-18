@@ -122,7 +122,7 @@ namespace StsServerIdentity.Controllers
             return View(await BuildLoginViewModelAsync(model));
         }
 
-        async Task<LoginViewModel> BuildLoginViewModelAsync(string returnUrl, AuthorizationRequest context)
+        private async Task<LoginViewModel> BuildLoginViewModelAsync(string returnUrl, AuthorizationRequest context)
         {
             var loginProviders = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
             var providers = loginProviders
@@ -157,7 +157,7 @@ namespace StsServerIdentity.Controllers
             };
         }
 
-        async Task<LoginViewModel> BuildLoginViewModelAsync(LoginInputModel model)
+        private async Task<LoginViewModel> BuildLoginViewModelAsync(LoginInputModel model)
         {
             var context = await _interaction.GetAuthorizationContextAsync(model.ReturnUrl);
             var vm = await BuildLoginViewModelAsync(model.ReturnUrl, context);
