@@ -22,6 +22,7 @@ using StsServerIdentity.Resources;
 using StsServerIdentity.Services;
 using StsServerIdentity.Filters;
 using StsServerIdentity.Services.Certificate;
+using Serilog;
 
 namespace StsServerIdentity
 {
@@ -142,6 +143,10 @@ namespace StsServerIdentity
 
             app.UseIdentityServer();
 
+            // https://nblumhardt.com/2019/10/serilog-in-aspnetcore-3/
+            // https://nblumhardt.com/2019/10/serilog-mvc-logging/
+            app.UseSerilogRequestLogging();
+
             app.UseRouting();
 
             app.UseAuthentication();
@@ -214,7 +219,7 @@ namespace StsServerIdentity
 
                     var providerQuery = new LocalizationQueryProvider
                     {
-                        QureyParamterName = "ui_locales"
+                        QueryParameterName = "ui_locales"
                     };
 
                     options.RequestCultureProviders.Insert(0, providerQuery);
