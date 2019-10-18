@@ -214,7 +214,7 @@ namespace StsServerIdentity
 
                     var providerQuery = new LocalizationQueryProvider
                     {
-                        QureyParamterName = "ui_locales"
+                        QueryParameterName = "ui_locales"
                     };
 
                     options.RequestCultureProviders.Insert(0, providerQuery);
