@@ -172,9 +172,6 @@ namespace StsServerIdentity.Controllers
         [HttpGet]
         public async Task<IActionResult> Logout(string logoutId)
         {
-            var item = CultureInfo.CurrentCulture;
-            var item2 = CultureInfo.CurrentUICulture;
-
             if (User.Identity.IsAuthenticated == false)
             {
                 // if the user is not authenticated, then just show logged out page
@@ -205,9 +202,6 @@ namespace StsServerIdentity.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Logout(LogoutViewModel model)
         {
-            var item = CultureInfo.CurrentCulture;
-            var item2 = CultureInfo.CurrentUICulture;
-
             var idp = User?.FindFirst(JwtClaimTypes.IdentityProvider)?.Value;
             var subjectId = HttpContext.User.Identity.GetSubjectId();
 
@@ -221,7 +215,7 @@ namespace StsServerIdentity.Controllers
                     model.LogoutId = await _interaction.CreateLogoutContextAsync();
                 }
 
-                string url = "/Account/Logout?logoutId=" + model.LogoutId;
+                // string url = "/Account/Logout?logoutId=" + model.LogoutId;
                 try
                 {
                     await _signInManager.SignOutAsync();
@@ -623,11 +617,6 @@ namespace StsServerIdentity.Controllers
             {
                 ModelState.AddModelError(string.Empty, error.Description);
             }
-        }
-
-        private Task<ApplicationUser> GetCurrentUserAsync()
-        {
-            return _userManager.GetUserAsync(HttpContext.User);
         }
 
         private IActionResult RedirectToLocal(string returnUrl)
