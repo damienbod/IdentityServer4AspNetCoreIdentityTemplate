@@ -2,6 +2,10 @@
 
 [Readme](https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/README.md) 
 
+2019-12-06 3.0.0
+- updated to .NET core 3.1 LTS
+- updated npm packages
+
 2019-10-24 2.0.1
 - small bug fixes
 - code clean up
