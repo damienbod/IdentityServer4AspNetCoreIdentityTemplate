@@ -68,7 +68,6 @@ namespace StsServerIdentity
                 {
                     options.Filters.Add(new SecurityHeadersAttribute());
                 })
-                .SetCompatibilityVersion(CompatibilityVersion.Version_3_0)
                 .AddViewLocalization()
                 .AddDataAnnotationsLocalization(options =>
                 {
@@ -141,15 +140,14 @@ namespace StsServerIdentity
                 }
             });
 
-            app.UseIdentityServer();
-
             // https://nblumhardt.com/2019/10/serilog-in-aspnetcore-3/
             // https://nblumhardt.com/2019/10/serilog-mvc-logging/
             app.UseSerilogRequestLogging();
-
+			
+            app.UseStaticFiles();
             app.UseRouting();
 
-            app.UseAuthentication();
+            app.UseIdentityServer();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
