@@ -59,8 +59,8 @@ namespace StsServerIdentity
                  .AddOpenIdConnect("aad", "Login with Azure AD", options => // Microsoft common
                  {
                      //  https://login.microsoftonline.com/common/v2.0/.well-known/openid-configuration
-                     options.ClientId = "your_client_id";
-                     options.ClientSecret = "your_secret";
+                     options.ClientId = "your_client_id"; // ADD APP Registration ID
+                     options.ClientSecret = "your_secret"; // ADD APP Registration secret
                      options.SignInScheme = "Identity.External";
                      options.RemoteAuthenticationTimeout = TimeSpan.FromSeconds(30);
                      options.Authority = "https://login.microsoftonline.com/common/v2.0/";
@@ -70,7 +70,9 @@ namespace StsServerIdentity
                      options.Scope.Add("email");
                      options.TokenValidationParameters = new TokenValidationParameters
                      {
+                         // ALWAYS VALIDATE THE ISSUER IF POSSIBLE !!!!
                          ValidateIssuer = false,
+                         // ValidIssuers = new List<string> { "tenant..." },
                          NameClaimType = "email",
                      };
                      options.CallbackPath = "/signin-microsoft";
