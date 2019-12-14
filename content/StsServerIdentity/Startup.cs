@@ -56,12 +56,25 @@ namespace StsServerIdentity
                 .AddDefaultTokenProviders();
 
             services.AddAuthentication()
-                 .AddOpenIdConnect("aad", "Login with Azure AD", options =>
+                 .AddOpenIdConnect("aad", "Login with Azure AD", options => // Microsoft common
                  {
-                     options.Authority = $"https://login.microsoftonline.com/common";
-                     options.TokenValidationParameters = new TokenValidationParameters { ValidateIssuer = false };
-                     options.ClientId = "99eb0b9d-ca40-476e-b5ac-6f4c32bfb530";
-                     options.CallbackPath = "/signin-oidc";
+                     //  https://login.microsoftonline.com/common/v2.0/.well-known/openid-configuration
+                     options.ClientId = "your_client_id";
+                     options.ClientSecret = "your_secret";
+                     options.SignInScheme = "Identity.External";
+                     options.RemoteAuthenticationTimeout = TimeSpan.FromSeconds(30);
+                     options.Authority = "https://login.microsoftonline.com/common/v2.0/";
+                     options.ResponseType = "code";
+                     options.UsePkce = false; // live does not support this yet
+                     options.Scope.Add("profile");
+                     options.Scope.Add("email");
+                     options.TokenValidationParameters = new TokenValidationParameters
+                     {
+                         ValidateIssuer = false,
+                         NameClaimType = "email",
+                     };
+                     options.CallbackPath = "/signin-microsoft";
+                     options.Prompt = "login"; // login, consent
                  });
 
             services.AddControllersWithViews(options =>
