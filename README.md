@@ -4,7 +4,7 @@
 
 ## Features
 
-- ASP.NET Core 3.0
+- ASP.NET Core 3.1
 - Latest ASP.NET Core Identity
 - Bootstrap 4 UI
 - Localization en-US, de-DE, it-IT, fr-FR, zh-Hans, de-CH, gsw-CH
