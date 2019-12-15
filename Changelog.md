@@ -2,6 +2,12 @@
 
 [Readme](https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/README.md) 
 
+2019-12-16 3.0.1
+- updated middleware calls in startup
+- Added grants view
+- Added docs for external login, moved to Azure v2.0
+- bug fix style bug UI
+
 2019-12-06 3.0.0
 - updated to .NET core 3.1 LTS
 - updated npm packages
