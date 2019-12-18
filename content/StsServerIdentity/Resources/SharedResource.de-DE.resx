@@ -882,7 +882,7 @@
     <value>Identität Genehmigung</value>
   </data>
   <data name="GRANTS_INFO" xml:space="preserve">
-    <value>Unten finden Sie eine Liste der Anwendungen, auf die Sie Zugriff haben, und die Namen der Ressourcen, auf die sie Zugriff haben.</value>
+    <value>Unten finden Sie eine Liste der Anwendungen, auf die Sie Zugriff haben, und die Namen der Ressourcen, auf die Sie Zugriff haben.</value>
   </data>
   <data name="GRANTS_NO_ACCESS" xml:space="preserve">
     <value>Sie haben keinen Zugriff auf Anwendungen gewährt</value>
