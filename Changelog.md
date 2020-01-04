@@ -2,6 +2,10 @@
 
 [Readme](https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/README.md) 
 
+2020-01-04 3.0.2
+- updated nuget packages
+- added fix for same site chrome changes
+
 2019-12-16 3.0.1
 - updated middleware calls in startup
 - Added grants view
