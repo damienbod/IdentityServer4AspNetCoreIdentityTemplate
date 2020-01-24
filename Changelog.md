@@ -2,6 +2,10 @@
 
 [Readme](https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/README.md) 
 
+2020-01-24 3.0.3
+- updated nuget packages
+- updated npm packages
+
 2020-01-04 3.0.2
 - updated nuget packages
 - added fix for same site chrome changes
