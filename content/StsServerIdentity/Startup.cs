@@ -63,7 +63,8 @@ namespace StsServerIdentity
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddErrorDescriber<StsIdentityErrorDescriber>()
-                .AddDefaultTokenProviders();
+                .AddDefaultTokenProviders()
+                .AddTokenProvider<Fifo2UserTwoFactorTokenProvider>("FIDO2");
 
             services.AddAuthentication()
                  .AddOpenIdConnect("aad", "Login with Azure AD", options => // Microsoft common
