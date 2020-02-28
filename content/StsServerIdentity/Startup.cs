@@ -23,6 +23,7 @@ using StsServerIdentity.Filters;
 using StsServerIdentity.Services.Certificate;
 using Serilog;
 using Microsoft.AspNetCore.Http;
+using Fido2NetLib;
 
 namespace StsServerIdentity
 {
@@ -110,6 +111,19 @@ namespace StsServerIdentity
                 .AddInMemoryClients(Config.GetClients(stsConfig))
                 .AddAspNetIdentity<ApplicationUser>()
                 .AddProfileService<IdentityWithAdditionalClaimsProfileService>();
+
+            services.Configure<Fido2Configuration>(_configuration.GetSection("fido2"));
+            services.Configure<Fido2MdsConfiguration>(_configuration.GetSection("fido2mds"));
+            services.AddScoped<Fido2Storage>();
+            // Adds a default in-memory implementation of IDistributedCache.
+            services.AddDistributedMemoryCache();
+            services.AddSession(options =>
+            {
+                // Set a short timeout for easy testing.
+                options.IdleTimeout = TimeSpan.FromMinutes(2);
+                options.Cookie.HttpOnly = true;
+                options.Cookie.SameSite = Microsoft.AspNetCore.Http.SameSiteMode.None;
+            });
         }
 
         public void Configure(IApplicationBuilder app)
@@ -174,6 +188,8 @@ namespace StsServerIdentity
 
             app.UseIdentityServer();
             app.UseAuthorization();
+
+            app.UseSession();
 
             app.UseEndpoints(endpoints =>
             {
