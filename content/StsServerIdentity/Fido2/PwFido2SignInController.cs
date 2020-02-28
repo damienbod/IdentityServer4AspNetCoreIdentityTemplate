@@ -11,7 +11,7 @@ using System.IO;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
 
-namespace Fido2Identity
+namespace StsServerIdentity
 {
 
     [Route("api/[controller]")]

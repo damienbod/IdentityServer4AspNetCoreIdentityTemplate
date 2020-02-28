@@ -13,7 +13,7 @@ using Microsoft.Extensions.Options;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace Fido2Identity
+namespace StsServerIdentity
 {
 
     [Route("api/[controller]")]

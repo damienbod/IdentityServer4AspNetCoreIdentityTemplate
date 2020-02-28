@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Fido2Identity
+namespace StsServerIdentity
 {
     public class Fifo2UserTwoFactorTokenProvider : IUserTwoFactorTokenProvider<IdentityUser>
     {

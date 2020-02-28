@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 using System;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Fido2Identity
+namespace StsServerIdentity
 {
     public class FidoStoredCredential
     {
