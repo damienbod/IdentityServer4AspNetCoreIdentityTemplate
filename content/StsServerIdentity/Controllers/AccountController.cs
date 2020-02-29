@@ -147,7 +147,7 @@ namespace StsServerIdentity.Controllers
 
             if (string.IsNullOrEmpty(provider))
             {
-                provider = "FIDO2";
+                provider = "fido2";
             }
 
             return View(new MfaModel { /*Provider = provider,*/ ReturnUrl = returnUrl, RememberMe = rememberMe });
