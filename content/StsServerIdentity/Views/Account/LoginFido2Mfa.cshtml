@@ -1,0 +1,45 @@
+﻿@using StsServerIdentity.Resources
+@using Microsoft.AspNetCore.Identity
+@inject LocService SharedLocalizer
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+@model MfaModel
+@{
+    ViewData["Title"] = "Login with Fido2 MFA";
+}
+
+<h4>@ViewData["Title"]</h4>
+<div class="section">
+    <div class="container">
+        <h1 class="title is-1">2FA/MFA</h1>
+        <div class="content"><p>This is scenario where we just want to use FIDO as the MFA. The user register and logins with their username and password. For demo purposes, we trigger the MFA registering on sign up.</p></div>
+        <div class="notification is-danger" style="display:none">
+            Please note: Your browser does not seem to support WebAuthn yet. <a href="https://caniuse.com/#search=webauthn" target="_blank">Supported browsers</a>
+        </div>
+
+        <div class="columns">
+            <div class="column is-4">
+
+                <h3 class="title is-3">FIDO2 2FA</h3>
+                <form action="/LoginFido2Mfa" method="post" id="signin">
+
+                    <div class="field">
+                        <div class="control">
+                            <button class="btn btn-primary">2FA with FIDO2 device</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="~/js/helpers.js"></script>
+<script src="~/js/instant.js"></script>
+<script src="~/js/mfa.login.js"></script>
+
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}
