@@ -13,7 +13,7 @@
     {
         <div class="alert alert-danger">
             <strong>@SharedLocalizer.GetLocalizedHtmlString("2FA_NO_CODES_LEFT")</strong>
-            <p>@SharedLocalizer.GetLocalizedHtmlString("2FA_NO_CODES_LEFT_TEXT") <a asp-action="GenerateRecoveryCodes">@SharedLocalizer.GetLocalizedHtmlString("GENERATE")</a></p>
+            <p>@SharedLocalizer.GetLocalizedHtmlString("2FA_NO_CODES_LEFT_TEXT") <a asp-action="GenerateRecoveryCodesWarning">@SharedLocalizer.GetLocalizedHtmlString("GENERATE")</a></p>
         </div>
     }
     else if (Model.RecoveryCodesLeft == 1)
@@ -27,7 +27,7 @@
     {
         <div class="alert alert-warning">
             <strong>@SharedLocalizer.GetLocalizedHtmlString("2FA_N_CODES_LEFT", @Model.RecoveryCodesLeft.ToString())</strong>
-            <p>@SharedLocalizer.GetLocalizedHtmlString("2FA_N_CODES_LEFT_TEXT") <a asp-action="GenerateRecoveryCodes">@SharedLocalizer.GetLocalizedHtmlString("GENERATE")</a></p>
+            <p>@SharedLocalizer.GetLocalizedHtmlString("2FA_N_CODES_LEFT_TEXT") <a asp-action="GenerateRecoveryCodesWarning">@SharedLocalizer.GetLocalizedHtmlString("GENERATE")</a></p>
         </div>
     }
 
