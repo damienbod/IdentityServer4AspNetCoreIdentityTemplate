@@ -161,7 +161,7 @@ async function registerNewCredential(newCredential) {
         timer: 2000
     });
 
-    window.location.href = "/Identity/Account/Manage/GenerateRecoveryCodes";
+    window.location.href = "/Manage/GenerateRecoveryCodes";
 }
 
 async function registerCredentialWithServer(formData) {
