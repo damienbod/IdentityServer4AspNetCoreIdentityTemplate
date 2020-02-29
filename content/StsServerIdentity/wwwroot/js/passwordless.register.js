@@ -152,7 +152,7 @@ async function registerNewCredential(newCredential) {
     Swal.fire({
         title: 'Registration Successful!',
         text: 'You\'ve registered successfully.',
-        type: 'success',
+        //type: 'success',
         timer: 2000
     });
 

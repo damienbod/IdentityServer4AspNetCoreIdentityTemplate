@@ -122,7 +122,7 @@ async function verifyAssertionWithServer(assertedCredential) {
     await Swal.fire({
         title: 'Logged In!',
         text: 'You\'re logged in successfully.',
-        type: 'success',
+       // type: 'success',
         timer: 2000
     });
 

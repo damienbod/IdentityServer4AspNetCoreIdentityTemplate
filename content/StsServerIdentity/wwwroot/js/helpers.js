@@ -73,7 +73,7 @@ function showErrorAlert(message, error) {
         footermsg = 'exception:' + error.toString();
     }
     Swal.fire({
-        type: 'error',
+        //type: 'error',
         title: 'Error',
         text: message,
         footer: footermsg

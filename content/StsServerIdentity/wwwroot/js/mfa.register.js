@@ -20,8 +20,6 @@ async function handleRegisterSubmit(event) {
     // possible values: true,false
     let require_resident_key = false;
 
-
-
     // prepare form post data
     var data = new FormData();
     data.append('username', username);
@@ -157,7 +155,7 @@ async function registerNewCredential(newCredential) {
     Swal.fire({
         title: 'Registration Successful!',
         text: 'You\'ve registered successfully.',
-        type: 'success',
+       // type: 'success',
         timer: 2000
     });
 
