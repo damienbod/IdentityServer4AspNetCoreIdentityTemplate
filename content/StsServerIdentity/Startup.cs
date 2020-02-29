@@ -102,7 +102,8 @@ namespace StsServerIdentity
                         var assemblyName = new AssemblyName(typeof(SharedResource).GetTypeInfo().Assembly.FullName);
                         return factory.Create("SharedResource", assemblyName.Name);
                     };
-                });
+                })
+                .AddNewtonsoftJson();
 
             var stsConfig = _configuration.GetSection("StsConfig");
             services.AddIdentityServer()
