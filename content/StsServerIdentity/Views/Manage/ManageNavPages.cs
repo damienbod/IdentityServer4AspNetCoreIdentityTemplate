@@ -18,7 +18,6 @@ namespace StsServerIdentity.Views.Manage
 
         public static string Fido2Mfa => "Fido2Mfa";
         
-
         public static string PersonalData => "PersonalData";
 
         public static string DownloadPersonalData => "DownloadPersonalData";

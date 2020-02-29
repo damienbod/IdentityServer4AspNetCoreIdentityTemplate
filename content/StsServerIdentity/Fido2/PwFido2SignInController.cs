@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.IO;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
+using StsServerIdentity.Models;
 
 namespace StsServerIdentity
 {
@@ -20,15 +21,15 @@ namespace StsServerIdentity
         private Fido2 _lib;
         public static IMetadataService _mds;
         private readonly Fido2Storage _fido2Storage;
-        private readonly UserManager<IdentityUser> _userManager;
-        private readonly SignInManager<IdentityUser> _signInManager;
+        private readonly UserManager<ApplicationUser> _userManager;
+        private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly IOptions<Fido2Configuration> _optionsFido2Configuration;
         private readonly IOptions<Fido2MdsConfiguration> _optionsFido2MdsConfiguration;
 
         public PwFido2SignInController(
             Fido2Storage fido2Storage,
-            UserManager<IdentityUser> userManager,
-            SignInManager<IdentityUser> signInManager,
+            UserManager<ApplicationUser> userManager,
+            SignInManager<ApplicationUser> signInManager,
             IOptions<Fido2Configuration> optionsFido2Configuration,
             IOptions<Fido2MdsConfiguration> optionsFido2MdsConfiguration)
         {

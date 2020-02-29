@@ -1,8 +1,8 @@
 ﻿@using StsServerIdentity.Resources
 @using Microsoft.AspNetCore.Identity
 @inject LocService SharedLocalizer
-@inject SignInManager<IdentityUser> SignInManager
-@inject UserManager<IdentityUser> UserManager
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
 @model MfaModel
 @{
     Layout = "_Layout.cshtml";

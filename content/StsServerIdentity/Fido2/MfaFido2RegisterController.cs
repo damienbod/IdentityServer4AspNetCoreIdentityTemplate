@@ -10,6 +10,7 @@ using static Fido2NetLib.Fido2;
 using System.IO;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
+using StsServerIdentity.Models;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -22,14 +23,14 @@ namespace StsServerIdentity
         private Fido2 _lib;
         public static IMetadataService _mds;
         private readonly Fido2Storage _fido2Storage;
-        private readonly UserManager<IdentityUser> _userManager;
+        private readonly UserManager<ApplicationUser> _userManager;
         private readonly IOptions<Fido2Configuration> _optionsFido2Configuration;
         private readonly IOptions<Fido2MdsConfiguration> _optionsFido2MdsConfiguration;
         
 
         public MfaFido2RegisterController(
             Fido2Storage fido2Storage, 
-            UserManager<IdentityUser> userManager,
+            UserManager<ApplicationUser> userManager,
             IOptions<Fido2Configuration> optionsFido2Configuration,
             IOptions<Fido2MdsConfiguration> optionsFido2MdsConfiguration)
         {
