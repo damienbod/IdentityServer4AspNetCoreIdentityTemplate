@@ -322,6 +322,19 @@ namespace StsServerIdentity.Controllers
         }
 
         [HttpGet]
+        public async Task<IActionResult> Fido2Mfa()
+        {
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null)
+            {
+                return NotFound(_sharedLocalizer["USER_NOTFOUND", _userManager.GetUserId(User)]);
+            }
+
+            var model = new MfaModel();
+            return View(model);
+        }
+
+        [HttpGet]
         public async Task<IActionResult> TwoFactorAuthentication()
         {
             var user = await _userManager.GetUserAsync(User);
