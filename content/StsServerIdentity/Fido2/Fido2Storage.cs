@@ -25,10 +25,14 @@ namespace StsServerIdentity
 
         public async Task RemoveCredentialsByUsername(string username)
         {
-            var item = await _applicationDbContext.FidoStoredCredential.Where(c => c.Username == username).FirstOrDefaultAsync();
-            if(item != null)
+            var items = await _applicationDbContext.FidoStoredCredential.Where(c => c.Username == username).ToListAsync();
+            if(items != null)
             {
-                _applicationDbContext.FidoStoredCredential.Remove(item);
+                foreach(var fido2Key in items)
+                {
+                    _applicationDbContext.FidoStoredCredential.Remove(fido2Key);
+                };
+
                 await _applicationDbContext.SaveChangesAsync();
             }
         }
