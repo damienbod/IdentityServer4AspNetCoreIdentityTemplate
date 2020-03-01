@@ -71,6 +71,7 @@ async function handleSignInSubmit(event) {
     try {
         credential = await navigator.credentials.get({ publicKey: makeAssertionOptions });
     } catch (err) {
+        document.getElementById('fido2logindisplay').innerHTML = '';
         showErrorAlert(err.message ? err.message : err);
     }
 
@@ -79,6 +80,7 @@ async function handleSignInSubmit(event) {
     try {
         await verifyAssertionWithServer(credential);
     } catch (e) {
+        document.getElementById('fido2logindisplay').innerHTML = '';
         showErrorAlert("Could not verify assertion", e);
     }
 }
@@ -124,6 +126,7 @@ async function verifyAssertionWithServer(assertedCredential) {
     if (response.status !== "ok") {
         console.log("Error doing assertion");
         console.log(response.errorMessage);
+        document.getElementById('fido2logindisplay').innerHTML = '';
         showErrorAlert(response.errorMessage);
         return;
     }
