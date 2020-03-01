@@ -10,6 +10,7 @@
 - Localization en-US, de-DE, it-IT, fr-FR, zh-Hans, de-CH, gsw-CH
 - 2FA
 - TOTP
+- FIDO2 MFA
 - Personal data, download, delete (part of Identity)
 - Azure AD, Cert, key vault deployments API
 - SendGrid Email API
