@@ -50,7 +50,7 @@ async function handleSignInSubmit(event) {
 
     //console.log("Assertion options", makeAssertionOptions);
 
-    document.getElementById('fido2logindisplay').innerHTML += '<p>Tap your security key to login.</p><img src = "/images/securitykey.min.svg" alt = "fido login" />';
+    document.getElementById('fido2logindisplay').innerHTML += '<br><b>Tap your security key to login.</b><img src = "/images/securitykey.min.svg" alt = "fido login" />';
 
     //Swal.fire({
     //    title: 'Logging In...',
@@ -65,10 +65,12 @@ async function handleSignInSubmit(event) {
     // ask browser for credentials (browser will ask connected authenticators)
     let credential;
     try {
-        credential = await navigator.credentials.get({ publicKey: makeAssertionOptions })
+        credential = await navigator.credentials.get({ publicKey: makeAssertionOptions });
     } catch (err) {
         showErrorAlert(err.message ? err.message : err);
     }
+
+    //document.getElementById('fido2logindisplay').innerHTML = '<p>Processing</p>';
 
     try {
         await verifyAssertionWithServer(credential);
@@ -78,7 +80,6 @@ async function handleSignInSubmit(event) {
 }
 
 async function verifyAssertionWithServer(assertedCredential) {
-
     // Move data into Arrays incase it is super long
     let authData = new Uint8Array(assertedCredential.response.authenticatorData);
     let clientDataJSON = new Uint8Array(assertedCredential.response.clientDataJSON);

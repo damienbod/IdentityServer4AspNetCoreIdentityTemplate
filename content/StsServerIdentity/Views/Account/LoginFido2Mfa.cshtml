@@ -5,19 +5,18 @@
 @inject UserManager<ApplicationUser> UserManager
 @model MfaModel
 @{
-    ViewData["Title"] = "Login with Fido2 MFA";
+    ViewData["Title"] = "Login with FIDO2 MFA";
 }
 
 <h4>@ViewData["Title"]</h4>
+<br />
 <div class="section">
     <div class="container">
-        <h1 class="title is-1">2FA/MFA</h1>
-        <div class="content"><p>This is scenario where we just want to use FIDO as the MFA. The user register and logins with their username and password. For demo purposes, we trigger the MFA registering on sign up.</p></div>
         <div class="notification is-danger" style="display:none">
             Please note: Your browser does not seem to support WebAuthn yet. <a href="https://caniuse.com/#search=webauthn" target="_blank">Supported browsers</a>
         </div>
 
-        <button class="btn btn-primary" id="signin">Start FIDO2</button>
+        <button class="btn btn-primary" id="signin">MFA using FIDO2</button>
 
         <div id="fido2logindisplay"></div>
 
