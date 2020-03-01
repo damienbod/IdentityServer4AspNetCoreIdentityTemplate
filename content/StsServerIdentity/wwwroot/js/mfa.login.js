@@ -1,18 +1,14 @@
-﻿document.getElementById('signin').addEventListener('submit', handleSignInSubmit);
+﻿document.getElementById('signin').addEventListener('click', handleSignInSubmit);
 
 async function handleSignInSubmit(event) {
     event.preventDefault();
 
     //let username = this.username.value;
-
     // passwordfield is omitted in demo
     // let password = this.password.value;
-
-
     // prepare form post data
     var formData = new FormData();
     //formData.append('username', username);
-
     // not done in demo
     // todo: validate username + password with server (has nothing to do with FIDO2/WebAuthn)
 
@@ -32,7 +28,7 @@ async function handleSignInSubmit(event) {
         showErrorAlert("Request to server failed", e);
     }
 
-    console.log("Assertion Options Object", makeAssertionOptions);
+    //console.log("Assertion Options Object", makeAssertionOptions);
 
     // show options error to user
     if (makeAssertionOptions.status !== "ok") {
@@ -52,17 +48,19 @@ async function handleSignInSubmit(event) {
         listItem.id = Uint8Array.from(atob(fixedId), c => c.charCodeAt(0));
     });
 
-    console.log("Assertion options", makeAssertionOptions);
+    //console.log("Assertion options", makeAssertionOptions);
 
-    Swal.fire({
-        title: 'Logging In...',
-        text: 'Tap your security key to login.',
-        imageUrl: "/images/securitykey.min.svg",
-        showCancelButton: true,
-        showConfirmButton: false,
-        focusConfirm: false,
-        focusCancel: false
-    });
+    document.getElementById('fido2logindisplay').innerHTML += '<p>Tap your security key to login.</p><img src = "/images/securitykey.min.svg" alt = "fido login" />';
+
+    //Swal.fire({
+    //    title: 'Logging In...',
+    //    text: 'Tap your security key to login.',
+    //    imageUrl: "/images/securitykey.min.svg",
+    //    showCancelButton: true,
+    //    showConfirmButton: false,
+    //    focusConfirm: false,
+    //    focusCancel: false
+    //});
 
     // ask browser for credentials (browser will ask connected authenticators)
     let credential;
@@ -115,7 +113,7 @@ async function verifyAssertionWithServer(assertedCredential) {
         throw e;
     }
 
-    console.log("Assertion Object", response);
+    //console.log("Assertion Object", response);
 
     // show error
     if (response.status !== "ok") {
@@ -125,13 +123,15 @@ async function verifyAssertionWithServer(assertedCredential) {
         return;
     }
 
+    //document.getElementById('fido2logindisplay').innerHTML = '<p>Logged In!</p>';
+
     // show success message
-    await Swal.fire({
-        title: 'Logged In!',
-        text: 'You\'re logged in successfully.',
-        //type: 'success',
-        timer: 2000
-    });
+    //await Swal.fire({
+    //    title: 'Logged In!',
+    //    text: 'You\'re logged in successfully.',
+    //    //type: 'success',
+    //    timer: 2000
+    //});
 
     window.location.href = "/";
 }

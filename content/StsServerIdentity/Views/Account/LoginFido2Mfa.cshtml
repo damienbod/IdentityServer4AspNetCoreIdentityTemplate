@@ -17,20 +17,9 @@
             Please note: Your browser does not seem to support WebAuthn yet. <a href="https://caniuse.com/#search=webauthn" target="_blank">Supported browsers</a>
         </div>
 
-        <div class="columns">
-            <div class="column is-4">
+        <button class="btn btn-primary" id="signin">Start FIDO2</button>
 
-                <h3 class="title is-3">FIDO2 2FA</h3>
-                <form action="/LoginFido2Mfa" method="post" id="signin">
-
-                    <div class="field">
-                        <div class="control">
-                            <button class="btn btn-primary">2FA with FIDO2 device</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
+        <div id="fido2logindisplay"></div>
 
     </div>
 </div>
