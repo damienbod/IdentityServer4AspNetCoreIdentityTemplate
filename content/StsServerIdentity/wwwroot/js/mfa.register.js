@@ -58,7 +58,8 @@ async function handleRegisterSubmit(event) {
 
     //console.log("Credential Options Formatted", makeCredentialOptions);
 
-    document.getElementById('fido2mfadisplay').innerHTML += '<br><b>Tap your security key to finish registration.</b><img src = "/images/securitykey.min.svg" alt = "fido login" />';
+    const fido2TapYourSecurityKeyToFinishRegistration = document.getElementById('fido2TapYourSecurityKeyToFinishRegistration').innerText;
+    document.getElementById('fido2mfadisplay').innerHTML += '<br><b>' + fido2TapYourSecurityKeyToFinishRegistration +'</b><img src = "/images/securitykey.min.svg" alt = "fido login" />';
 
     //Swal.fire({
     //    title: 'Registering...',
@@ -80,8 +81,8 @@ async function handleRegisterSubmit(event) {
             publicKey: makeCredentialOptions
         });
     } catch (e) {
-        var msg = "Could not create credentials in browser. Probably because the username is already registered with your authenticator. Please change username or authenaticator.";
-        console.error(msg, e);
+        const fido2RegistrationError = document.getElementById('fido2RegistrationError').innerText;
+        console.error(fido2RegistrationError, e);
         document.getElementById('fido2mfadisplay').innerHTML = '';
         showErrorAlert(msg, e);
     }

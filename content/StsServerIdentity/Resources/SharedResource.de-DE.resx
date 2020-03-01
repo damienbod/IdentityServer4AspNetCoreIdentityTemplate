@@ -926,4 +926,10 @@
   <data name="FIDO2_COULD_NOT_VERIFY_ASSERTION" xml:space="preserve">
     <value>Assertion konnte nicht überprüft werden</value>
   </data>
+  <data name="FIDO2_REGISTRATION_ERROR" xml:space="preserve">
+    <value>Anmeldeinformationen im Browser konnten nicht erstellt werden. Wahrscheinlich, weil der Benutzername bereits bei Ihrem Authentifikator registriert ist. Bitte ändern Sie den Benutzernamen oder den Authentifikator.</value>
+  </data>
+  <data name="FIDO2_TAP_YOUR_SECURITY_KEY_TO_FINISH_REGISTRATION" xml:space="preserve">
+    <value>Tippen Sie auf Ihren Sicherheitsschlüssel, um die Registrierung abzuschließen.</value>
+  </data>
 </root>

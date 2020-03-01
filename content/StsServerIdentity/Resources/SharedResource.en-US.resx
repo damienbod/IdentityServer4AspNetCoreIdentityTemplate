@@ -902,8 +902,14 @@
   <data name="FIDO2_MULTI_FACTOR_AUTHENTICATION" xml:space="preserve">
     <value>FIDO2 Multi-factor authentication</value>
   </data>
+  <data name="FIDO2_REGISTRATION_ERROR" xml:space="preserve">
+    <value>Could not create credentials in browser. Probably because the username is already registered with your authenticator. Please change username or authenaticator.</value>
+  </data>
   <data name="FIDO2_SUPPORTED_BROWSERS" xml:space="preserve">
     <value>Supported browsers</value>
+  </data>
+  <data name="FIDO2_TAP_YOUR_SECURITY_KEY_TO_FINISH_REGISTRATION" xml:space="preserve">
+    <value>Tap your security key to finish registration.</value>
   </data>
   <data name="FIDO2_TAP_YOUR_SECURITY_KEY_TO_LOGIN" xml:space="preserve">
     <value>Tap your security key to login. </value>
