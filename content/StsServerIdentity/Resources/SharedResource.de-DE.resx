@@ -923,4 +923,7 @@
   <data name="FIDO2_TAP_YOUR_SECURITY_KEY_TO_LOGIN" xml:space="preserve">
     <value>Tippen Sie auf Ihren Sicherheitsschlüssel, um sich anzumelden.</value>
   </data>
+  <data name="FIDO2_COULD_NOT_VERIFY_ASSERTION" xml:space="preserve">
+    <value>Assertion konnte nicht überprüft werden</value>
+  </data>
 </root>

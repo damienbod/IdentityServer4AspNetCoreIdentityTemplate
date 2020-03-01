@@ -893,6 +893,9 @@
   <data name="FIDO2_ADD_A_KEY" xml:space="preserve">
     <value>Add a FIDO2 Key</value>
   </data>
+  <data name="FIDO2_COULD_NOT_VERIFY_ASSERTION" xml:space="preserve">
+    <value>Could not verify assertion</value>
+  </data>
   <data name="FIDO2_LOGIN_WITH_MFA" xml:space="preserve">
     <value>Login with FIDO2 MFA</value>
   </data>

@@ -82,7 +82,8 @@ async function handleSignInSubmit(event) {
         await verifyAssertionWithServer(credential);
     } catch (e) {
         document.getElementById('fido2logindisplay').innerHTML = '';
-        showErrorAlert("Could not verify assertion", e);
+        const fido2CouldNotVerifyAssertion = document.getElementById('fido2CouldNotVerifyAssertion').innerText;
+        showErrorAlert(fido2CouldNotVerifyAssertion, e);
     }
 }
 
