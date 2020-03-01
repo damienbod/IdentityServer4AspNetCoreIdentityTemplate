@@ -352,6 +352,8 @@ namespace StsServerIdentity.Controllers
                 return RedirectToAction(nameof(Login));
             }
 
+            var email = info.Principal.FindFirstValue(ClaimTypes.Email);
+
             // Sign in the user with this external login provider if the user already has a login.
             var result = await _signInManager.ExternalLoginSignInAsync(info.LoginProvider, info.ProviderKey, isPersistent: false);
             if (result.Succeeded)
@@ -361,7 +363,15 @@ namespace StsServerIdentity.Controllers
             }
             if (result.RequiresTwoFactor)
             {
-                return RedirectToAction(nameof(SendCode), new { ReturnUrl = returnUrl });
+                var fido2ItemExistsForUser = await _fido2Storage.GetCredentialsByUsername(email);
+                if (fido2ItemExistsForUser.Count > 0)
+                {
+                    return RedirectToAction(nameof(LoginFido2Mfa), new { ReturnUrl = returnUrl });
+                }
+                else
+                {
+                    return RedirectToAction(nameof(SendCode), new { ReturnUrl = returnUrl });
+                }
             }
             if (result.IsLockedOut)
             {
@@ -372,7 +382,6 @@ namespace StsServerIdentity.Controllers
                 // If the user does not have an account, then ask the user to create an account.
                 ViewData["ReturnUrl"] = returnUrl;
                 ViewData["LoginProvider"] = info.LoginProvider;
-                var email = info.Principal.FindFirstValue(ClaimTypes.Email);
                 return View("ExternalLoginConfirmation", new ExternalLoginConfirmationViewModel { Email = email });
             }
         }
