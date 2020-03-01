@@ -909,8 +909,7 @@
     <value>Unbekannte Anmeldeinformationen</value>
   </data>
   <data name="FIDO2_USERNAME" xml:space="preserve">
-    <value>8/5000
-Benutzername</value>
+    <value>Benutzername</value>
   </data>
   <data name="FIDO2_USERNAME_NOT_REGISTERED" xml:space="preserve">
     <value>Benutzername wurde nicht registriert</value>
