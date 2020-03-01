@@ -35,7 +35,7 @@ async function handleRegisterSubmit(event) {
         showErrorAlert(msg);
     }
 
-    console.log("Credential Options Object", makeCredentialOptions);
+    //console.log("Credential Options Object", makeCredentialOptions);
 
     if (makeCredentialOptions.status !== "ok") {
         console.log("Error creating credential options");
@@ -56,22 +56,24 @@ async function handleRegisterSubmit(event) {
 
     if (makeCredentialOptions.authenticatorSelection.authenticatorAttachment === null) makeCredentialOptions.authenticatorSelection.authenticatorAttachment = undefined;
 
-    console.log("Credential Options Formatted", makeCredentialOptions);
+    //console.log("Credential Options Formatted", makeCredentialOptions);
 
-    Swal.fire({
-        title: 'Registering...',
-        text: 'Tap your security key to finish registration.',
-        imageUrl: "/images/securitykey.min.svg",
-        showCancelButton: true,
-        showConfirmButton: false,
-        focusConfirm: false,
-        focusCancel: false
-    });
+    document.getElementById('fido2mfadisplay').innerHTML += '<br><b>Tap your security key to finish registration.</b><img src = "/images/securitykey.min.svg" alt = "fido login" />';
 
-    console.log("Creating PublicKeyCredential...");
-    console.log(navigator);
-    console.log(navigator.credentials);
-    console.log(makeCredentialOptions);
+    //Swal.fire({
+    //    title: 'Registering...',
+    //    text: 'Tap your security key to finish registration.',
+    //    imageUrl: "/images/securitykey.min.svg",
+    //    showCancelButton: true,
+    //    showConfirmButton: false,
+    //    focusConfirm: false,
+    //    focusCancel: false
+    //});
+
+    //console.log("Creating PublicKeyCredential...");
+    //console.log(navigator);
+    //console.log(navigator.credentials);
+    //console.log(makeCredentialOptions);
     let newCredential;
     try {
         newCredential = await navigator.credentials.create({
@@ -80,6 +82,7 @@ async function handleRegisterSubmit(event) {
     } catch (e) {
         var msg = "Could not create credentials in browser. Probably because the username is already registered with your authenticator. Please change username or authenaticator.";
         console.error(msg, e);
+        document.getElementById('fido2mfadisplay').innerHTML = '';
         showErrorAlert(msg, e);
     }
 
@@ -132,7 +135,7 @@ async function registerNewCredential(newCredential) {
         showErrorAlert(e);
     }
 
-    console.log("Credential Object", response);
+    //console.log("Credential Object", response);
 
     // show error
     if (response.status !== "ok") {
