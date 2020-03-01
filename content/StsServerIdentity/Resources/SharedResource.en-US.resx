@@ -890,4 +890,22 @@
   <data name="GRANTS_REVOKE_ACCESS" xml:space="preserve">
     <value>Revoke Access</value>
   </data>
+  <data name="FIDO2_ADD_A_KEY" xml:space="preserve">
+    <value>Add a FIDO2 Key</value>
+  </data>
+  <data name="FIDO2_LOGIN_WITH_MFA" xml:space="preserve">
+    <value>Login with FIDO2 MFA</value>
+  </data>
+  <data name="FIDO2_MULTI_FACTOR_AUTHENTICATION" xml:space="preserve">
+    <value>FIDO2 Multi-factor authentication</value>
+  </data>
+  <data name="FIDO2_SUPPORTED_BROWSERS" xml:space="preserve">
+    <value>Supported browsers</value>
+  </data>
+  <data name="FIDO2_USERNAME" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="FIDO2_WEBAUTHN_NOT_SUPPORTED" xml:space="preserve">
+    <value>Please note: Your browser does not seem to support WebAuthn yet.</value>
+  </data>
 </root>

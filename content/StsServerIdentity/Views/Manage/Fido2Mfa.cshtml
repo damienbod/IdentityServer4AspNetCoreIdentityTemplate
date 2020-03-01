@@ -6,22 +6,22 @@
 @model MfaModel
 @{
     Layout = "_Layout.cshtml";
-    ViewData["Title"] = "FIDO2 Multi-factor authentication";
+    ViewData["Title"] = @SharedLocalizer.GetLocalizedHtmlString("FIDO2_MULTI_FACTOR_AUTHENTICATION");
     ViewData["ActivePage"] = ManageNavPages.Fido2Mfa;
 }
 
 <div class="section">
     <div class="container">
         <div class="notification is-danger" style="display:none">
-            Please note: Your browser does not seem to support WebAuthn yet. <a href="https://caniuse.com/#search=webauthn" target="_blank">Supported browsers</a>
+            @SharedLocalizer.GetLocalizedHtmlString("FIDO2_WEBAUTHN_NOT_SUPPORTED") <a href="https://caniuse.com/#search=webauthn" target="_blank">@SharedLocalizer.GetLocalizedHtmlString("FIDO2_SUPPORTED_BROWSERS")</a>
         </div>
 
         <div class="columns">
             <div class="column is-4">
-                <h3 class="title is-3">FIDO2 Multi-factor authentication</h3>
+                <h3 class="title is-3">@SharedLocalizer.GetLocalizedHtmlString("FIDO2_MULTI_FACTOR_AUTHENTICATION")</h3>
                 <form action="/Fido2Mfa" method="post" id="register">
                     <div class="field">
-                        <label class="label">Username</label>
+                        <label class="label">@SharedLocalizer.GetLocalizedHtmlString("FIDO2_USERNAME")</label>
                         <div class="control has-icons-left has-icons-right">
                             <input class="form-control" type="text" readonly placeholder="email" value="@User.Identity.Name" name="username" required>
                         </div>
@@ -29,7 +29,7 @@
 
                     <div class="field" style="margin-top:10px;">
                         <div class="control">
-                            <button class="btn btn-primary">Add a FIDO2 Key</button>
+                            <button class="btn btn-primary">@SharedLocalizer.GetLocalizedHtmlString("FIDO2_ADD_A_KEY")</button>
                         </div>
                     </div>
                 </form>

@@ -5,7 +5,7 @@
 @inject UserManager<ApplicationUser> UserManager
 @model MfaModel
 @{
-    ViewData["Title"] = "Login with FIDO2 MFA";
+    ViewData["Title"] = @SharedLocalizer.GetLocalizedHtmlString("FIDO2_LOGIN_WITH_MFA");
 }
 
 <br />
@@ -13,7 +13,7 @@
     <div class="container">
         <h4>@ViewData["Title"]</h4>
         <div class="notification is-danger" style="display:none">
-            Please note: Your browser does not seem to support WebAuthn yet. <a href="https://caniuse.com/#search=webauthn" target="_blank">Supported browsers</a>
+            @SharedLocalizer.GetLocalizedHtmlString("FIDO2_WEBAUTHN_NOT_SUPPORTED") <a href="https://caniuse.com/#search=webauthn" target="_blank">@SharedLocalizer.GetLocalizedHtmlString("FIDO2_SUPPORTED_BROWSERS")</a>
         </div>
 
         @*<button class="btn btn-primary" id="signin">MFA using FIDO2</button>*@
