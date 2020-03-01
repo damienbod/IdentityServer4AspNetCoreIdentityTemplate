@@ -11,6 +11,9 @@ using System.IO;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
 using StsServerIdentity.Models;
+using Microsoft.Extensions.Localization;
+using StsServerIdentity.Resources;
+using System.Reflection;
 
 namespace StsServerIdentity
 {
@@ -24,17 +27,23 @@ namespace StsServerIdentity
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly IOptions<Fido2Configuration> _optionsFido2Configuration;
         private readonly IOptions<Fido2MdsConfiguration> _optionsFido2MdsConfiguration;
-        
+        private readonly IStringLocalizer _sharedLocalizer;
+
         public MfaFido2RegisterController(
             Fido2Storage fido2Storage, 
             UserManager<ApplicationUser> userManager,
             IOptions<Fido2Configuration> optionsFido2Configuration,
-            IOptions<Fido2MdsConfiguration> optionsFido2MdsConfiguration)
+            IOptions<Fido2MdsConfiguration> optionsFido2MdsConfiguration,
+            IStringLocalizerFactory factory)
         {
             _userManager = userManager;
             _optionsFido2Configuration = optionsFido2Configuration;
             _optionsFido2MdsConfiguration = optionsFido2MdsConfiguration;
             _fido2Storage = fido2Storage;
+
+            var type = typeof(SharedResource);
+            var assemblyName = new AssemblyName(type.GetTypeInfo().Assembly.FullName);
+            _sharedLocalizer = factory.Create("SharedResource", assemblyName.Name);
 
             var MDSCacheDirPath = _optionsFido2MdsConfiguration.Value.MDSCacheDirPath ?? Path.Combine(Path.GetTempPath(), "fido2mdscache"); 
             _mds = string.IsNullOrEmpty(_optionsFido2MdsConfiguration.Value.MDSAccessKey) ? null : MDSMetadata.Instance(
@@ -154,7 +163,7 @@ namespace StsServerIdentity
                 var user = await _userManager.GetUserAsync(User);
                 if (user == null)
                 {
-                    return Json(new CredentialMakeResult { Status = "error", ErrorMessage = $"Unable to load user with ID '{_userManager.GetUserId(User)}'." });
+                    return Json(new CredentialMakeResult { Status = "error", ErrorMessage = _sharedLocalizer["FIDO2_USER_NOTFOUND", _userManager.GetUserId(User)] });
                 }
 
                 await _userManager.SetTwoFactorEnabledAsync(user, true);

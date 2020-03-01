@@ -11,6 +11,9 @@ using System.IO;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
 using StsServerIdentity.Models;
+using Microsoft.Extensions.Localization;
+using StsServerIdentity.Resources;
+using System.Reflection;
 
 namespace StsServerIdentity
 {
@@ -25,13 +28,15 @@ namespace StsServerIdentity
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly IOptions<Fido2Configuration> _optionsFido2Configuration;
         private readonly IOptions<Fido2MdsConfiguration> _optionsFido2MdsConfiguration;
+        private readonly IStringLocalizer _sharedLocalizer;
 
         public MfaFido2SignInFidoController(
             Fido2Storage fido2Storage,
             UserManager<ApplicationUser> userManager,
             SignInManager<ApplicationUser> signInManager,
             IOptions<Fido2Configuration> optionsFido2Configuration,
-            IOptions<Fido2MdsConfiguration> optionsFido2MdsConfiguration)
+            IOptions<Fido2MdsConfiguration> optionsFido2MdsConfiguration,
+            IStringLocalizerFactory factory)
         {
             _userManager = userManager;
             _optionsFido2Configuration = optionsFido2Configuration;
@@ -39,6 +44,10 @@ namespace StsServerIdentity
             _signInManager = signInManager;
             _userManager = userManager;
             _fido2Storage = fido2Storage;
+
+            var type = typeof(SharedResource);
+            var assemblyName = new AssemblyName(type.GetTypeInfo().Assembly.FullName);
+            _sharedLocalizer = factory.Create("SharedResource", assemblyName.Name);
 
             var MDSCacheDirPath = _optionsFido2MdsConfiguration.Value.MDSCacheDirPath ?? Path.Combine(Path.GetTempPath(), "fido2mdscache");
             _mds = string.IsNullOrEmpty(_optionsFido2MdsConfiguration.Value.MDSAccessKey) ? null : MDSMetadata.Instance(
@@ -75,7 +84,7 @@ namespace StsServerIdentity
                 var identityUser = await _signInManager.GetTwoFactorAuthenticationUserAsync();
                 if (identityUser == null)
                 {
-                    throw new InvalidOperationException($"Unable to load two-factor authentication user.");
+                    throw new InvalidOperationException(_sharedLocalizer["FIDO2_UNABLE_TO_LOAD_2FA_AUTHENTICATED_USER"]);
                 }
 
                 var existingCredentials = new List<PublicKeyCredentialDescriptor>();
@@ -90,7 +99,7 @@ namespace StsServerIdentity
                         Id = Encoding.UTF8.GetBytes(identityUser.UserName) // byte representation of userID is required
                     };
 
-                    if (user == null) throw new ArgumentException("Username was not registered");
+                    if (user == null) throw new ArgumentException(_sharedLocalizer["FIDO2_USERNAME_NOT_REGISTERED"]);
 
                     // 2. Get registered credentials from database
                     var items = await _fido2Storage.GetCredentialsByUsername(identityUser.UserName);
@@ -135,7 +144,7 @@ namespace StsServerIdentity
 
                 if (creds == null)
                 {
-                    throw new Exception("Unknown credentials");
+                    throw new Exception(_sharedLocalizer["FIDO2_UNKNOWN_CREDENTIALS"]);
                 }
 
                 // 3. Get credential counter from database
@@ -158,7 +167,7 @@ namespace StsServerIdentity
                 var user = await _signInManager.GetTwoFactorAuthenticationUserAsync();
                 if (user == null)
                 {
-                    throw new InvalidOperationException($"Unable to load two-factor authentication user.");
+                    throw new InvalidOperationException(_sharedLocalizer["FIDO2_UNABLE_TO_LOAD_2FA_AUTHENTICATED_USER"]);
                 }
                 
                 var result = await _signInManager.TwoFactorSignInAsync("FIDO2", string.Empty, false, false);

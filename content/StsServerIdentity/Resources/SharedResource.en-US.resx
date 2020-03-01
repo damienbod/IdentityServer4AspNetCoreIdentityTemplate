@@ -902,8 +902,20 @@
   <data name="FIDO2_SUPPORTED_BROWSERS" xml:space="preserve">
     <value>Supported browsers</value>
   </data>
+  <data name="FIDO2_UNABLE_TO_LOAD_2FA_AUTHENTICATED_USER" xml:space="preserve">
+    <value>Unable to load two-factor authenticated user.</value>
+  </data>
+  <data name="FIDO2_UNKNOWN_CREDENTIALS" xml:space="preserve">
+    <value>Unknown credentials</value>
+  </data>
   <data name="FIDO2_USERNAME" xml:space="preserve">
     <value>Username</value>
+  </data>
+  <data name="FIDO2_USERNAME_NOT_REGISTERED" xml:space="preserve">
+    <value>Username was not registered</value>
+  </data>
+  <data name="FIDO2_USER_NOTFOUND" xml:space="preserve">
+    <value>Unable to load user with ID '{0}'.</value>
   </data>
   <data name="FIDO2_WEBAUTHN_NOT_SUPPORTED" xml:space="preserve">
     <value>Please note: Your browser does not seem to support WebAuthn yet.</value>
