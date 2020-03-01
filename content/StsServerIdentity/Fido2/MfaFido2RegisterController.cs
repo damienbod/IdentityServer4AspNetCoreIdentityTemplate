@@ -12,8 +12,6 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
 using StsServerIdentity.Models;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-
 namespace StsServerIdentity
 {
 
@@ -27,7 +25,6 @@ namespace StsServerIdentity
         private readonly IOptions<Fido2Configuration> _optionsFido2Configuration;
         private readonly IOptions<Fido2MdsConfiguration> _optionsFido2MdsConfiguration;
         
-
         public MfaFido2RegisterController(
             Fido2Storage fido2Storage, 
             UserManager<ApplicationUser> userManager,
