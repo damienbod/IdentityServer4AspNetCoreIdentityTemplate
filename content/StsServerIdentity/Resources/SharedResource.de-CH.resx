@@ -920,4 +920,7 @@
   <data name="FIDO2_WEBAUTHN_NOT_SUPPORTED" xml:space="preserve">
     <value>Bitte beachten Sie: Ihr Browser scheint WebAuthn noch nicht zu unterstützen.</value>
   </data>
+  <data name="FIDO2_TAP_YOUR_SECURITY_KEY_TO_LOGIN" xml:space="preserve">
+    <value>Tippen Sie auf Ihren Sicherheitsschlüssel, um sich anzumelden.</value>
+  </data>
 </root>

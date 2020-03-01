@@ -902,6 +902,9 @@
   <data name="FIDO2_SUPPORTED_BROWSERS" xml:space="preserve">
     <value>Supported browsers</value>
   </data>
+  <data name="FIDO2_TAP_YOUR_SECURITY_KEY_TO_LOGIN" xml:space="preserve">
+    <value>Tap your security key to login. </value>
+  </data>
   <data name="FIDO2_UNABLE_TO_LOAD_2FA_AUTHENTICATED_USER" xml:space="preserve">
     <value>Unable to load two-factor authenticated user.</value>
   </data>

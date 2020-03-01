@@ -54,7 +54,8 @@ async function handleSignInSubmit(event) {
 
     //console.log("Assertion options", makeAssertionOptions);
 
-    document.getElementById('fido2logindisplay').innerHTML += '<br><b>Tap your security key to login.</b><img src = "/images/securitykey.min.svg" alt = "fido login" />';
+    const fido2TapKeyToLogin = document.getElementById('fido2TapKeyToLogin').innerText;
+    document.getElementById('fido2logindisplay').innerHTML += '<br><b>' + fido2TapKeyToLogin + '</b><img src = "/images/securitykey.min.svg" alt = "fido login" />';
 
     //Swal.fire({
     //    title: 'Logging In...',
