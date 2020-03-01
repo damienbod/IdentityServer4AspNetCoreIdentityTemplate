@@ -1,7 +1,11 @@
-﻿document.getElementById('signin').addEventListener('click', handleSignInSubmit);
+﻿//document.getElementById('signin').addEventListener('click', handleSignInSubmit);
+
+window.onload = function () {
+    handleSignInSubmit();
+};
 
 async function handleSignInSubmit(event) {
-    event.preventDefault();
+    //event.preventDefault();
 
     //let username = this.username.value;
     // passwordfield is omitted in demo
