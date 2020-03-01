@@ -5,21 +5,16 @@ async function handleRegisterSubmit(event) {
 
     let username = this.username.value;
     //let displayName = this.displayName.value;
-
     // passwordfield is omitted in demo
     // let password = this.password.value;
-
     // possible values: none, direct, indirect
     let attestation_type = "none";
     // possible values: <empty>, platform, cross-platform
     let authenticator_attachment = "";
-
     // possible values: preferred, required, discouraged
     let user_verification = "preferred";
-
     // possible values: true,false
     let require_resident_key = false;
-
     // prepare form post data
     var data = new FormData();
     data.append('username', username);
@@ -39,7 +34,6 @@ async function handleRegisterSubmit(event) {
         let msg = "Something wen't really wrong";
         showErrorAlert(msg);
     }
-
 
     console.log("Credential Options Object", makeCredentialOptions);
 
@@ -74,7 +68,6 @@ async function handleRegisterSubmit(event) {
         focusCancel: false
     });
 
-
     console.log("Creating PublicKeyCredential...");
     console.log(navigator);
     console.log(navigator.credentials);
@@ -89,7 +82,6 @@ async function handleRegisterSubmit(event) {
         console.error(msg, e);
         showErrorAlert(msg, e);
     }
-
 
     console.log("PublicKeyCredential Created", newCredential);
 
@@ -114,7 +106,6 @@ async function fetchMakeCredentialOptions(formData) {
 
     return data;
 }
-
 
 // This should be used to verify the auth data with the server
 async function registerNewCredential(newCredential) {
