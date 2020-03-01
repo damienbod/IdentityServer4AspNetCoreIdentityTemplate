@@ -890,4 +890,35 @@
   <data name="GRANTS_REVOKE_ACCESS" xml:space="preserve">
     <value>Zugangsberechtigung aufheben</value>
   </data>
+  <data name="FIDO2_ADD_A_KEY" xml:space="preserve">
+    <value>Fügen Sie einen FIDO2-Schlüssel hinzu</value>
+  </data>
+  <data name="FIDO2_LOGIN_WITH_MFA" xml:space="preserve">
+    <value>Melden Sie sich mit FIDO2 MFA an</value>
+  </data>
+  <data name="FIDO2_MULTI_FACTOR_AUTHENTICATION" xml:space="preserve">
+    <value>FIDO2 Multi-Faktor-Authentifizierung</value>
+  </data>
+  <data name="FIDO2_SUPPORTED_BROWSERS" xml:space="preserve">
+    <value>Unterstützte Browser</value>
+  </data>
+  <data name="FIDO2_UNABLE_TO_LOAD_2FA_AUTHENTICATED_USER" xml:space="preserve">
+    <value>Zwei-Faktor-authentifizierter Benutzer kann nicht geladen werden.</value>
+  </data>
+  <data name="FIDO2_UNKNOWN_CREDENTIALS" xml:space="preserve">
+    <value>Unbekannte Anmeldeinformationen</value>
+  </data>
+  <data name="FIDO2_USERNAME" xml:space="preserve">
+    <value>8/5000
+Benutzername</value>
+  </data>
+  <data name="FIDO2_USERNAME_NOT_REGISTERED" xml:space="preserve">
+    <value>Benutzername wurde nicht registriert</value>
+  </data>
+  <data name="FIDO2_USER_NOTFOUND" xml:space="preserve">
+    <value>Benutzer mit der ID '{0}' kann nicht geladen werden.</value>
+  </data>
+  <data name="FIDO2_WEBAUTHN_NOT_SUPPORTED" xml:space="preserve">
+    <value>Bitte beachten Sie: Ihr Browser scheint WebAuthn noch nicht zu unterstützen.</value>
+  </data>
 </root>
