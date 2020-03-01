@@ -84,7 +84,7 @@ async function handleRegisterSubmit(event) {
         const fido2RegistrationError = document.getElementById('fido2RegistrationError').innerText;
         console.error(fido2RegistrationError, e);
         document.getElementById('fido2mfadisplay').innerHTML = '';
-        showErrorAlert(msg, e);
+        showErrorAlert(fido2RegistrationError, e);
     }
 
     console.log("PublicKeyCredential Created", newCredential);
