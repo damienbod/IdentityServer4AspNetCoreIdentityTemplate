@@ -26,6 +26,7 @@ namespace StsServerIdentity.Controllers
     [Authorize]
     public class AccountController : Controller
     {
+        private readonly Fido2Storage _fido2Storage;
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly IEmailSender _emailSender;
@@ -43,8 +44,10 @@ namespace StsServerIdentity.Controllers
             ILoggerFactory loggerFactory,
             IIdentityServerInteractionService interaction,
             IClientStore clientStore,
-            IStringLocalizerFactory factory)
+            IStringLocalizerFactory factory,
+            Fido2Storage fido2Storage)
         {
+            _fido2Storage = fido2Storage;
             _userManager = userManager;
             _persistedGrantService = persistedGrantService;
             _signInManager = signInManager;
@@ -104,8 +107,17 @@ namespace StsServerIdentity.Controllers
                 }
                 if (result.RequiresTwoFactor)
                 {
-                    return RedirectToAction(nameof(VerifyCode), new { ReturnUrl = returnUrl, RememberMe = model.RememberLogin });
+                    var fido2ItemExistsForUser = await _fido2Storage.GetCredentialsByUsername(model.Email);
+                    if (fido2ItemExistsForUser.Count > 0)
+                    {
+                        return RedirectToAction(nameof(LoginFido2Mfa), new { ReturnUrl = returnUrl, RememberMe = model.RememberLogin });
+                    }
+                    else
+                    {
+                        return RedirectToAction(nameof(VerifyCode), new { ReturnUrl = returnUrl, RememberMe = model.RememberLogin });
+                    }
                 }
+
                 if (result.IsLockedOut)
                 {
                     _logger.LogWarning(2, "User account locked out.");
@@ -120,6 +132,25 @@ namespace StsServerIdentity.Controllers
 
             // If we got this far, something failed, redisplay form
             return View(await BuildLoginViewModelAsync(model));
+        }
+
+        [HttpGet]
+        [AllowAnonymous]
+        public async Task<IActionResult> LoginFido2Mfa(string provider, bool rememberMe, string returnUrl = null)
+        {
+            // Require that the user has already logged in via username/password or external login
+            var user = await _signInManager.GetTwoFactorAuthenticationUserAsync();
+            if (user == null)
+            {
+                return View("Error");
+            }
+
+            if (string.IsNullOrEmpty(provider))
+            {
+                provider = "fido2";
+            }
+
+            return View(new MfaModel { /*Provider = provider,*/ ReturnUrl = returnUrl, RememberMe = rememberMe });
         }
 
         private async Task<LoginViewModel> BuildLoginViewModelAsync(string returnUrl, AuthorizationRequest context)
@@ -321,6 +352,8 @@ namespace StsServerIdentity.Controllers
                 return RedirectToAction(nameof(Login));
             }
 
+            var email = info.Principal.FindFirstValue(ClaimTypes.Email);
+
             // Sign in the user with this external login provider if the user already has a login.
             var result = await _signInManager.ExternalLoginSignInAsync(info.LoginProvider, info.ProviderKey, isPersistent: false);
             if (result.Succeeded)
@@ -330,7 +363,15 @@ namespace StsServerIdentity.Controllers
             }
             if (result.RequiresTwoFactor)
             {
-                return RedirectToAction(nameof(SendCode), new { ReturnUrl = returnUrl });
+                var fido2ItemExistsForUser = await _fido2Storage.GetCredentialsByUsername(email);
+                if (fido2ItemExistsForUser.Count > 0)
+                {
+                    return RedirectToAction(nameof(LoginFido2Mfa), new { ReturnUrl = returnUrl });
+                }
+                else
+                {
+                    return RedirectToAction(nameof(SendCode), new { ReturnUrl = returnUrl });
+                }
             }
             if (result.IsLockedOut)
             {
@@ -341,7 +382,6 @@ namespace StsServerIdentity.Controllers
                 // If the user does not have an account, then ask the user to create an account.
                 ViewData["ReturnUrl"] = returnUrl;
                 ViewData["LoginProvider"] = info.LoginProvider;
-                var email = info.Principal.FindFirstValue(ClaimTypes.Email);
                 return View("ExternalLoginConfirmation", new ExternalLoginConfirmationViewModel { Email = email });
             }
         }
