@@ -2,7 +2,7 @@
 
 [Readme](https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/README.md) 
 
-2020-03-01 4.0.0
+2020-03-02 4.0.0
 - Added support for FIDO2 MFA
 
 2020-02-14 3.0.4
