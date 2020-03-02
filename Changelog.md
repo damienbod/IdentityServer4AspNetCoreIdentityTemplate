@@ -4,6 +4,7 @@
 
 2020-03-02 4.0.0
 - Added support for FIDO2 MFA
+- Allow clients to request MFA requirement
 
 2020-02-14 3.0.4
 - updated nuget packages
