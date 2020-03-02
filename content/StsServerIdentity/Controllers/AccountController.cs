@@ -93,6 +93,14 @@ namespace StsServerIdentity.Controllers
         public async Task<IActionResult> Login(LoginInputModel model)
         {
             var returnUrl = model.ReturnUrl;
+            var context = await _interaction.GetAuthorizationContextAsync(returnUrl);
+            var requires2Fa = context?.AcrValues.Count(t => t.Contains("mfa")) >= 1;
+
+            var user = await _userManager.FindByNameAsync(model.Email);
+            if(user != null && !user.TwoFactorEnabled && requires2Fa)
+            {
+                return RedirectToAction(nameof(ErrorEnable2FA));
+            }
 
             ViewData["ReturnUrl"] = returnUrl;
             if (ModelState.IsValid)
@@ -151,6 +159,13 @@ namespace StsServerIdentity.Controllers
             }
 
             return View(new MfaModel { /*Provider = provider,*/ ReturnUrl = returnUrl, RememberMe = rememberMe });
+        }
+		
+        [HttpGet]
+        [AllowAnonymous]
+        public IActionResult ErrorEnable2FA()
+        {
+            return View();
         }
 
         private async Task<LoginViewModel> BuildLoginViewModelAsync(string returnUrl, AuthorizationRequest context)
@@ -341,18 +356,31 @@ namespace StsServerIdentity.Controllers
         [AllowAnonymous]
         public async Task<IActionResult> ExternalLoginCallback(string returnUrl = null, string remoteError = null)
         {
+            var context = await _interaction.GetAuthorizationContextAsync(returnUrl);
+            var requires2Fa = context?.AcrValues.Count(t => t.Contains("mfa")) >= 1;
+
             if (remoteError != null)
             {
                 ModelState.AddModelError(string.Empty, _sharedLocalizer["EXTERNAL_PROVIDER_ERROR", remoteError]);
                 return View(nameof(Login));
             }
             var info = await _signInManager.GetExternalLoginInfoAsync();
+
             if (info == null)
             {
                 return RedirectToAction(nameof(Login));
             }
 
             var email = info.Principal.FindFirstValue(ClaimTypes.Email);
+  
+            if (!string.IsNullOrEmpty(email))
+            {
+                var user = await _userManager.FindByNameAsync(email);
+                if (user != null && !user.TwoFactorEnabled && requires2Fa)
+                {
+                    return RedirectToAction(nameof(ErrorEnable2FA));
+                }
+            }
 
             // Sign in the user with this external login provider if the user already has a login.
             var result = await _signInManager.ExternalLoginSignInAsync(info.LoginProvider, info.ProviderKey, isPersistent: false);
@@ -382,6 +410,7 @@ namespace StsServerIdentity.Controllers
                 // If the user does not have an account, then ask the user to create an account.
                 ViewData["ReturnUrl"] = returnUrl;
                 ViewData["LoginProvider"] = info.LoginProvider;
+                //var email = info.Principal.FindFirstValue(ClaimTypes.Email);
                 return View("ExternalLoginConfirmation", new ExternalLoginConfirmationViewModel { Email = email });
             }
         }
