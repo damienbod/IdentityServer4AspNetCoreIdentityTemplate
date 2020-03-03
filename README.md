@@ -1,6 +1,6 @@
 # An ASP.NET Core IdentityServer4 Identity Template with Bootstrap 4 and Localization
 
- [![Build status](https://ci.appveyor.com/api/projects/status/ibm36ev49bpjf3o9?svg=true)](https://ci.appveyor.com/project/damienbod/identityserver4aspnetcoreidentitytemplate)      [![NuGet Status](http://img.shields.io/nuget/v/IdentityServer4AspNetCoreIdentityTemplate.svg?style=flat-square)](https://www.nuget.org/packages/IdentityServer4AspNetCoreIdentityTemplate/)  [Change log](https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/Changelog.md) 
+[![Build status](https://ci.appveyor.com/api/projects/status/ibm36ev49bpjf3o9?svg=true)](https://ci.appveyor.com/project/damienbod/identityserver4aspnetcoreidentitytemplate) [![NuGet Status](http://img.shields.io/nuget/v/IdentityServer4AspNetCoreIdentityTemplate.svg?style=flat-square)](https://www.nuget.org/packages/IdentityServer4AspNetCoreIdentityTemplate/) [Change log](https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/Changelog.md)
 
 ## Features
 
@@ -15,7 +15,7 @@
 - Azure AD, Cert, key vault deployments API
 - SendGrid Email API
 - npm with bundleconfig used for frontend packages
-- EF Core 
+- EF Core
 - Support for ui_locales using OIDC logins
 
 some print screens:
@@ -40,7 +40,6 @@ zh-Hans
 
 <img src="https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/images/zh-Hans_template.png" alt=""  />
 
-
 ## Using the template
 
 ### install
@@ -53,16 +52,25 @@ dotnet new -i IdentityServer4AspNetCoreIdentityTemplate
 
 Locally built nupkg:
 
-
 ```
 dotnet new -i IdentityServer4AspNetCoreIdentityTemplate.4.0.0.nupkg
 ```
 
-### run 
+Local folder:
 
 ```
-dotnet new sts
+dotnet new -i <PATH>
 ```
+
+Where `<PATH>` is the path to the folder containing .template.config.
+
+### run
+
+```
+dotnet new sts -n YourCompany.Sts
+```
+
+Use the `-n` or `--name` parameter to change the name of the output created. This string is also used to substitute the namespace name in the .cs file for the project.
 
 ### Setup, Using the application for your System
 
@@ -125,7 +133,7 @@ Get-ChildItem -Path cert:\localMachine\my\"The thumbprint..." | Export-PfxCertif
 - Sendgrid
 - NWebsec.AspNetCore.Middleware
 - Serilog
-	
+
 ## Links
 
 http://docs.identityserver.io/en/release/
