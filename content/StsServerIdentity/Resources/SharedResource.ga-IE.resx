@@ -208,7 +208,7 @@
     <value>Iarracht logála neamhbhailí.</value>
   </data>
   <data name="LOCKED_OUT" xml:space="preserve">
-    <value>Locked out</value>
+    <value>Faoi ghlas</value>
   </data>
   <data name="LOCKED_OUT_TEXT" xml:space="preserve">
     <value>This account has been locked out, please try again later.</value>
@@ -589,7 +589,7 @@
     <value>Cuir seirbhís eile le logáil isteach.</value>
   </data>
   <data name="LANGUAGE" xml:space="preserve">
-    <value>Language</value>
+    <value>Teanga</value>
   </data>
   <data name="RESET_PASSWORD_CLICK_HERE_TO_LOGIN" xml:space="preserve">
     <value>Click here to log in</value>
@@ -642,31 +642,31 @@
     <comment>Error for duplicate user names</comment>
   </data>
   <data name="InvalidEmail" xml:space="preserve">
-    <value>Email '{0}' is invalid.</value>
+    <value>Tá an ríomhphost '{0}' neamhbhailí.</value>
     <comment>Invalid email</comment>
   </data>
   <data name="InvalidManagerType" xml:space="preserve">
-    <value>Type {0} must derive from {1}&lt;{2}&gt;.</value>
+    <value>Ní mór go bhfaigheadh Cineál {0} ó {1} &lt;{2}&gt;.</value>
     <comment>Error when the manager type is not derived correctly</comment>
   </data>
   <data name="InvalidPasswordHasherCompatibilityMode" xml:space="preserve">
-    <value>The provided PasswordHasherCompatibilityMode is invalid.</value>
+    <value>Tá an PasswordHasherCompatibilityMode atá ar fáil neamhbhailí.</value>
     <comment>Error when the password hasher doesn't understand the format it's being asked to produce.</comment>
   </data>
   <data name="InvalidPasswordHasherIterationCount" xml:space="preserve">
-    <value>The iteration count must be a positive integer.</value>
+    <value>Caithfidh slánuimhir dhearfach a bheith sa chomhaireamh atriallta.</value>
     <comment>Error when the iteration count is &lt; 1.</comment>
   </data>
   <data name="InvalidRoleName" xml:space="preserve">
-    <value>Role name '{0}' is invalid.</value>
+    <value>Tá ainm róil '{0}' neamhbhailí.</value>
     <comment>Error for invalid role names</comment>
   </data>
   <data name="InvalidToken" xml:space="preserve">
-    <value>Invalid token.</value>
+    <value>Comhartha neamhbhailí.</value>
     <comment>Error when a token is not recognized</comment>
   </data>
   <data name="InvalidUserName" xml:space="preserve">
-    <value>User name '{0}' is invalid, can only contain letters or digits.</value>
+    <value>Tá ainm úsáideora '{0}' neamhbhailí, ní féidir ach litreacha nó digití a bheith ann.</value>
     <comment>User names can only contain letters or digits</comment>
   </data>
   <data name="LoginAlreadyAssociated" xml:space="preserve">
