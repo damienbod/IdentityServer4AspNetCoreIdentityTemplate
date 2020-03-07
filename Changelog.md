@@ -6,6 +6,7 @@
 - Added support for FIDO2 MFA
 - Allow clients to request MFA requirement
 - Support for custom namespaces
+- Add amr to user profile (mfa or pwd values)
 
 2020-02-14 3.0.4
 - updated nuget packages
