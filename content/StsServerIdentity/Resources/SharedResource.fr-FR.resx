@@ -890,4 +890,16 @@
   <data name="GRANTS_REVOKE_ACCESS" xml:space="preserve">
     <value>Annuler l'autorisation d'accès</value>
   </data>
+  <data name="ERROR_ENABLE_MFA" xml:space="preserve">
+    <value>Activer MFA</value>
+  </data>
+  <data name="ERROR_ENABLE_MFA_CLIENT_APP_REQUIRES_MFA" xml:space="preserve">
+    <value>L'application cliente nécessite que MFA soit activé. Activez cette option et essayez de vous reconnecter.</value>
+  </data>
+  <data name="ERROR_ENABLE_MFA_ERROR_TITLE" xml:space="preserve">
+    <value>Activer l'erreur MFA</value>
+  </data>
+  <data name="ERROR_ENABLE_MFA_YOU_CAN_ENABLE_HERE" xml:space="preserve">
+    <value>Vous pouvez activer MFA pour vous connecter ici:</value>
+  </data>
 </root>
