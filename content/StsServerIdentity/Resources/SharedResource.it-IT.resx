@@ -825,13 +825,13 @@
     <value>Abilita MFA</value>
   </data>
   <data name="ERROR_ENABLE_MFA_CLIENT_APP_REQUIRES_MFA" xml:space="preserve">
-    <value>L'applicazione client richiede l'attivazione di MFA. Abilita questo e prova ad accedere di nuovo.</value>
+    <value>L'applicazione richiede che tu abbia l'MFA abilitato. Abilitalo e riprova a loggarti di nuovo.</value>
   </data>
   <data name="ERROR_ENABLE_MFA_ERROR_TITLE" xml:space="preserve">
-    <value>Abilita errore MFA</value>
+    <value>Errori abilitazione MFA</value>
   </data>
   <data name="ERROR_ENABLE_MFA_YOU_CAN_ENABLE_HERE" xml:space="preserve">
-    <value>Puoi abilitare MFA per accedere qui:</value>
+    <value>Puoi abilitare l'MFA per loggarti qui:</value>
   </data>
   <data name="FIDO2_ADD_A_KEY" xml:space="preserve">
     <value>Aggiungi una chiave FIDO2</value>
@@ -876,28 +876,28 @@
     <value>Nota: il tuo browser non sembra ancora supportare WebAuthn.</value>
   </data>
   <data name="GRANTS" xml:space="preserve">
-    <value>Permessi</value>
+    <value>Grants</value>
   </data>
   <data name="GRANTS_API_GRANTS" xml:space="preserve">
-    <value>API Permessi</value>
+    <value>API Grants</value>
   </data>
   <data name="GRANTS_CLIENT_APP_ACCESS" xml:space="preserve">
-    <value>Accesso alle applicazioni client</value>
+    <value>Client Application Access</value>
   </data>
   <data name="GRANTS_CREATED" xml:space="preserve">
-    <value>creato</value>
+    <value>Creato</value>
   </data>
   <data name="GRANTS_EXPIRES" xml:space="preserve">
-    <value>Scade</value>
+    <value>Scadenza</value>
   </data>
   <data name="GRANTS_IDENTITY_GRANTS" xml:space="preserve">
-    <value>Concessioni di identità</value>
+    <value>Identity Grants</value>
   </data>
   <data name="GRANTS_INFO" xml:space="preserve">
-    <value>Di seguito è riportato l'elenco delle applicazioni a cui hai concesso l'accesso e i nomi delle risorse a cui hanno accesso.</value>
+    <value>Sotto è presente la lista delle applicazioni a cui hai dato accesso e a cosa hanno accesso.</value>
   </data>
   <data name="GRANTS_NO_ACCESS" xml:space="preserve">
-    <value>Non hai dato accesso ad alcuna applicazione</value>
+    <value>Non hai dato l'accesso a nessuna applicazione</value>
   </data>
   <data name="GRANTS_REVOKE_ACCESS" xml:space="preserve">
     <value>Revoca accesso</value>
