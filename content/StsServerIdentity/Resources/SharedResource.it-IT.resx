@@ -821,4 +821,85 @@
     <value>L'utente non ha il ruolo '{0}'.</value>
     <comment>Utente senza ruolo corretto</comment>
   </data>
+  <data name="ERROR_ENABLE_MFA" xml:space="preserve">
+    <value>Abilita MFA</value>
+  </data>
+  <data name="ERROR_ENABLE_MFA_CLIENT_APP_REQUIRES_MFA" xml:space="preserve">
+    <value>L'applicazione client richiede l'attivazione di MFA. Abilita questo e prova ad accedere di nuovo.</value>
+  </data>
+  <data name="ERROR_ENABLE_MFA_ERROR_TITLE" xml:space="preserve">
+    <value>Abilita errore MFA</value>
+  </data>
+  <data name="ERROR_ENABLE_MFA_YOU_CAN_ENABLE_HERE" xml:space="preserve">
+    <value>Puoi abilitare MFA per accedere qui:</value>
+  </data>
+  <data name="FIDO2_ADD_A_KEY" xml:space="preserve">
+    <value>Aggiungi una chiave FIDO2</value>
+  </data>
+  <data name="FIDO2_COULD_NOT_VERIFY_ASSERTION" xml:space="preserve">
+    <value>Impossibile verificare l'asserzione</value>
+  </data>
+  <data name="FIDO2_LOGIN_WITH_MFA" xml:space="preserve">
+    <value>Accedi con FIDO2 MFA</value>
+  </data>
+  <data name="FIDO2_MULTI_FACTOR_AUTHENTICATION" xml:space="preserve">
+    <value>FIDO2 Autenticazione a più fattori</value>
+  </data>
+  <data name="FIDO2_REGISTRATION_ERROR" xml:space="preserve">
+    <value>Impossibile creare le credenziali nel browser. Probabilmente perché il nome utente è già registrato con il tuo autenticatore. Si prega di cambiare nome utente o authenaticator.</value>
+  </data>
+  <data name="FIDO2_SUPPORTED_BROWSERS" xml:space="preserve">
+    <value>Browser supportati</value>
+  </data>
+  <data name="FIDO2_TAP_YOUR_SECURITY_KEY_TO_FINISH_REGISTRATION" xml:space="preserve">
+    <value>Tocca la chiave di sicurezza per completare la registrazione.</value>
+  </data>
+  <data name="FIDO2_TAP_YOUR_SECURITY_KEY_TO_LOGIN" xml:space="preserve">
+    <value>Tocca la chiave di sicurezza per accedere.</value>
+  </data>
+  <data name="FIDO2_UNABLE_TO_LOAD_2FA_AUTHENTICATED_USER" xml:space="preserve">
+    <value>Impossibile caricare l'utente autenticato a due fattori.</value>
+  </data>
+  <data name="FIDO2_UNKNOWN_CREDENTIALS" xml:space="preserve">
+    <value>Credenziali sconosciute</value>
+  </data>
+  <data name="FIDO2_USERNAME" xml:space="preserve">
+    <value>nome utente</value>
+  </data>
+  <data name="FIDO2_USERNAME_NOT_REGISTERED" xml:space="preserve">
+    <value>Il nome utente non è stato registrato</value>
+  </data>
+  <data name="FIDO2_USER_NOTFOUND" xml:space="preserve">
+    <value>Impossibile caricare l'utente con ID "{0}".</value>
+  </data>
+  <data name="FIDO2_WEBAUTHN_NOT_SUPPORTED" xml:space="preserve">
+    <value>Nota: il tuo browser non sembra ancora supportare WebAuthn.</value>
+  </data>
+  <data name="GRANTS" xml:space="preserve">
+    <value>Permessi</value>
+  </data>
+  <data name="GRANTS_API_GRANTS" xml:space="preserve">
+    <value>API Permessi</value>
+  </data>
+  <data name="GRANTS_CLIENT_APP_ACCESS" xml:space="preserve">
+    <value>Accesso alle applicazioni client</value>
+  </data>
+  <data name="GRANTS_CREATED" xml:space="preserve">
+    <value>creato</value>
+  </data>
+  <data name="GRANTS_EXPIRES" xml:space="preserve">
+    <value>Scade</value>
+  </data>
+  <data name="GRANTS_IDENTITY_GRANTS" xml:space="preserve">
+    <value>Concessioni di identità</value>
+  </data>
+  <data name="GRANTS_INFO" xml:space="preserve">
+    <value>Di seguito è riportato l'elenco delle applicazioni a cui hai concesso l'accesso e i nomi delle risorse a cui hanno accesso.</value>
+  </data>
+  <data name="GRANTS_NO_ACCESS" xml:space="preserve">
+    <value>Non hai dato accesso ad alcuna applicazione</value>
+  </data>
+  <data name="GRANTS_REVOKE_ACCESS" xml:space="preserve">
+    <value>Revoca accesso</value>
+  </data>
 </root>
