@@ -8,7 +8,7 @@
     <RepositoryUrl>https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate</RepositoryUrl>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageTags>oidc identityserver4 identity aspnetcore</PackageTags>
-    <PackageReleaseNotes>Added support for FIDO2 MFA, Support for custom namespaces, Allow clients to request MFA requirement</PackageReleaseNotes>
+    <PackageReleaseNotes>Added support for FIDO2 MFA, Support for custom namespaces, Allow clients to request MFA requirement, added amr claim</PackageReleaseNotes>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="BuildBundlerMinifier" Version="3.2.435" />
