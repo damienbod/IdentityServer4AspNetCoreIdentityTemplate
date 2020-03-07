@@ -44,6 +44,15 @@ namespace StsServerIdentity
                 claims.Add(new Claim(JwtClaimTypes.Role, "user"));
             }
 
+            if (user.TwoFactorEnabled)
+            {
+                claims.Add(new Claim("amr", "mfa"));
+            }
+            else
+            {
+                claims.Add(new Claim("amr", "pwd")); ;
+            }
+
             claims.Add(new Claim(IdentityServerConstants.StandardScopes.Email, user.Email));
 
             context.IssuedClaims = claims;
