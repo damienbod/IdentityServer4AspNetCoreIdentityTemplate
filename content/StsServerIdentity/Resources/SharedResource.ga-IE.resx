@@ -160,7 +160,7 @@
     <value>Remember me</value>
   </data>
   <data name="FORGOT_YOUR_PASSWORD" xml:space="preserve">
-    <value>Forgot your password?</value>
+    <value>Ar rinne tú dearmad ar do Phásfhocail?</value>
   </data>
   <data name="ACCOUNT_LOGIN" xml:space="preserve">
     <value>Logáil isteach</value>
@@ -196,16 +196,16 @@
     <value>Deimhnigh le do thoil do chuntas le &lt;a href='{0}'&gt; cliceáil anseo &lt;/a&gt;.</value>
   </data>
   <data name="FORGOT_PASSWORD_CONFIRMATION" xml:space="preserve">
-    <value>Forgot password confirmation</value>
+    <value>Dearbhú pasfhocal dearmadta</value>
   </data>
   <data name="FORGOT_PASSWORD_CONFIRMATION_TEXT" xml:space="preserve">
-    <value>Please check your email to reset your password.</value>
+    <value>Seiceáil do ríomhphost chun do phasfhocal a athshocrú.</value>
   </data>
   <data name="FORGOT_YOUR_PASSWORD_ENTER_EMAIL" xml:space="preserve">
-    <value>Enter your email.</value>
+    <value>Cuir isteach do ríomhphost.</value>
   </data>
   <data name="INVALID_LOGIN_ATTEMPT" xml:space="preserve">
-    <value>Invalid login attempt.</value>
+    <value>Iarracht logála neamhbhailí.</value>
   </data>
   <data name="LOCKED_OUT" xml:space="preserve">
     <value>Locked out</value>
@@ -265,10 +265,10 @@
     <value>D'iarr tú ar logáil isteach le cód aisghabhála. Ní chuirfear an logáil seo san áireamh go dtí go soláthróidh tú cód app fíoraitheora ag logáil isteach nó díchumasaigh 2FA agus logáil isteach arís.</value>
   </data>
   <data name="INVALID_AUTHENTICATOR_CODE" xml:space="preserve">
-    <value>Invalid authenticator code.</value>
+    <value>Cód fíordheimhnithe neamhbhailí.</value>
   </data>
   <data name="INVALID_RECOVERY_CODE" xml:space="preserve">
-    <value>Invalid recovery code entered.</value>
+    <value>Cuireadh cód aisghabhála neamhbhailí isteach.</value>
   </data>
   <data name="LOGOUT_TEXT" xml:space="preserve">
     <value>You have successfully logged out of the application.</value>
@@ -391,10 +391,10 @@
     <value>Íoslódáil Do shonraí</value>
   </data>
   <data name="INCORRECT_PASSWORD" xml:space="preserve">
-    <value>Password is not correct</value>
+    <value>Níl an focal faire ceart</value>
   </data>
   <data name="INVALID_VERFICATION_CODE" xml:space="preserve">
-    <value>Verification code is invalid.</value>
+    <value>Tá an cód fíoraithe neamhbhailí.</value>
   </data>
   <data name="OR" xml:space="preserve">
     <value>or</value>
@@ -457,28 +457,28 @@
     <value>Bainistigh do logáil isteach seachtrach</value>
   </data>
   <data name="FORGET_THIS_BROWSER" xml:space="preserve">
-    <value>Forget this browser</value>
+    <value>Déan dearmad ar an mbrabhsálaí seo</value>
   </data>
   <data name="GENERATE" xml:space="preserve">
-    <value>Generate</value>
+    <value>Gin</value>
   </data>
   <data name="GENERATE_2FA_RECOVERY_CODES" xml:space="preserve">
-    <value>Generate two-factor authentication (2FA) recovery codes</value>
+    <value>Cruthaigh cóid aisghabhála dhá fhíordheimhniú (2FA)</value>
   </data>
   <data name="GENERATE_2FA_RECOVERY_CODES_INFO_LOSE" xml:space="preserve">
-    <value>If you lose your device and don't have the recovery codes you will lose access to your account.</value>
+    <value>Má chailleann tú do ghléas agus mura bhfuil na cóid aisghabhála agat caillfidh tú rochtain ar do chuntas.</value>
   </data>
   <data name="GENERATE_2FA_RECOVERY_CODES_SAFE_PLACE" xml:space="preserve">
-    <value>Put these codes in a safe place.</value>
+    <value>Cuir na cóid seo in áit shábháilte.</value>
   </data>
   <data name="GENERATE_2FA_RECOVERY_CODES_TEXT" xml:space="preserve">
-    <value>Generating new recovery codes does not change the keys used in authenticator apps. If you wish to change the key used in an authenticator app you should</value>
+    <value>Ní athraíonn giniúint na gcód aisghabhála nua na heochracha a úsáidtear i apps fíordheimhnithe. Más mian leat an eochair a athrú i app fíoraitheora ba chóir duit</value>
   </data>
   <data name="GENERATE_2FA_RECOVERY_CODES_TEXT_LINK" xml:space="preserve">
-    <value>reset your authenticator keys.</value>
+    <value>do chuid eochracha fíordheimhnithe a athshocrú.</value>
   </data>
   <data name="GENERATE_RECOVERY_CODES" xml:space="preserve">
-    <value>Generate Recovery Codes</value>
+    <value>Gin Cóid Téarnaimh</value>
   </data>
   <data name="PERSONAL_DATA_DELETEINFO" xml:space="preserve">
     <value>Deleting this data will permanently remove your account, and this cannot be recovered.</value>
@@ -610,13 +610,13 @@
     <value>Tá gá le Cód</value>
   </data>
   <data name="INVALID_CODE" xml:space="preserve">
-    <value>Invalid code.</value>
+    <value>Cód neamhbhailí.</value>
   </data>
   <data name="INVALID_CONSENT_PERMISSION" xml:space="preserve">
-    <value>You must pick at least one permission.</value>
+    <value>Ní mór duit cead amháin ar a laghad a roghnú.</value>
   </data>
   <data name="INVALID_CONSENT_SELECTION" xml:space="preserve">
-    <value>Invalid Selection</value>
+    <value>Roghnú Neamhbhailí</value>
   </data>
   <data name="STATUS_MESSAGE_PROFILE_HAS_BEEN_RESET" xml:space="preserve">
     <value>Your profile has been updated</value>
@@ -840,7 +840,7 @@
     <value>Cód Úsáideora</value>
   </data>
   <data name="Invalid selection" xml:space="preserve">
-    <value>Invalid selection</value>
+    <value>Roghnú neamhbhailí</value>
   </data>
   <data name="Offline Access" xml:space="preserve">
     <value>Offline Access</value>
@@ -894,16 +894,16 @@
     <value>Dintiúir anaithnid</value>
   </data>
   <data name="FIDO2_USERNAME" xml:space="preserve">
-    <value>Username</value>
+    <value>Ainm Úsáideora</value>
   </data>
   <data name="FIDO2_USERNAME_NOT_REGISTERED" xml:space="preserve">
-    <value>Username was not registered</value>
+    <value>Níor cláraíodh ainm úsáideora</value>
   </data>
   <data name="FIDO2_USER_NOTFOUND" xml:space="preserve">
-    <value>Unable to load user with ID '{0}'.</value>
+    <value>Ní féidir an t-úsáideoir a luchtú le ID '{0}'.</value>
   </data>
   <data name="FIDO2_WEBAUTHN_NOT_SUPPORTED" xml:space="preserve">
-    <value>Please note: Your browser does not seem to support WebAuthn yet.</value>
+    <value>Tabhair faoi deara: Is cosúil nach dtacaíonn do bhrabhsálaí le WebAuthn go fóill.</value>
   </data>
   <data name="ERROR_ENABLE_MFA" xml:space="preserve">
     <value>Cumasaigh MFA</value>
@@ -918,30 +918,30 @@
     <value>Is féidir leat cur ar chumas MFA logáil isteach anseo:</value>
   </data>
   <data name="GRANTS" xml:space="preserve">
-    <value>Grants</value>
+    <value>Deontais</value>
   </data>
   <data name="GRANTS_API_GRANTS" xml:space="preserve">
-    <value>API Grants</value>
+    <value>API Deontais</value>
   </data>
   <data name="GRANTS_CLIENT_APP_ACCESS" xml:space="preserve">
-    <value>Client Application Access</value>
+    <value>Rochtain ar Iarratas Cliant</value>
   </data>
   <data name="GRANTS_CREATED" xml:space="preserve">
-    <value>Created</value>
+    <value>Cruthaithe</value>
   </data>
   <data name="GRANTS_EXPIRES" xml:space="preserve">
-    <value>Expires</value>
+    <value>In éag</value>
   </data>
   <data name="GRANTS_IDENTITY_GRANTS" xml:space="preserve">
-    <value>Identity Grants</value>
+    <value>Deontais Aitheantais</value>
   </data>
   <data name="GRANTS_INFO" xml:space="preserve">
-    <value>Below is the list of applications you have given access to and the names of the resources they have access to.</value>
+    <value>Anseo thíos tá liosta na n-iarratas a thug tú rochtain orthu agus ainmneacha na n-acmhainní a bhfuil rochtain acu orthu.</value>
   </data>
   <data name="GRANTS_NO_ACCESS" xml:space="preserve">
-    <value>You have not given access to any applications</value>
+    <value>Níor thug tú rochtain ar aon iarratais</value>
   </data>
   <data name="GRANTS_REVOKE_ACCESS" xml:space="preserve">
-    <value>Revoke Access</value>
+    <value>Cúlghairm a dhéanamh ar Rochtain</value>
   </data>
 </root>
