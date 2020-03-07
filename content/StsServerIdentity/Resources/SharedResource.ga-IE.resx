@@ -133,10 +133,10 @@
     <value>Cruthaigh cuntas nua.</value>
   </data>
   <data name="EMAIL" xml:space="preserve">
-    <value>E-Mail</value>
+    <value>R-Phost</value>
   </data>
   <data name="EMAIL_INVALID" xml:space="preserve">
-    <value>invalid Email</value>
+    <value>Ríomhphost neamhbhailí</value>
   </data>
   <data name="EMAIL_REQUIRED" xml:space="preserve">
     <value>Email required</value>
@@ -220,19 +220,19 @@
     <value>Submit</value>
   </data>
   <data name="EXTERNAL_LOGIN_ASSOCIATE_ACCOUNT" xml:space="preserve">
-    <value>Associate your {0} account</value>
+    <value>Chomhlachú do {0} cuntas</value>
   </data>
   <data name="EXTERNAL_LOGIN_TEXT" xml:space="preserve">
-    <value>You've successfully authenticated with {0}. Please enter an email address for this site below and click the Register button to finish logging in.</value>
+    <value>Tá tú fíordheimhnithe go rathúil le {0}. Cuir isteach seoladh ríomhphoist don suíomh seo thíos agus cliceáil ar an gcnaipe Clár chun logáil isteach a chríochnú.</value>
   </data>
   <data name="EXTERNAL_PROVIDER_ERROR" xml:space="preserve">
-    <value>Error from external provider: {0}</value>
+    <value>Earráid ón soláthraí seachtrach: {0}</value>
   </data>
   <data name="EXTERNAL_PROVIDER_ERROR_CONFIRMATION" xml:space="preserve">
-    <value>Error loading external login information during confirmation.</value>
+    <value>Earráid agus faisnéis logála seachtrach á lódáil le linn an dearbhaithe.</value>
   </data>
   <data name="EXTERNAL_PROVIDER_ERROR_INFO" xml:space="preserve">
-    <value>Error loading external login information.</value>
+    <value>Earráid agus faisnéis sheachtrach logála isteach á lódáil.</value>
   </data>
   <data name="ACCOUNT_LOGIN_2FA" xml:space="preserve">
     <value>Fíordheimhniú dhá fhachtóir</value>
@@ -301,7 +301,7 @@
     <value>Teastaíonn an pasfhocal reatha</value>
   </data>
   <data name="EXTERNAL_LOGINS" xml:space="preserve">
-    <value>External logins</value>
+    <value>Logáin sheachtracha</value>
   </data>
   <data name="MANAGE_CHANGE_ACCOUNT_SETTINGS" xml:space="preserve">
     <value>Change your account settings</value>
@@ -364,31 +364,31 @@
     <value>Scrios Sonraí Pearsanta</value>
   </data>
   <data name="DELETE_PERSONAL_DATA_AND_CLOSE" xml:space="preserve">
-    <value>Delete data and close my account</value>
+    <value>Scrios na sonraí agus dún mo chuntas</value>
   </data>
   <data name="DELETE_PERSONAL_DATA_TEXT" xml:space="preserve">
-    <value>Deleting this data will permanently remove your account, and this cannot be recovered.</value>
+    <value>Má scriostar na sonraí seo bainfear do chuntas go buan agus ní féidir é seo a aisghabháil.</value>
   </data>
   <data name="DISABLE_2FA" xml:space="preserve">
-    <value>Disable two-factor authentication (2FA)</value>
+    <value>Díchumasaigh fíordheimhniú dhá fhachtóir (2FA)</value>
   </data>
   <data name="DISABLE_2FA_BUTTON" xml:space="preserve">
-    <value>Disable 2FA</value>
+    <value>Díchumasaigh 2FA</value>
   </data>
   <data name="DISABLE_2FA_STATUS" xml:space="preserve">
-    <value>2fa has been disabled. You can reenable 2fa when you setup an authenticator app</value>
+    <value>Díchumasaíodh 2FA. Is féidir leat 2FA a chumasú nuair a chuireann tú app fíoraitheora ar bun</value>
   </data>
   <data name="DISABLE_2FA_TEXT_DETAILS" xml:space="preserve">
-    <value>Disabling 2FA does not change the keys used in authenticator apps. If you wish to change the key used in an authenticator app you should</value>
+    <value>Ní athraíonn an 2FA na heochracha a úsáidtear in aipeanna fíordheimhnithe. Más mian leat an eochair a athrú i app fíoraitheora ba chóir duit</value>
   </data>
   <data name="DISABLE_2FA_TEXT_DETAILS_LINK" xml:space="preserve">
-    <value>reset your authenticator keys.</value>
+    <value>do chuid eochracha fíordheimhnithe a athshocrú.</value>
   </data>
   <data name="DISABLE_2FA_TEXT_HEADER" xml:space="preserve">
-    <value>This action only disables 2FA.</value>
+    <value>Ní dhíchumasaíonn an gníomh seo ach 2FA.</value>
   </data>
   <data name="DOWNLOAD_YOUR_DATA" xml:space="preserve">
-    <value>Download Your Data</value>
+    <value>Íoslódáil Do shonraí</value>
   </data>
   <data name="INCORRECT_PASSWORD" xml:space="preserve">
     <value>Password is not correct</value>
@@ -448,13 +448,13 @@
     <value>Scrios</value>
   </data>
   <data name="DOWNLOAD" xml:space="preserve">
-    <value>Download</value>
+    <value>Íoslódáil</value>
   </data>
   <data name="EXTERNAL_LOGINS_REGISTERED_LOGIN" xml:space="preserve">
-    <value>Registered Logins</value>
+    <value>Logáin Cláraithe</value>
   </data>
   <data name="EXTERNAL_LOGINS_TITLE" xml:space="preserve">
-    <value>Manage your external logins</value>
+    <value>Bainistigh do logáil isteach seachtrach</value>
   </data>
   <data name="FORGET_THIS_BROWSER" xml:space="preserve">
     <value>Forget this browser</value>
@@ -586,7 +586,7 @@
     <value>Would you like to logout of IdentityServer?</value>
   </data>
   <data name="EXTERNAL_LOGINS_ADD_ANOTHER_SERVICE_TO_LOGIN" xml:space="preserve">
-    <value>Add another service to log in.</value>
+    <value>Cuir seirbhís eile le logáil isteach.</value>
   </data>
   <data name="LANGUAGE" xml:space="preserve">
     <value>Language</value>
@@ -630,15 +630,15 @@
     <comment>Default identity result error message</comment>
   </data>
   <data name="DuplicateEmail" xml:space="preserve">
-    <value>Email '{0}' is already taken.</value>
+    <value>Tá ríomhphost '{0}' tógtha cheana féin.</value>
     <comment>Error for duplicate emails</comment>
   </data>
   <data name="DuplicateRoleName" xml:space="preserve">
-    <value>Role name '{0}' is already taken.</value>
+    <value>Tá ainm an róil '{0}' tógtha cheana féin.</value>
     <comment>Error for duplicate roles</comment>
   </data>
   <data name="DuplicateUserName" xml:space="preserve">
-    <value>User name '{0}' is already taken.</value>
+    <value>Tá an t-ainm úsáideora "{0}" tógtha cheana féin.</value>
     <comment>Error for duplicate user names</comment>
   </data>
   <data name="InvalidEmail" xml:space="preserve">
@@ -828,16 +828,16 @@
     <value>Deimhnigh, le do thoil, go luaitear an cód leis an iarraidh údaraithe:</value>
   </data>
   <data name="DEVICE_ENTER_CODE_DISPLAYED_ON_DEVICE" xml:space="preserve">
-    <value>Please enter the code displayed on your device</value>
+    <value>Cuir isteach an cód a thaispeántar ar do ghléas le do thoil</value>
   </data>
   <data name="DEVICE_SUCCESS" xml:space="preserve">
-    <value>Success</value>
+    <value>Rath</value>
   </data>
   <data name="DEVICE_SUCCESS_AUTHORIZE" xml:space="preserve">
-    <value>You have successfully authorized the device</value>
+    <value>D'éirigh leat an gléas a údarú</value>
   </data>
   <data name="DEVICE_USER_CODE" xml:space="preserve">
-    <value>User Code</value>
+    <value>Cód Úsáideora</value>
   </data>
   <data name="Invalid selection" xml:space="preserve">
     <value>Invalid selection</value>
@@ -864,34 +864,34 @@
     <value>Your user profile information (first name, last name, etc.)</value>
   </data>
   <data name="FIDO2_ADD_A_KEY" xml:space="preserve">
-    <value>Add a FIDO2 Key</value>
+    <value>Cuir Eochair FIDO2 leis</value>
   </data>
   <data name="FIDO2_COULD_NOT_VERIFY_ASSERTION" xml:space="preserve">
-    <value>Could not verify assertion</value>
+    <value>Níorbh fhéidir dearbhú a fhíorú</value>
   </data>
   <data name="FIDO2_LOGIN_WITH_MFA" xml:space="preserve">
-    <value>Login with FIDO2 MFA</value>
+    <value>Logáil isteach le FIDO2 MFA</value>
   </data>
   <data name="FIDO2_MULTI_FACTOR_AUTHENTICATION" xml:space="preserve">
-    <value>FIDO2 Multi-factor authentication</value>
+    <value>FIDO2 Fíordheimhniú ilfhachtóra</value>
   </data>
   <data name="FIDO2_REGISTRATION_ERROR" xml:space="preserve">
-    <value>Could not create credentials in browser. Probably because the username is already registered with your authenticator. Please change username or authenticator.</value>
+    <value>Níorbh fhéidir dintiúir a chruthú sa bhrabhsálaí. Is dócha toisc go bhfuil an t-ainm úsáideora cláraithe le do bharántóir cheana féin. Athraigh ainm úsáideora nó fíordheimhnithe.</value>
   </data>
   <data name="FIDO2_SUPPORTED_BROWSERS" xml:space="preserve">
-    <value>Supported browsers</value>
+    <value>Brabhsálaithe tacaithe</value>
   </data>
   <data name="FIDO2_TAP_YOUR_SECURITY_KEY_TO_FINISH_REGISTRATION" xml:space="preserve">
-    <value>Tap your security key to finish registration.</value>
+    <value>Beartaigh do eochair slándála chun clárú a chríochnú.</value>
   </data>
   <data name="FIDO2_TAP_YOUR_SECURITY_KEY_TO_LOGIN" xml:space="preserve">
-    <value>Tap your security key to login. </value>
+    <value>Beartaigh do eochair slándála chun logáil isteach.</value>
   </data>
   <data name="FIDO2_UNABLE_TO_LOAD_2FA_AUTHENTICATED_USER" xml:space="preserve">
-    <value>Unable to load two-factor authenticated user.</value>
+    <value>Ní féidir le húsáideoir fíordheimhnithe dhá fhachtóir a luchtú.</value>
   </data>
   <data name="FIDO2_UNKNOWN_CREDENTIALS" xml:space="preserve">
-    <value>Unknown credentials</value>
+    <value>Dintiúir anaithnid</value>
   </data>
   <data name="FIDO2_USERNAME" xml:space="preserve">
     <value>Username</value>
@@ -906,16 +906,16 @@
     <value>Please note: Your browser does not seem to support WebAuthn yet.</value>
   </data>
   <data name="ERROR_ENABLE_MFA" xml:space="preserve">
-    <value>Enable MFA</value>
+    <value>Cumasaigh MFA</value>
   </data>
   <data name="ERROR_ENABLE_MFA_CLIENT_APP_REQUIRES_MFA" xml:space="preserve">
-    <value>The client application requires you to have MFA enabled. Enable this and try to sign in again.</value>
+    <value>Éilíonn an feidhmchlár cliant go bhfuil tú in ann MFA a chumasú. Cumasaigh é seo agus déan iarracht clárú arís.</value>
   </data>
   <data name="ERROR_ENABLE_MFA_ERROR_TITLE" xml:space="preserve">
-    <value>Enable MFA Error</value>
+    <value>Cumasaigh Earráid MFA</value>
   </data>
   <data name="ERROR_ENABLE_MFA_YOU_CAN_ENABLE_HERE" xml:space="preserve">
-    <value>You can enable MFA to login here:</value>
+    <value>Is féidir leat cur ar chumas MFA logáil isteach anseo:</value>
   </data>
   <data name="GRANTS" xml:space="preserve">
     <value>Grants</value>
