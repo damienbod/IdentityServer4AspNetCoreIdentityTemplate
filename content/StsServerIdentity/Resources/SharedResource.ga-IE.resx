@@ -151,7 +151,7 @@
     <value>Athshocraigh an Pasfhocal</value>
   </data>
   <data name="RESET_YOUR_PASSWORD" xml:space="preserve">
-    <value>Reset your password</value>
+    <value>Athshocraigh do phasfhocal</value>
   </data>
   <data name="LOGOUT" xml:space="preserve">
     <value>Logáil Amach</value>
@@ -217,7 +217,7 @@
     <value>Déan do phasfhocal a athshocrú le &lt;a href='{0}'&gt; Cliceáil anseo &lt;/a&gt;.</value>
   </data>
   <data name="SUBMIT" xml:space="preserve">
-    <value>Submit</value>
+    <value>Cuir isteach</value>
   </data>
   <data name="EXTERNAL_LOGIN_ASSOCIATE_ACCOUNT" xml:space="preserve">
     <value>Chomhlachú do {0} cuntas</value>
@@ -283,7 +283,7 @@
     <value>Athshocraíodh do phasfhocal. Le do thoil</value>
   </data>
   <data name="The {0} must be at least {2} and at max {1} characters long." xml:space="preserve">
-    <value>The {0} must be at least {2} and at max {1} characters long.</value>
+    <value>Caithfidh an {0} a bheith {2} ar a laghad agus ag max {1} carachtar fada.</value>
   </data>
   <data name="2FA" xml:space="preserve">
     <value>Fíordheimhniú dhá fhachtóir</value>
@@ -322,13 +322,13 @@
     <value>Próifíl</value>
   </data>
   <data name="TWOFACTORCODE_REQUIRED" xml:space="preserve">
-    <value>Two-factor code is required</value>
+    <value>Tá gá le cód dhá fhachtóir</value>
   </data>
   <data name="UPDATE_PASSWORD" xml:space="preserve">
-    <value>Update password</value>
+    <value>Nuashonraigh an focal faire</value>
   </data>
   <data name="VERIFICATION_CODE_REQUIRED" xml:space="preserve">
-    <value>Verification code is required</value>
+    <value>Tá cód fíoraithe ag teastáil</value>
   </data>
   <data name="AND" xml:space="preserve">
     <value>agus</value>
@@ -400,13 +400,13 @@
     <value>nó</value>
   </data>
   <data name="USER_NOTFOUND" xml:space="preserve">
-    <value>Unable to load user with ID '{0}'.</value>
+    <value>Ní féidir an t-úsáideoir a luchtú le ID '{0}'.</value>
   </data>
   <data name="VERIFICATION_CODE" xml:space="preserve">
-    <value>Verification code</value>
+    <value>Cód fíorúcháin</value>
   </data>
   <data name="VERIFY" xml:space="preserve">
-    <value>Verify</value>
+    <value>Fíoraigh</value>
   </data>
   <data name="2FA_AUTHENTICATION_ADD_AUTHENTICATOR_APP" xml:space="preserve">
     <value>Cuir app fíoraitheora leis</value>
@@ -508,40 +508,40 @@
     <value>Athshocraigh cóid aisghabhála</value>
   </data>
   <data name="SAVE" xml:space="preserve">
-    <value>Save</value>
+    <value>Sábháil</value>
   </data>
   <data name="SEND_VERIFICATION_EMAIL" xml:space="preserve">
-    <value>Send verification email</value>
+    <value>Seol ríomhphost fíoraithe</value>
   </data>
   <data name="SET_PASSWORD" xml:space="preserve">
-    <value>Set password</value>
+    <value>Socraigh focal faire</value>
   </data>
   <data name="SET_PASSWORD_STATUS" xml:space="preserve">
-    <value>Your password has been set.</value>
+    <value>Tá do phasfhocal socraithe.</value>
   </data>
   <data name="SET_PASSWORD_TEXT" xml:space="preserve">
-    <value>You do not have a local username/password for this site. Add a local account so you can log in without an external login.</value>
+    <value>Níl ainm úsáideora / focal faire áitiúil agat don suíomh seo. Cuir cuntas áitiúil leis ionas gur féidir leat logáil isteach gan logáil isteach seachtrach.</value>
   </data>
   <data name="SET_YOUR_PASSWORD" xml:space="preserve">
-    <value>Set your password</value>
+    <value>Socraigh do phasfhocal</value>
   </data>
   <data name="STATUS_EXTERNAL_LOGIN_ADDED" xml:space="preserve">
-    <value>The external login was added.</value>
+    <value>Cuireadh an logáil isteach seachtrach leis.</value>
   </data>
   <data name="STATUS_EXTERNAL_LOGIN_REMOVED" xml:space="preserve">
-    <value>The external login was removed.</value>
+    <value>Baineadh an logáil isteach seachtrach.</value>
   </data>
   <data name="STATUS_GENERATE_CODES" xml:space="preserve">
-    <value>You have generated new recovery codes.</value>
+    <value>Ghin tú cóid nua aisghabhála.</value>
   </data>
   <data name="STATUS_PROFILE_UPDATED" xml:space="preserve">
-    <value>Your profile has been updated</value>
+    <value>Nuashonraíodh do phróifíl</value>
   </data>
   <data name="STATUS_UPDATE_PROFILE_EMAIL_SEND" xml:space="preserve">
-    <value>Verification email sent. Please check your email.</value>
+    <value>Seoladh r-phost fíoraithe. Seiceáil do ríomhphost.</value>
   </data>
   <data name="USERNAME" xml:space="preserve">
-    <value>Username</value>
+    <value>Ainm Úsáideora</value>
   </data>
   <data name="ACCOUNT_CLICK_LOGIN_LINK" xml:space="preserve">
     <value>Cliceáil an cnaipe logála isteach</value>
@@ -553,7 +553,7 @@
     <value>Cuimhnigh ar an mBrabhsálaí</value>
   </data>
   <data name="YES" xml:space="preserve">
-    <value>Yes</value>
+    <value>Tá</value>
   </data>
   <data name="CONSENT_APPLICATION_ACCESS" xml:space="preserve">
     <value>Rochtain Iarratais</value>
@@ -583,7 +583,7 @@
     <value>Fill ar ais</value>
   </data>
   <data name="WOULD_YOU_LIKE_TO_LOGOUT" xml:space="preserve">
-    <value>Would you like to logout of IdentityServer?</value>
+    <value>Ar mhaith leat logáil isteach de IdentityServer?</value>
   </data>
   <data name="EXTERNAL_LOGINS_ADD_ANOTHER_SERVICE_TO_LOGIN" xml:space="preserve">
     <value>Cuir seirbhís eile le logáil isteach.</value>
@@ -598,13 +598,13 @@
     <value>Athshocraíodh do phasfhocal.</value>
   </data>
   <data name="SEND_VERIFICATION_CODE" xml:space="preserve">
-    <value>Send Verification Code</value>
+    <value>Seol Cód Fíoraithe</value>
   </data>
   <data name="SEND_VERIFICATION_CODE_SELECT" xml:space="preserve">
-    <value>Select Two-Factor Authentication Provider:</value>
+    <value>Roghnaigh Soláthraí Fíordheimhniúcháin Dhá-Fachtóir:</value>
   </data>
   <data name="UNSUCCESSFUL_LOGIN_WITH_SERVICE" xml:space="preserve">
-    <value>Unsuccessful login with service.</value>
+    <value>Logáil isteach nár éirigh leis le seirbhís.</value>
   </data>
   <data name="CODE_REQUIRED" xml:space="preserve">
     <value>Tá gá le Cód</value>
@@ -619,7 +619,7 @@
     <value>Roghnú Neamhbhailí</value>
   </data>
   <data name="STATUS_MESSAGE_PROFILE_HAS_BEEN_RESET" xml:space="preserve">
-    <value>Your profile has been updated</value>
+    <value>Nuashonraíodh do phróifíl</value>
   </data>
   <data name="ConcurrencyFailure" xml:space="preserve">
     <value>Tá teip ar chomhréireacht dóchasach, mionathraíodh an réad.</value>
@@ -726,99 +726,99 @@
     <comment>Error when a recovery code is not redeemed.</comment>
   </data>
   <data name="RoleNotFound" xml:space="preserve">
-    <value>Role {0} does not exist.</value>
+    <value>Níl ról {0} ann.</value>
     <comment>Error when a role does not exist</comment>
   </data>
   <data name="StoreNotIProtectedUserStore" xml:space="preserve">
-    <value>Store does not implement IProtectedUserStore&lt;TUser&gt; which is required when ProtectPersonalData = true.</value>
+    <value>Ní chuireann Store i bhfeidhm &lt;TUser&gt; IProtectedUserStore atá ag teastáil nuair atá ProtectPersonalData = fíor.</value>
     <comment>Error when the store does not implement this interface</comment>
   </data>
   <data name="StoreNotIQueryableRoleStore" xml:space="preserve">
-    <value>Store does not implement IQueryableRoleStore&lt;TRole&gt;.</value>
+    <value>Ní chuireann an siopa ITReryableRoleStore &lt;TRole&gt; i bhfeidhm.</value>
     <comment>Error when the store does not implement this interface</comment>
   </data>
   <data name="StoreNotIQueryableUserStore" xml:space="preserve">
-    <value>Store does not implement IQueryableUserStore&lt;TUser&gt;.</value>
+    <value>Ní fheidhmíonn Store IQueryableUserStore&lt;TRole&gt;.</value>
     <comment>Error when the store does not implement this interface</comment>
   </data>
   <data name="StoreNotIRoleClaimStore" xml:space="preserve">
-    <value>Store does not implement IRoleClaimStore&lt;TRole&gt;.</value>
+    <value>Ní fheidhmíonn Store IQueryableUserStore&lt;TUser&gt;.</value>
     <comment>Error when the store does not implement this interface</comment>
   </data>
   <data name="StoreNotIUserAuthenticationTokenStore" xml:space="preserve">
-    <value>Store does not implement IUserAuthenticationTokenStore&lt;User&gt;.</value>
+    <value>Ní fheidhmíonn Store IUserAuthenticationTokenStore&lt;User&gt;.</value>
     <comment>Error when the store does not implement this interface</comment>
   </data>
   <data name="StoreNotIUserAuthenticatorKeyStore" xml:space="preserve">
-    <value>Store does not implement IUserAuthenticatorKeyStore&lt;User&gt;.</value>
+    <value>Ní fheidhmíonn Store IUserAuthenticatorKeyStore&lt;User&gt;.</value>
     <comment>Error when the store does not implement this interface</comment>
   </data>
   <data name="StoreNotIUserClaimStore" xml:space="preserve">
-    <value>Store does not implement IUserClaimStore&lt;TUser&gt;.</value>
+    <value>Ní fheidhmíonn Store IUserClaimStore&lt;TUser&gt;.</value>
     <comment>Error when the store does not implement this interface</comment>
   </data>
   <data name="StoreNotIUserConfirmationStore" xml:space="preserve">
-    <value>Store does not implement IUserConfirmationStore&lt;TUser&gt;.</value>
+    <value>Ní fheidhmíonn Store IUserConfirmationStore&lt;TUser&gt;.</value>
     <comment>Error when the store does not implement this interface</comment>
   </data>
   <data name="StoreNotIUserEmailStore" xml:space="preserve">
-    <value>Store does not implement IUserEmailStore&lt;TUser&gt;.</value>
+    <value>Ní fheidhmíonn Store IUserEmailStore&lt;TUser&gt;.</value>
     <comment>Error when the store does not implement this interface</comment>
   </data>
   <data name="StoreNotIUserLockoutStore" xml:space="preserve">
-    <value>Store does not implement IUserLockoutStore&lt;TUser&gt;.</value>
+    <value>Ní fheidhmíonn Store IUserLockoutStore&lt;TUser&gt;.</value>
     <comment>Error when the store does not implement this interface</comment>
   </data>
   <data name="StoreNotIUserLoginStore" xml:space="preserve">
-    <value>Store does not implement IUserLoginStore&lt;TUser&gt;.</value>
+    <value>Ní fheidhmíonn Store IUserLoginStore&lt;TUser&gt;.</value>
     <comment>Error when the store does not implement this interface</comment>
   </data>
   <data name="StoreNotIUserPasswordStore" xml:space="preserve">
-    <value>Store does not implement IUserPasswordStore&lt;TUser&gt;.</value>
+    <value>Ní fheidhmíonn Store IUserPasswordStore&lt;TUser&gt;.</value>
     <comment>Error when the store does not implement this interface</comment>
   </data>
   <data name="StoreNotIUserPhoneNumberStore" xml:space="preserve">
-    <value>Store does not implement IUserPhoneNumberStore&lt;TUser&gt;.</value>
+    <value>Ní fheidhmíonn Store IUserPhoneNumberStore&lt;TUser&gt;.</value>
     <comment>Error when the store does not implement this interface</comment>
   </data>
   <data name="StoreNotIUserRoleStore" xml:space="preserve">
-    <value>Store does not implement IUserRoleStore&lt;TUser&gt;.</value>
+    <value>Ní fheidhmíonn Store IUserRoleStore&lt;TUser&gt;.</value>
     <comment>Error when the store does not implement this interface</comment>
   </data>
   <data name="StoreNotIUserSecurityStampStore" xml:space="preserve">
-    <value>Store does not implement IUserSecurityStampStore&lt;TUser&gt;.</value>
+    <value>Ní fheidhmíonn Store IUserSecurityStampStore&lt;TUser&gt;.</value>
     <comment>Error when the store does not implement this interface</comment>
   </data>
   <data name="StoreNotIUserTwoFactorRecoveryCodeStore" xml:space="preserve">
-    <value>Store does not implement IUserTwoFactorRecoveryCodeStore&lt;User&gt;.</value>
+    <value>Ní fheidhmíonn Store IUserTwoFactorRecoveryCodeStore&lt;User&gt;.</value>
     <comment>Error when the store does not implement this interface</comment>
   </data>
   <data name="StoreNotIUserTwoFactorStore" xml:space="preserve">
-    <value>Store does not implement IUserTwoFactorStore&lt;TUser&gt;.</value>
+    <value>Ní fheidhmíonn Store IUserTwoFactorStore&lt;TUser&gt;.</value>
     <comment>Error when the store does not implement this interface</comment>
   </data>
   <data name="UserAlreadyHasPassword" xml:space="preserve">
-    <value>User already has a password set.</value>
+    <value>Tá tacar focal faire ag an úsáideoir cheana féin.</value>
     <comment>Error when AddPasswordAsync called when a user already has a password</comment>
   </data>
   <data name="UserAlreadyInRole" xml:space="preserve">
-    <value>User already in role '{0}'.</value>
+    <value>Úsáideoir cheana féin i ról '{0}'.</value>
     <comment>Error when a user is already in a role</comment>
   </data>
   <data name="UserLockedOut" xml:space="preserve">
-    <value>User is locked out.</value>
+    <value>Tá an t-úsáideoir faoi ghlas.</value>
     <comment>Error when a user is locked out</comment>
   </data>
   <data name="UserLockoutNotEnabled" xml:space="preserve">
-    <value>Lockout is not enabled for this user.</value>
+    <value>Ní féidir frithdhúnadh a chumasú don úsáideoir seo.</value>
     <comment>Error when lockout is not enabled</comment>
   </data>
   <data name="UserNameNotFound" xml:space="preserve">
-    <value>User {0} does not exist.</value>
+    <value>Níl Úsáideoir {0} ann.</value>
     <comment>Error when a user does not exist</comment>
   </data>
   <data name="UserNotInRole" xml:space="preserve">
-    <value>User is not in role '{0}'.</value>
+    <value>Níl an t-úsáideoir '{0}' i ról.</value>
     <comment>Error when a user is not in the role</comment>
   </data>
   <data name="Access to your applications and resources, even when you are offline" xml:space="preserve">
@@ -849,19 +849,19 @@
     <value>Cóid aisghabhála</value>
   </data>
   <data name="User profile" xml:space="preserve">
-    <value>User profile</value>
+    <value>Próifíl úsáideora</value>
   </data>
   <data name="You must pick at least one permission" xml:space="preserve">
-    <value>You must pick at least one permission</value>
+    <value>Ní mór duit cead amháin ar a laghad a roghnú</value>
   </data>
   <data name="Your email address" xml:space="preserve">
-    <value>Your email address</value>
+    <value>Do sheoladh ríomhphoist</value>
   </data>
   <data name="Your user identifier" xml:space="preserve">
-    <value>Your user identifier</value>
+    <value>Do aitheantóir úsáideora</value>
   </data>
   <data name="Your user profile information (first name, last name, etc.)" xml:space="preserve">
-    <value>Your user profile information (first name, last name, etc.)</value>
+    <value>Do chuid faisnéise faoi phróifíl úsáideora (an chéad ainm, an t-ainm deireanach, etc.)</value>
   </data>
   <data name="FIDO2_ADD_A_KEY" xml:space="preserve">
     <value>Cuir Eochair FIDO2 leis</value>
