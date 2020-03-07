@@ -821,4 +821,73 @@
   <data name="FORGET_THIS_BROWSER" xml:space="preserve">
     <value>Oubliez ce navigateur</value>
   </data>
+  <data name="FIDO2_ADD_A_KEY" xml:space="preserve">
+    <value>Ajouter une clé FIDO2</value>
+  </data>
+  <data name="FIDO2_COULD_NOT_VERIFY_ASSERTION" xml:space="preserve">
+    <value>L'assertion n'a pas pu être vérifiée</value>
+  </data>
+  <data name="FIDO2_LOGIN_WITH_MFA" xml:space="preserve">
+    <value>Connectez-vous avec FIDO2 MFA</value>
+  </data>
+  <data name="FIDO2_MULTI_FACTOR_AUTHENTICATION" xml:space="preserve">
+    <value>Authentification multifacteur FIDO2</value>
+  </data>
+  <data name="FIDO2_REGISTRATION_ERROR" xml:space="preserve">
+    <value>Impossible de créer des informations d'identification dans le navigateur. Probablement parce que le nom d'utilisateur est déjà enregistré auprès de votre authentificateur. Veuillez changer le nom d'utilisateur ou l'authentificateur.</value>
+  </data>
+  <data name="FIDO2_SUPPORTED_BROWSERS" xml:space="preserve">
+    <value>Navigateurs pris en charge</value>
+  </data>
+  <data name="FIDO2_TAP_YOUR_SECURITY_KEY_TO_FINISH_REGISTRATION" xml:space="preserve">
+    <value>Appuyez sur votre clé de sécurité pour terminer l'enregistrement.</value>
+  </data>
+  <data name="FIDO2_TAP_YOUR_SECURITY_KEY_TO_LOGIN" xml:space="preserve">
+    <value>Appuyez sur votre clé de sécurité pour vous connecter.</value>
+  </data>
+  <data name="FIDO2_UNABLE_TO_LOAD_2FA_AUTHENTICATED_USER" xml:space="preserve">
+    <value>Impossible de charger l'utilisateur authentifié à deux facteurs.</value>
+  </data>
+  <data name="FIDO2_UNKNOWN_CREDENTIALS" xml:space="preserve">
+    <value>Identifiants inconnus</value>
+  </data>
+  <data name="FIDO2_USERNAME" xml:space="preserve">
+    <value>nom d'utilisateur</value>
+  </data>
+  <data name="FIDO2_USERNAME_NOT_REGISTERED" xml:space="preserve">
+    <value>Le nom d'utilisateur n'était pas enregistré</value>
+  </data>
+  <data name="FIDO2_USER_NOTFOUND" xml:space="preserve">
+    <value>Impossible de charger l'utilisateur avec l'ID '{0}'.</value>
+  </data>
+  <data name="FIDO2_WEBAUTHN_NOT_SUPPORTED" xml:space="preserve">
+    <value>Remarque: votre navigateur ne semble pas encore prendre en charge WebAuthn.</value>
+  </data>
+  <data name="GRANTS" xml:space="preserve">
+    <value>Permis</value>
+  </data>
+  <data name="GRANTS_API_GRANTS" xml:space="preserve">
+    <value>Permis API</value>
+  </data>
+  <data name="GRANTS_CLIENT_APP_ACCESS" xml:space="preserve">
+    <value>Accès à l'application client</value>
+  </data>
+  <data name="GRANTS_CREATED" xml:space="preserve">
+    <value>Créé</value>
+  </data>
+  <data name="GRANTS_EXPIRES" xml:space="preserve">
+    <value>Expire</value>
+  </data>
+  <data name="GRANTS_IDENTITY_GRANTS" xml:space="preserve">
+    <value>Approbation d'identité</value>
+  </data>
+  <data name="GRANTS_INFO" xml:space="preserve">
+    <value>Vous trouverez ci-dessous une liste des applications auxquelles vous avez accès et les noms des ressources auxquelles vous avez accès.</value>
+  </data>
+  <data name="GRANTS_NO_ACCESS" xml:space="preserve">
+    <value>Vous n'avez pas accordé l'accès aux applications</value>
+  </data>
+  <data name="GRANTS_REVOKE_ACCESS" xml:space="preserve">
+    <value>Annuler l'autorisation d'accès</value>
+  </data>
 </root>
