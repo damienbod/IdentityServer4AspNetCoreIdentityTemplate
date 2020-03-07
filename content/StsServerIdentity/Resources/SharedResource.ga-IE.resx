@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="PASSWORD" xml:space="preserve">
-    <value>Password</value>
+    <value>Pasfhocal</value>
   </data>
   <data name="REGISTER" xml:space="preserve">
-    <value>Register</value>
+    <value>Cláraigh</value>
   </data>
   <data name="CONFIRM_PASSWORD" xml:space="preserve">
     <value>Deimhnigh Pasfhocal</value>
@@ -142,22 +142,22 @@
     <value>Email required</value>
   </data>
   <data name="PASSWORD_REQUIRED" xml:space="preserve">
-    <value>Password required</value>
+    <value>Teastaíonn an pasfhocal</value>
   </data>
   <data name="RESET" xml:space="preserve">
-    <value>Reset</value>
+    <value>Athshocraigh</value>
   </data>
   <data name="RESET_PASSWORD" xml:space="preserve">
-    <value>Reset Password</value>
+    <value>Athshocraigh an Pasfhocal</value>
   </data>
   <data name="RESET_YOUR_PASSWORD" xml:space="preserve">
     <value>Reset your password</value>
   </data>
   <data name="LOGOUT" xml:space="preserve">
-    <value>Logout</value>
+    <value>Logáil Amach</value>
   </data>
   <data name="REMEMBER_ME" xml:space="preserve">
-    <value>Remember me</value>
+    <value>Cuimhnigh orm</value>
   </data>
   <data name="FORGOT_YOUR_PASSWORD" xml:space="preserve">
     <value>Ar rinne tú dearmad ar do Phásfhocail?</value>
@@ -166,7 +166,7 @@
     <value>Logáil isteach</value>
   </data>
   <data name="REGISTER_AS_NEW_USER" xml:space="preserve">
-    <value>Register as a new user</value>
+    <value>Cláraigh mar úsáideoir nua</value>
   </data>
   <data name="ACCESS_DENIED" xml:space="preserve">
     <value>Rochtain diúltaithe</value>
@@ -211,10 +211,10 @@
     <value>Faoi ghlas</value>
   </data>
   <data name="LOCKED_OUT_TEXT" xml:space="preserve">
-    <value>This account has been locked out, please try again later.</value>
+    <value>Cuireadh an cuntas seo faoi ghlas, bain triail as arís níos déanaí.</value>
   </data>
   <data name="RESET_PASSWORD_EMAIL_TEXT" xml:space="preserve">
-    <value>Please reset your password by &lt;a href='{0}'&gt;clicking here&lt;/a&gt;.</value>
+    <value>Déan do phasfhocal a athshocrú le &lt;a href='{0}'&gt; Cliceáil anseo &lt;/a&gt;.</value>
   </data>
   <data name="SUBMIT" xml:space="preserve">
     <value>Submit</value>
@@ -271,16 +271,16 @@
     <value>Cuireadh cód aisghabhála neamhbhailí isteach.</value>
   </data>
   <data name="LOGOUT_TEXT" xml:space="preserve">
-    <value>You have successfully logged out of the application.</value>
+    <value>D'éirigh leat logáil amach as an iarratas.</value>
   </data>
   <data name="RESET_PASSWORD_CONFIRMATION" xml:space="preserve">
-    <value>Reset password confirmation</value>
+    <value>Athshocraigh pasfhocal</value>
   </data>
   <data name="RESET_PASSWORD_CONFIRMATION_CLICK_HERE" xml:space="preserve">
-    <value>click here to log in</value>
+    <value>cliceáil anseo chun logáil isteach</value>
   </data>
   <data name="RESET_PASSWORD_CONFIRMATION_TEXT1" xml:space="preserve">
-    <value>Your password has been reset. Please</value>
+    <value>Athshocraíodh do phasfhocal. Le do thoil</value>
   </data>
   <data name="The {0} must be at least {2} and at max {1} characters long." xml:space="preserve">
     <value>The {0} must be at least {2} and at max {1} characters long.</value>
@@ -304,22 +304,22 @@
     <value>Logáin sheachtracha</value>
   </data>
   <data name="MANAGE_CHANGE_ACCOUNT_SETTINGS" xml:space="preserve">
-    <value>Change your account settings</value>
+    <value>Athraigh socruithe do chuntais</value>
   </data>
   <data name="MANAGE_YOUR_ACCOUNT" xml:space="preserve">
-    <value>Manage your account</value>
+    <value>Bainistigh do chuntas</value>
   </data>
   <data name="NEW_PASSWORD" xml:space="preserve">
-    <value>New password</value>
+    <value>Focal Faire Nua</value>
   </data>
   <data name="NEW_PASSWORD_REQUIRED" xml:space="preserve">
-    <value>New password required</value>
+    <value>Teastaíonn pasfhocal nua</value>
   </data>
   <data name="PERSONAL_DATA" xml:space="preserve">
-    <value>Personal data</value>
+    <value>Sonraí pearsanta</value>
   </data>
   <data name="PROFILE" xml:space="preserve">
-    <value>Profile</value>
+    <value>Próifíl</value>
   </data>
   <data name="TWOFACTORCODE_REQUIRED" xml:space="preserve">
     <value>Two-factor code is required</value>
@@ -397,7 +397,7 @@
     <value>Tá an cód fíoraithe neamhbhailí.</value>
   </data>
   <data name="OR" xml:space="preserve">
-    <value>or</value>
+    <value>nó</value>
   </data>
   <data name="USER_NOTFOUND" xml:space="preserve">
     <value>Unable to load user with ID '{0}'.</value>
@@ -481,31 +481,31 @@
     <value>Gin Cóid Téarnaimh</value>
   </data>
   <data name="PERSONAL_DATA_DELETEINFO" xml:space="preserve">
-    <value>Deleting this data will permanently remove your account, and this cannot be recovered.</value>
+    <value>Má scriostar na sonraí seo bainfear do chuntas go buan agus ní féidir é seo a aisghabháil.</value>
   </data>
   <data name="PERSONAL_DATA_INFO" xml:space="preserve">
-    <value>Your account contains personal data that you have given us. This page allows you to download or delete that data.</value>
+    <value>Tá sonraí pearsanta a thug tú dúinn i do chuntas. Ligeann an leathanach seo duit na sonraí sin a íoslódáil nó a scriosadh.</value>
   </data>
   <data name="PHONE_NUMBER" xml:space="preserve">
-    <value>Phone number</value>
+    <value>Uimhir teileafón</value>
   </data>
   <data name="REMOVE" xml:space="preserve">
-    <value>Remove</value>
+    <value>Bain amach</value>
   </data>
   <data name="RESET_AUTHENTICATOR_INFO" xml:space="preserve">
-    <value>If you reset your authenticator key your authenticator app will not work until you reconfigure it.</value>
+    <value>Má athraíonn tú do eochair fíordheimhnithe ní oibreoidh do app fíordheimhnithe go dtí go ndéanfaidh tú é a athchumrú.</value>
   </data>
   <data name="RESET_AUTHENTICATOR_KEY" xml:space="preserve">
-    <value>Reset authenticator key</value>
+    <value>Athshocraigh eochair fíordheimhnithe</value>
   </data>
   <data name="RESET_AUTHENTICATOR_STATUS" xml:space="preserve">
-    <value>Your authenticator app key has been reset, you will need to configure your authenticator app using the new key.</value>
+    <value>Athshocraíodh an eochair app do fhíordheimhniú, beidh ort do app fíordheimhnithe a chumrú ag baint úsáide as an eochair nua.</value>
   </data>
   <data name="RESET_AUTHENTICATOR_TEXT" xml:space="preserve">
-    <value>This process disables 2FA until you verify your authenticator app. If you do not complete your authenticator app configuration you may lose access to your account.</value>
+    <value>Díchumasaíonn an próiseas seo 2FA go dtí go bhfíoraíonn tú do app fíoraitheora. Mura gcomhlánaíonn tú do chumraíocht app fíoraitheora féadfaidh tú rochtain ar do chuntas a chailleadh.</value>
   </data>
   <data name="RESET_RECOVERY_CODES" xml:space="preserve">
-    <value>Reset recovery codes</value>
+    <value>Athshocraigh cóid aisghabhála</value>
   </data>
   <data name="SAVE" xml:space="preserve">
     <value>Save</value>
@@ -550,7 +550,7 @@
     <value>Logáil isteach le Azure AD</value>
   </data>
   <data name="REMEMBER_BROWSER" xml:space="preserve">
-    <value>Remember Browser</value>
+    <value>Cuimhnigh ar an mBrabhsálaí</value>
   </data>
   <data name="YES" xml:space="preserve">
     <value>Yes</value>
@@ -580,7 +580,7 @@
     <value>Sea, ceadaigh</value>
   </data>
   <data name="LOGOUT_RETURN_TO" xml:space="preserve">
-    <value>Return to</value>
+    <value>Fill ar ais</value>
   </data>
   <data name="WOULD_YOU_LIKE_TO_LOGOUT" xml:space="preserve">
     <value>Would you like to logout of IdentityServer?</value>
@@ -592,10 +592,10 @@
     <value>Teanga</value>
   </data>
   <data name="RESET_PASSWORD_CLICK_HERE_TO_LOGIN" xml:space="preserve">
-    <value>Click here to log in</value>
+    <value>Cliceáil anseo chun logáil isteach</value>
   </data>
   <data name="RESET_PASSWORD_YOUR_PASSWORD_HAS_BEEN_RESET" xml:space="preserve">
-    <value>Your password has been reset.</value>
+    <value>Athshocraíodh do phasfhocal.</value>
   </data>
   <data name="SEND_VERIFICATION_CODE" xml:space="preserve">
     <value>Send Verification Code</value>
@@ -670,39 +670,39 @@
     <comment>User names can only contain letters or digits</comment>
   </data>
   <data name="LoginAlreadyAssociated" xml:space="preserve">
-    <value>A user with this login already exists.</value>
+    <value>Tá úsáideoir leis an logáil seo ann cheana féin.</value>
     <comment>Error when a login already linked</comment>
   </data>
   <data name="MustCallAddIdentity" xml:space="preserve">
-    <value>AddIdentity must be called on the service collection.</value>
+    <value>Ní mór an tsuimiúlacht a ghlaoch ar bhailiúchán na seirbhíse.</value>
     <comment>Error when AddIdentity is not called</comment>
   </data>
   <data name="NoPersonalDataProtector" xml:space="preserve">
-    <value>No IPersonalDataProtector service was registered, this is required when ProtectPersonalData = true.</value>
+    <value>Níor cláraíodh aon seirbhís IPersonalDataProtector, tá sé seo ag teastáil nuair atá ProtectPersonalData = fíor.</value>
     <comment>Error when there is no IPersonalDataProtector</comment>
   </data>
   <data name="NoRoleType" xml:space="preserve">
-    <value>No RoleType was specified, try AddRoles&lt;TRole&gt;().</value>
+    <value>Níor sonraíodh aon RoleType, bain triail as AddRoles &lt;TRole&gt; ().</value>
     <comment>Error when the IdentityBuilder.RoleType was not specified</comment>
   </data>
   <data name="NoTokenProvider" xml:space="preserve">
-    <value>No IUserTwoFactorTokenProvider&lt;{0}&gt; named '{1}' is registered.</value>
+    <value>Níl IUserTwoFactorTokenProvider &lt;&lt;0}&gt; ainmnithe '{1}' cláraithe.</value>
     <comment>Error when there is no IUserTwoFactorTokenProvider</comment>
   </data>
   <data name="NullSecurityStamp" xml:space="preserve">
-    <value>User security stamp cannot be null.</value>
+    <value>Ní féidir le stampa slándála úsáideora a bheith ar neamhní.</value>
     <comment>Error when a user's security stamp is null.</comment>
   </data>
   <data name="PasswordMismatch" xml:space="preserve">
-    <value>Incorrect password.</value>
+    <value>Pasfhocal mícheart.</value>
     <comment>Error when a password doesn't match</comment>
   </data>
   <data name="PasswordRequiresDigit" xml:space="preserve">
-    <value>Passwords must have at least one digit ('0'-'9').</value>
+    <value>Ní mór go mbeadh digit amháin ar a laghad ag pasfhocail ('0' - '9').</value>
     <comment>Error when passwords do not have a digit</comment>
   </data>
   <data name="PasswordRequiresLower" xml:space="preserve">
-    <value>Passwords must have at least one lowercase ('a'-'z').</value>
+    <value>Ní mór pasfhocail amháin ar a laghad a bheith ag pasfhocail ('a' - 'z').</value>
     <comment>Error when passwords do not have a lowercase letter</comment>
   </data>
   <data name="PasswordRequiresNonAlphanumeric" xml:space="preserve">
@@ -710,19 +710,19 @@
     <comment>Error when password does not have enough non alphanumeric characters</comment>
   </data>
   <data name="PasswordRequiresUniqueChars" xml:space="preserve">
-    <value>Passwords must use at least {0} different characters.</value>
+    <value>Ní mór pasfhocail {0} carachtar éagsúil a úsáid.</value>
     <comment>Error message for passwords that are based on similar characters</comment>
   </data>
   <data name="PasswordRequiresUpper" xml:space="preserve">
-    <value>Passwords must have at least one uppercase ('A'-'Z').</value>
+    <value>Caithfidh uasteorainn amháin ar a laghad a bheith ag pasfhocail ('A' - 'Z').</value>
     <comment>Error when passwords do not have an uppercase letter</comment>
   </data>
   <data name="PasswordTooShort" xml:space="preserve">
-    <value>Passwords must be at least {0} characters.</value>
+    <value>Caithfidh pasfhocail {0} carachtar a bheith ar a laghad.</value>
     <comment>Error message for passwords that are too short</comment>
   </data>
   <data name="RecoveryCodeRedemptionFailed" xml:space="preserve">
-    <value>Recovery code redemption failed.</value>
+    <value>Theip ar fhuascailt an chóid aisghabhála.</value>
     <comment>Error when a recovery code is not redeemed.</comment>
   </data>
   <data name="RoleNotFound" xml:space="preserve">
@@ -843,10 +843,10 @@
     <value>Roghnú neamhbhailí</value>
   </data>
   <data name="Offline Access" xml:space="preserve">
-    <value>Offline Access</value>
+    <value>Rochtain as líne</value>
   </data>
   <data name="Recovery codes" xml:space="preserve">
-    <value>Recovery codes</value>
+    <value>Cóid aisghabhála</value>
   </data>
   <data name="User profile" xml:space="preserve">
     <value>User profile</value>
