@@ -2,6 +2,13 @@
 
 [Readme](https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/README.md) 
 
+2020-03-14 4.0.2
+- Improved Azure Key Vault certificate handling
+- support for certificate update
+- local certificate support
+- certificates can be loaded using local store and thumbprints
+- Updated localizations it-IT, fr-FR
+
 2020-03-03 4.0.1
 - Added support for FIDO2 MFA
 - Allow clients to request MFA requirement
