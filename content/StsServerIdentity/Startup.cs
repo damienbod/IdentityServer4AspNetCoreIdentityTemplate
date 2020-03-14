@@ -217,7 +217,7 @@ namespace StsServerIdentity
 
                 // development certificate
                 DevelopmentCertificatePfx = Path.Combine(environment.ContentRootPath, "sts_dev_cert.pfx"),
-                DevelopmentCertificatePassword = configuration["DevelopmentCertificatePassword"] //"1234",
+                DevelopmentCertificatePassword = "1234" //configuration["DevelopmentCertificatePassword"] //"1234",
 
                 //    // Use a local store with thumbprint
                 //    UseLocalCertStore = Convert.ToBoolean(configuration["UseLocalCertStore"]),
