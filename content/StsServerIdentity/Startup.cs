@@ -215,13 +215,13 @@ namespace StsServerIdentity
                 CertificateNameKeyVault = configuration["CertificateNameKeyVault"], //"StsCert",
                 KeyVaultEndpoint = configuration["AzureKeyVaultEndpoint"], // "https://damienbod.vault.azure.net"
 
+                // Use a local store with thumbprint
+                //UseLocalCertStore = Convert.ToBoolean(configuration["UseLocalCertStore"]),
+                //CertificateThumbprint = configuration["CertificateThumbprint"],
+
                 // development certificate
                 DevelopmentCertificatePfx = Path.Combine(environment.ContentRootPath, "sts_dev_cert.pfx"),
                 DevelopmentCertificatePassword = "1234" //configuration["DevelopmentCertificatePassword"] //"1234",
-
-                //// Use a local store with thumbprint
-                //UseLocalCertStore = Convert.ToBoolean(configuration["UseLocalCertStore"]),
-                //CertificateThumbprint = configuration["CertificateThumbprint"],
             };
 
             (X509Certificate2 ActiveCertificate, X509Certificate2 SecondaryCertificate) certs = CertificateService.GetCertificates(
