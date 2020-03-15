@@ -24,7 +24,7 @@ namespace StsServerIdentity.Services.Certificate
                             certificateConfiguration.KeyVaultEndpoint, 
                             certificateConfiguration.CertificateNameKeyVault);
 
-                    certs = keyVaultCertificateService.GetCertificatesFromKeyVault();
+                    certs = keyVaultCertificateService.GetCertificatesFromKeyVault().GetAwaiter().GetResult();
                 }  
             }
             

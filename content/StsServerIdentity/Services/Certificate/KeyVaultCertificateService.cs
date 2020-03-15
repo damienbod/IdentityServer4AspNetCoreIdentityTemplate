@@ -25,15 +25,7 @@ namespace StsServerIdentity.Services.Certificate
             _certificateName = certificateName; // certificateName
         }
 
-        public (X509Certificate2 ActiveCertificate, X509Certificate2 SecondaryCertificate) GetCertificatesFromKeyVault()
-        {
-            (X509Certificate2 ActiveCertificate, X509Certificate2 SecondaryCertificate) certs = (null, null);
-            Task<(X509Certificate2 ActiveCertificate, X509Certificate2 SecondaryCertificate)> task = Task.Run(async () => await GetCertsAsync());
-            certs = task.Result;
-            return certs;
-        }
-
-        private async Task<(X509Certificate2, X509Certificate2)> GetCertsAsync()
+        public async Task<(X509Certificate2 ActiveCertificate, X509Certificate2 SecondaryCertificate)> GetCertificatesFromKeyVault()
         {
             (X509Certificate2 ActiveCertificate, X509Certificate2 SecondaryCertificate) certs = (null, null);
             var azureServiceTokenProvider = new AzureServiceTokenProvider();
