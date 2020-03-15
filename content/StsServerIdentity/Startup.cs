@@ -108,16 +108,16 @@ namespace StsServerIdentity
             var stsConfig = _configuration.GetSection("StsConfig");
 
             var identityServer = services.AddIdentityServer()
-                .AddSigningCredential(x509Certificate2Certs.Item1)
+                .AddSigningCredential(x509Certificate2Certs.ActiveCertificate)
                 .AddInMemoryIdentityResources(Config.GetIdentityResources())
                 .AddInMemoryApiResources(Config.GetApiResources())
                 .AddInMemoryClients(Config.GetClients(stsConfig))
                 .AddAspNetIdentity<ApplicationUser>()
                 .AddProfileService<IdentityWithAdditionalClaimsProfileService>();
 
-            if (x509Certificate2Certs.Item2 != null)
+            if (x509Certificate2Certs.SecondaryCertificate != null)
             {
-                identityServer.AddValidationKey(x509Certificate2Certs.Item2);
+                identityServer.AddValidationKey(x509Certificate2Certs.SecondaryCertificate);
             }
 
             services.Configure<Fido2Configuration>(_configuration.GetSection("fido2"));
@@ -207,7 +207,7 @@ namespace StsServerIdentity
             });
         }
 
-        private static (X509Certificate2, X509Certificate2) GetCertificates(IWebHostEnvironment environment, IConfiguration configuration)
+        private static (X509Certificate2 ActiveCertificate, X509Certificate2 SecondaryCertificate) GetCertificates(IWebHostEnvironment environment, IConfiguration configuration)
         {
             var certificateConfiguration = new CertificateConfiguration
             {
@@ -224,7 +224,7 @@ namespace StsServerIdentity
                 //CertificateThumbprint = configuration["CertificateThumbprint"],
             };
 
-            (X509Certificate2, X509Certificate2) certs = CertificateService.GetCertificates(
+            (X509Certificate2 ActiveCertificate, X509Certificate2 SecondaryCertificate) certs = CertificateService.GetCertificates(
                 certificateConfiguration);
 
             return certs;
