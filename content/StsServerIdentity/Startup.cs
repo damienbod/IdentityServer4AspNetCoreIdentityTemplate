@@ -54,7 +54,7 @@ namespace StsServerIdentity
                     CheckSameSite(cookieContext.Context, cookieContext.CookieOptions);
             });
 
-            var x509Certificate2 = GetCertificate(_environment, _configuration);
+            var x509Certificate2Certs = GetCertificates(_environment, _configuration);
             AddLocalizationConfigurations(services);
 
             services.AddDbContext<ApplicationDbContext>(options =>
@@ -106,13 +106,19 @@ namespace StsServerIdentity
                 .AddNewtonsoftJson();
 
             var stsConfig = _configuration.GetSection("StsConfig");
-            services.AddIdentityServer()
-                .AddSigningCredential(x509Certificate2)
+
+            var identityServer = services.AddIdentityServer()
+                .AddSigningCredential(x509Certificate2Certs.ActiveCertificate)
                 .AddInMemoryIdentityResources(Config.GetIdentityResources())
                 .AddInMemoryApiResources(Config.GetApiResources())
                 .AddInMemoryClients(Config.GetClients(stsConfig))
                 .AddAspNetIdentity<ApplicationUser>()
                 .AddProfileService<IdentityWithAdditionalClaimsProfileService>();
+
+            if (x509Certificate2Certs.SecondaryCertificate != null)
+            {
+                identityServer.AddValidationKey(x509Certificate2Certs.SecondaryCertificate);
+            }
 
             services.Configure<Fido2Configuration>(_configuration.GetSection("fido2"));
             services.Configure<Fido2MdsConfiguration>(_configuration.GetSection("fido2mds"));
@@ -201,38 +207,27 @@ namespace StsServerIdentity
             });
         }
 
-        private static X509Certificate2 GetCertificate(IWebHostEnvironment environment, IConfiguration configuration)
+        private static (X509Certificate2 ActiveCertificate, X509Certificate2 SecondaryCertificate) GetCertificates(IWebHostEnvironment environment, IConfiguration configuration)
         {
-            X509Certificate2 cert;
-            var useLocalCertStore = Convert.ToBoolean(configuration["UseLocalCertStore"]);
-            var certificateThumbprint = configuration["CertificateThumbprint"];
-
-            if (environment.IsProduction())
+            var certificateConfiguration = new CertificateConfiguration
             {
-                if (useLocalCertStore)
-                {
-                    using (X509Store store = new X509Store(StoreName.My, StoreLocation.LocalMachine))
-                    {
-                        store.Open(OpenFlags.ReadOnly);
-                        var certs = store.Certificates.Find(X509FindType.FindByThumbprint, certificateThumbprint, false);
-                        cert = certs[0];
-                        store.Close();
-                    }
-                }
-                else
-                {
-                    // Azure deployment, will be used if deployed to Azure
-                    var vaultConfigSection = configuration.GetSection("Vault");
-                    var keyVaultService = new KeyVaultCertificateService(vaultConfigSection["Url"], vaultConfigSection["ClientId"], vaultConfigSection["ClientSecret"]);
-                    cert = keyVaultService.GetCertificateFromKeyVault(vaultConfigSection["CertificateName"]);
-                }
-            }
-            else
-            {
-                cert = new X509Certificate2(Path.Combine(environment.ContentRootPath, "sts_dev_cert.pfx"), "1234");
-            }
+                // Use an Azure key vault
+                CertificateNameKeyVault = configuration["CertificateNameKeyVault"], //"StsCert",
+                KeyVaultEndpoint = configuration["AzureKeyVaultEndpoint"], // "https://damienbod.vault.azure.net"
 
-            return cert;
+                // Use a local store with thumbprint
+                //UseLocalCertStore = Convert.ToBoolean(configuration["UseLocalCertStore"]),
+                //CertificateThumbprint = configuration["CertificateThumbprint"],
+
+                // development certificate
+                DevelopmentCertificatePfx = Path.Combine(environment.ContentRootPath, "sts_dev_cert.pfx"),
+                DevelopmentCertificatePassword = "1234" //configuration["DevelopmentCertificatePassword"] //"1234",
+            };
+
+            (X509Certificate2 ActiveCertificate, X509Certificate2 SecondaryCertificate) certs = CertificateService.GetCertificates(
+                certificateConfiguration);
+
+            return certs;
         }
 
         private static void AddLocalizationConfigurations(IServiceCollection services)
