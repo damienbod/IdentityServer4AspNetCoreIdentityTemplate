@@ -4,7 +4,6 @@ using System.Globalization;
 using System.IO;
 using System.Reflection;
 using System.Security.Cryptography.X509Certificates;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
@@ -55,8 +54,7 @@ namespace StsServerIdentity
                     CheckSameSite(cookieContext.Context, cookieContext.CookieOptions);
             });
 
-            var x509Certificate2Certs = GetCertificates(_environment, _configuration)
-                .GetAwaiter().GetResult();
+            var x509Certificate2Certs = GetCertificates(_environment, _configuration);
             AddLocalizationConfigurations(services);
 
             services.AddDbContext<ApplicationDbContext>(options =>
@@ -209,7 +207,7 @@ namespace StsServerIdentity
             });
         }
 
-        private static async Task<(X509Certificate2 ActiveCertificate, X509Certificate2 SecondaryCertificate)> GetCertificates(IWebHostEnvironment environment, IConfiguration configuration)
+        private static (X509Certificate2 ActiveCertificate, X509Certificate2 SecondaryCertificate) GetCertificates(IWebHostEnvironment environment, IConfiguration configuration)
         {
             var certificateConfiguration = new CertificateConfiguration
             {
@@ -226,8 +224,8 @@ namespace StsServerIdentity
                 DevelopmentCertificatePassword = "1234" //configuration["DevelopmentCertificatePassword"] //"1234",
             };
 
-            (X509Certificate2 ActiveCertificate, X509Certificate2 SecondaryCertificate) certs = await CertificateService.GetCertificates(
-                certificateConfiguration).ConfigureAwait(false);
+            (X509Certificate2 ActiveCertificate, X509Certificate2 SecondaryCertificate) certs = CertificateService.GetCertificates(
+                certificateConfiguration);
 
             return certs;
         }
@@ -301,9 +299,9 @@ namespace StsServerIdentity
                 return true;
             }
 
-            // Cover Chrome 50-69, because some versions are broken by SameSite=None,
+            // Cover Chrome 50-69, because some versions are broken by SameSite=None, 
             // and none in this range require it.
-            // Note: this covers some pre-Chromium Edge versions,
+            // Note: this covers some pre-Chromium Edge versions, 
             // but pre-Chromium Edge does not require SameSite=None.
             if (userAgent.Contains("Chrome/5") || userAgent.Contains("Chrome/6"))
             {

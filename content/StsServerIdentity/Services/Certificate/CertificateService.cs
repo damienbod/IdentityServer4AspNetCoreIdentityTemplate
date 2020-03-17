@@ -1,11 +1,10 @@
 ﻿using System.Security.Cryptography.X509Certificates;
-using System.Threading.Tasks;
 
 namespace StsServerIdentity.Services.Certificate
 {
     public static class CertificateService
     {
-        public static async Task<(X509Certificate2 ActiveCertificate, X509Certificate2 SecondaryCertificate)> GetCertificates(CertificateConfiguration certificateConfiguration)
+        public static (X509Certificate2 ActiveCertificate, X509Certificate2 SecondaryCertificate) GetCertificates(CertificateConfiguration certificateConfiguration)
         {
             (X509Certificate2 ActiveCertificate, X509Certificate2 SecondaryCertificate) certs = (null, null);
 
@@ -22,13 +21,13 @@ namespace StsServerIdentity.Services.Certificate
                 if (!string.IsNullOrEmpty(certificateConfiguration.KeyVaultEndpoint))
                 {
                     var keyVaultCertificateService = new KeyVaultCertificateService(
-                            certificateConfiguration.KeyVaultEndpoint,
+                            certificateConfiguration.KeyVaultEndpoint, 
                             certificateConfiguration.CertificateNameKeyVault);
 
-                    certs = await keyVaultCertificateService.GetCertificatesFromKeyVault().ConfigureAwait(false);
-                }
+                    certs = keyVaultCertificateService.GetCertificatesFromKeyVault().GetAwaiter().GetResult();
+                }  
             }
-
+            
             // search for local PFX with password, usually local dev
             if(certs.ActiveCertificate == null)
             {
