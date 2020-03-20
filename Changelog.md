@@ -2,7 +2,7 @@
 
 [Readme](https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/README.md) 
 
-2020-03-14 4.0.2
+2020-03-20 4.0.2
 - Improved Azure Key Vault certificate handling
 - support for certificate update
 - local certificate support
