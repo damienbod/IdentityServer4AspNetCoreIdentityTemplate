@@ -2,6 +2,9 @@
 
 [Readme](https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/README.md) 
 
+2020-03-21 4.0.4
+- Added es-MX localization
+
 2020-03-20 4.0.3
 - Improved Azure Key Vault certificate handling
 - support for certificate update
