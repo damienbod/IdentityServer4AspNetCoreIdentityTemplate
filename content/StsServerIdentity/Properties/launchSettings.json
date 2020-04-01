@@ -18,14 +18,10 @@
     "StsServerIdentity": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "http://localhost:5000",
+      "launchUrl": "https://localhost:5001",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
-    },
-    "newProfile1": {
-      "commandName": "IISExpress",
-      "launchBrowser": true
     }
   }
 }

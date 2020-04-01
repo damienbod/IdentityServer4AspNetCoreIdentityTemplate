@@ -92,6 +92,13 @@ namespace StsServerIdentity
                      options.Prompt = "login"; // login, consent
                  });
 
+            services.AddAntiforgery(options =>
+            {
+                options.SuppressXFrameOptionsHeader = true;
+                options.Cookie.SameSite = SameSiteMode.Strict;
+                options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
+            });
+
             services.AddControllersWithViews(options =>
                 {
                     options.Filters.Add(new SecurityHeadersAttribute());
