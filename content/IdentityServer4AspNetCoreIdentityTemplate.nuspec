@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
 	<metadata>
 		<id>IdentityServer4AspNetCoreIdentityTemplate</id>
-		<version>4.0.4</version>
+		<version>4.0.5</version>
 		<title>IdentityServer4.Identity.Template</title>
 		<license type="file">LICENSE</license>
 		<description>
@@ -17,7 +17,7 @@
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<copyright>2020 damienbod</copyright>
 		<summary>This template provides a simle getting started for IdentityServer4 with Identity. Identity is Localized and the UI uses Bootstrap 4, Remove AllowAnonymous from the logout</summary>
-		<releaseNotes>Added localization es-MX</releaseNotes>
+		<releaseNotes>Same Site fix for Anti forgery cookie, Language Cookie add Same Site + Secure</releaseNotes>
 		<repository type="git" url="https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate" />
 		<packageTypes>
 			<packageType name="Template" />
