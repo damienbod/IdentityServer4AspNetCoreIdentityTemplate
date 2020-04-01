@@ -33,7 +33,7 @@
           role="form">
 
         <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownLangButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <button class="btn dropdown-toggle nav-link" type="button" id="dropdownLangButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 @cultureItems.Where(o => o.Value == requestCulture.RequestCulture.UICulture.Name).FirstOrDefault().Text
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownLangButton">
