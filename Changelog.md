@@ -2,6 +2,10 @@
 
 [Readme](https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/README.md) 
 
+2020-04-01 4.0.5
+- Same Site fix for Anti forgery cookie
+- Language Cookie add Same Site + Secure
+
 2020-03-21 4.0.4
 - Added es-MX localization
 
