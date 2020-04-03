@@ -10,7 +10,7 @@
 @{
     var requestCulture = Context.Features.Get<IRequestCultureFeature>();
     var cultureItems = LocOptions.Value.SupportedUICultures
-        .Select(c => new SelectListItem { Value = c.Name, Text = c.NativeName.Substring(0, c.NativeName.IndexOf('(')) })
+        .Select(c => new SelectListItem { Value = c.Name, Text = c.NativeName.Contains('(') ? c.NativeName.Substring(0, c.NativeName.IndexOf('(')) : c.NativeName })
         .ToList();
 
     var location = new Uri($"{Context.Request.Scheme}://{Context.Request.Host}{Context.Request.Path}{Context.Request.QueryString}");
@@ -54,4 +54,4 @@
             window.location.reload();
         });
     }
-</script>
+</script>
