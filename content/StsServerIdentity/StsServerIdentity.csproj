@@ -8,7 +8,7 @@
     <RepositoryUrl>https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate</RepositoryUrl>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageTags>oidc identityserver4 identity aspnetcore</PackageTags>
-    <PackageReleaseNotes>Same Site fix for Anti forgery cookie, Language Cookie add Same Site + Secure</PackageReleaseNotes>
+    <PackageReleaseNotes>Same Site fix for Anti forgery cookie, Language Cookie add Same Site + Secure, Init language selection fix</PackageReleaseNotes>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="BuildBundlerMinifier" Version="3.2.435" />
