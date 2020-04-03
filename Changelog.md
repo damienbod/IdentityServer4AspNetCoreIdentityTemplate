@@ -5,6 +5,7 @@
 2020-04-01 4.0.5
 - Same Site fix for Anti forgery cookie
 - Language Cookie add Same Site + Secure
+- Init language selection fix
 
 2020-03-21 4.0.4
 - Added es-MX localization
