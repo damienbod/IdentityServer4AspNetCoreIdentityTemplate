@@ -3,6 +3,10 @@
 [Readme](https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/README.md) 
 
 2020-04-04 4.0.5
+- Updated FIDO2 to 1.1.0
+- Updating Nuget packages, npm packages
+
+2020-04-04 4.0.5
 - Same Site fix for Anti forgery cookie
 - Language Cookie add Same Site + Secure
 - Init language selection fix
