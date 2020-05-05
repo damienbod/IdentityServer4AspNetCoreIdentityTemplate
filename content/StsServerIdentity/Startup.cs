@@ -130,7 +130,6 @@ namespace StsServerIdentity
             }
 
             services.Configure<Fido2Configuration>(_configuration.GetSection("fido2"));
-            services.Configure<Fido2MdsConfiguration>(_configuration.GetSection("fido2mds"));
             services.AddScoped<Fido2Storage>();
             // Adds a default in-memory implementation of IDistributedCache.
             services.AddDistributedMemoryCache();
