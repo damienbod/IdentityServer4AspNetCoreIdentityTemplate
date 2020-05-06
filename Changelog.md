@@ -2,7 +2,7 @@
 
 [Readme](https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/README.md) 
 
-2020-04-04 4.0.5
+2020-05-06 4.0.6
 - Updated FIDO2 to 1.1.0
 - Updating Nuget packages, npm packages
 
