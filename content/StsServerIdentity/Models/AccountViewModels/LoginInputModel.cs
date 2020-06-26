@@ -6,7 +6,7 @@ namespace StsServerIdentity.Models.AccountViewModels
     {
         [Required(ErrorMessage = "EMAIL_REQUIRED")]
         [EmailAddress(ErrorMessage = "EMAIL_INVALID")]
-        public string Username { get; set; } // TODO Rename to Email 
+        public string Email { get; set; }
         [Required(ErrorMessage = "PASSWORD_REQUIRED")]
         public string Password { get; set; }
         public bool RememberLogin { get; set; }
