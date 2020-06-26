@@ -19,26 +19,34 @@ namespace StsServerIdentity
             };
         }
 
+        public static IEnumerable<ApiScope> GetApiScopes()
+        {
+            return new List<ApiScope>
+            {
+                //new ApiScope("dataEventRecords", "Scope for the dataEventRecords ApiResource"),
+                //new ApiScope("securedFiles",  "Scope for the securedFiles ApiResource")
+            };
+        }
+
         public static IEnumerable<ApiResource> GetApiResources()
         {
             return new List<ApiResource>
             {
-                // example code
-                //new ApiResource("dataEventRecords")
+                //new ApiResource("dataEventRecordsApi")
                 //{
                 //    ApiSecrets =
                 //    {
                 //        new Secret("dataEventRecordsSecret".Sha256())
                 //    },
-                //    Scopes =
+                //    Scopes = new List<string> { "dataEventRecords" }
+                //},
+                //new ApiResource("securedFilesApi")
+                //{
+                //    ApiSecrets =
                 //    {
-                //        new Scope
-                //        {
-                //            Name = "dataeventrecords",
-                //            DisplayName = "Scope for the dataEventRecords ApiResource"
-                //        }
+                //        new Secret("securedFilesSecret".Sha256())
                 //    },
-                //    UserClaims = { "role", "admin", "user", "dataEventRecords", "dataEventRecords.admin", "dataEventRecords.user" }
+                //    Scopes = new List<string> { "securedFiles" }
                 //}
             };
         }
