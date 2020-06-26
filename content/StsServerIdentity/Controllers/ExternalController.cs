@@ -19,6 +19,7 @@ using StsServerIdentity.Models;
 
 namespace StsServerIdentity.Controllers
 {
+    // TODO integrate this with account controller, not using for now
     [SecurityHeaders]
     [AllowAnonymous]
     public class ExternalController : Controller
