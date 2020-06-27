@@ -2,7 +2,9 @@
 {
     public class StsConfig
     {
-        public string StsUrl { get; set; }
-        public string ClientUrl { get; set; }
+        public string StsServerIdentityUrl { get; set; }
+        public string AngularClientUrl { get; set; }
+        public string AngularClientIdTokenOnlyUrl { get; set; }
+        public string AngularCodeClientUrl { get; set; }
     }
 }
