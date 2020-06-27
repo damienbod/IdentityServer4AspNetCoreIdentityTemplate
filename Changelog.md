@@ -4,6 +4,8 @@
 
 2020-06-26 5.0.0
 - Updated to IdentityServer4 V4, updated packages
+- Updated FIDO2 packages and code
+- Init language selection fix
 
 2020-05-06 4.0.6
 - Updated FIDO2 to 1.1.0
