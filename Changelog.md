@@ -2,7 +2,7 @@
 
 [Readme](https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/README.md) 
 
-2020-06-26 5.0.0
+2020-07-03 5.0.0
 - Updated to IdentityServer4 V4, updated packages
 - Updated FIDO2 packages and code
 - Init language selection fix
