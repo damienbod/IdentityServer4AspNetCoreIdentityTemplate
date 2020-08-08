@@ -19,6 +19,9 @@ using Microsoft.Extensions.Localization;
 using StsServerIdentity.Resources;
 using System.Reflection;
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.WebUtilities;
+using System.Text;
+using System.Text.Encodings.Web;
 
 namespace StsServerIdentity.Controllers
 {
@@ -266,6 +269,7 @@ namespace StsServerIdentity.Controllers
                 if (result.Succeeded)
                 {
                     //var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+                    // WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
                     //var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: HttpContext.Request.Scheme);
                     //await _emailSender.SendEmailAsync(model.Email, "Confirm your account",
                     //    $"Please confirm your account by clicking this link: <a href='{callbackUrl}'>link</a>");
@@ -408,6 +412,7 @@ namespace StsServerIdentity.Controllers
             {
                 return View("Error");
             }
+            code = Encoding.UTF8.GetString(WebEncoders.Base64UrlDecode(code));
             var result = await _userManager.ConfirmEmailAsync(user, code);
             return View(result.Succeeded ? "ConfirmEmail" : "Error");
         }
@@ -442,11 +447,12 @@ namespace StsServerIdentity.Controllers
                 // For more information on how to enable account confirmation and password reset please visit http://go.microsoft.com/fwlink/?LinkID=532713
                 // Send an email with this link
                 var code = await _userManager.GeneratePasswordResetTokenAsync(user);
+                code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
                 var callbackUrl = Url.Action("ResetPassword", "Account", new { userId = user.Id, code = code }, protocol: HttpContext.Request.Scheme);
                 await _emailSender.SendEmail(
                    model.Email, 
                    "Reset Password",
-                   $"Please reset your password by clicking here: {callbackUrl}", 
+                   $"Please reset your password by clicking here: {HtmlEncoder.Default.Encode(callbackUrl)}", 
                    "Hi Sir");
 
                 return View("ForgotPasswordConfirmation");
@@ -550,6 +556,7 @@ namespace StsServerIdentity.Controllers
             // Email used
             // Generate the token and send it
             var code = await _userManager.GenerateTwoFactorTokenAsync(user, model.SelectedProvider);
+            code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
             if (string.IsNullOrWhiteSpace(code))
             {
                 return View("Error");
