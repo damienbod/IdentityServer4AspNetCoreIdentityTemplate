@@ -2,6 +2,11 @@
 
 [Readme](https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/README.md) 
 
+2020-08-08 5.0.2
+- Encode PasswordResetToken and EmailConfirmationToken to base64URL enhancement
+- updated nuget packages
+- updated npm packages
+
 2020-07-03 5.0.1
 - Updated to IdentityServer4 V4, updated packages
 - Updated FIDO2 packages and code
