@@ -29,7 +29,7 @@ namespace StsServerIdentity
         private readonly IStringLocalizer _sharedLocalizer;
 
         public MfaFido2RegisterController(
-            Fido2Storage fido2Storage, 
+            Fido2Storage fido2Storage,
             UserManager<ApplicationUser> userManager,
             IOptions<Fido2Configuration> optionsFido2Configuration,
             IStringLocalizerFactory factory)

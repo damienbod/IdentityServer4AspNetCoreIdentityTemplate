@@ -156,7 +156,7 @@ namespace StsServerIdentity
                 {
                     throw new InvalidOperationException(_sharedLocalizer["FIDO2_UNABLE_TO_LOAD_2FA_AUTHENTICATED_USER"]);
                 }
-                
+
                 var result = await _signInManager.TwoFactorSignInAsync("FIDO2", string.Empty, false, false);
 
                 // 7. return OK to client
