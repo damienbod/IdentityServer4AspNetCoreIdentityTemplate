@@ -57,6 +57,7 @@ namespace StsServerIdentity
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         [Route("/mfamakeCredentialOptions")]
         public async Task<JsonResult> MakeCredentialOptions([FromForm] string username, [FromForm] string displayName, [FromForm] string attType, [FromForm] string authType, [FromForm] bool requireResidentKey, [FromForm] string userVerification)
         {
@@ -78,7 +79,7 @@ namespace StsServerIdentity
                 // 2. Get user existing keys by username
                 var items = await _fido2Storage.GetCredentialsByUsername(identityUser.UserName);
                 var existingKeys = new List<PublicKeyCredentialDescriptor>();
-                foreach(var publicKeyCredentialDescriptor in items)
+                foreach (var publicKeyCredentialDescriptor in items)
                 {
                     existingKeys.Add(publicKeyCredentialDescriptor.Descriptor);
                 }
@@ -110,6 +111,7 @@ namespace StsServerIdentity
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         [Route("/mfamakeCredential")]
         public async Task<JsonResult> MakeCredential([FromBody] AuthenticatorAttestationRawResponse attestationResponse)
         {
