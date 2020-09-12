@@ -70,6 +70,6 @@ namespace StsServerIdentity
                         .Enrich.FromLogContext()
                         .WriteTo.Console(theme: AnsiConsoleTheme.Code)
                 );
-            });
+                });
     }
 }

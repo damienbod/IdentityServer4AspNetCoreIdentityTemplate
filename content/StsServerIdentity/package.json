@@ -1,5 +1,5 @@
 {
-  "version": "5.0.3",
+  "version": "5.0.4",
   "name": "asp.net",
   "private": true,
   "devDependencies": {
@@ -9,7 +9,7 @@
     "jquery-validation-unobtrusive": "3.2.11",
     "jquery-ajax-unobtrusive": "3.2.6",
     "popper.js": "^1.16.1",
-    "sweetalert2": "^9.17.1"
+    "sweetalert2": "^10.0.2"
   },
   "dependencies": {}
 }
