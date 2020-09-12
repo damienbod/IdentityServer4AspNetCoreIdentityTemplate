@@ -2,6 +2,11 @@
 
 [Readme](https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/README.md) 
 
+2020-09-12 5.0.4
+- FIDO2 Anti-forgery tokens
+- updated nuget packages 3.1.7
+- update npm packages
+
 2020-08-28 5.0.3
 - updated nuget packages 3.1.7
 
