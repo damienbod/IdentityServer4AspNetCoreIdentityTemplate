@@ -2,6 +2,11 @@
 
 [Readme](https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/README.md) 
 
+2020-11-08 5.0.5
+- Switched to Azure.Security.KeyVault.Secrets
+- Updated nuget packages 3.1.9
+- Updated npm packages
+    
 2020-09-12 5.0.4
 - FIDO2 Anti-forgery tokens
 - updated nuget packages 3.1.7
