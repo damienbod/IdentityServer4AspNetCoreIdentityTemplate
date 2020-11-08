@@ -22,23 +22,23 @@ some print screens:
 
 it-IT
 
-<img src="https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/images/it-IT_template.png" alt=""  />
+![it-IT](https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/images/it-IT_template.png)
 
 de-DE
 
-<img src="https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/images/de-DE_template.png" alt="" />
+![de-DE](https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/images/de-DE_template.png)
 
 en-US
 
-<img src="https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/images/en-US_template.png" alt=""  />
+![en-US](https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/images/en-US_template.png)
 
 fr-FR
 
-<img src="https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/images/fr-FR_template.png" alt=""  />
+![fr-FR](https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/images/fr-FR_template.png)
 
 zh-Hans
 
-<img src="https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/images/zh-Hans_template.png" alt=""  />
+![zh-Hans](https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/images/zh-Hans_template.png)
 
 ## Using the template
 
