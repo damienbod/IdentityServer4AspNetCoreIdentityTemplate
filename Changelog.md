@@ -2,6 +2,10 @@
 
 [Readme](https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/README.md) 
 
+2021-01-07 5.0.5
+- Updated nuget packages 3.1.10
+- Updated npm packages
+
 2020-11-08 5.0.5
 - Switched to Azure.Security.KeyVault.Secrets
 - Updated nuget packages 3.1.9
