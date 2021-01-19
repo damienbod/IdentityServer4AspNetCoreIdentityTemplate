@@ -61,8 +61,8 @@ namespace StsServerIdentity.Services.Certificate
         }
 
         private async Task<X509Certificate2> GetCertificateAsync(
-            SecretClient secretClient, 
-            string certName, 
+            SecretClient secretClient,
+            string certName,
             string version)
         {
             // Create a new secret using the secret client.
