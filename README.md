@@ -85,6 +85,7 @@ Use the `-n` or `--name` parameter to change the name of the output created. Thi
 - Update the claims in the IdentityWithAdditionalClaimsProfileService
 - Add the security headers as required, CSP, IFrame, XSS, HSTS, ...
 - If you deploy in a multi instance environment, add the session data to a database using the IdentityServer4.EntityFramework NuGet package
+- Add "AZURE_TENANT_ID": "your-tenandId" to the launch settings to test in VS with Azure Key Vault certificates
 
 ### uninstall
 
