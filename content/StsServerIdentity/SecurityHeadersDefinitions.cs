@@ -33,7 +33,7 @@ namespace StsServerIdentity
                     builder.AddFontSrc().Self();
                     builder.AddStyleSrc().Self().UnsafeInline();
                     builder.AddBaseUri().Self();
-                    builder.AddScriptSrc().UnsafeInline(); //.WithNonce();
+                    builder.AddScriptSrc().Self().UnsafeInline(); //.WithNonce();
                     builder.AddFrameAncestors().Self();
                     // builder.AddCustomDirective("require-trusted-types-for", "'script'");
                 })
