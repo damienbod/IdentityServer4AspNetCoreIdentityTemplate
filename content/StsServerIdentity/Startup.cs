@@ -160,8 +160,6 @@ namespace StsServerIdentity
                 app.UseExceptionHandler("/Home/Error");
             }
 
-           
-
             var locOptions = app.ApplicationServices.GetService<IOptions<RequestLocalizationOptions>>();
             app.UseRequestLocalization(locOptions.Value);
 
