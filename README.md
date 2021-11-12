@@ -1,6 +1,6 @@
 # An ASP.NET Core IdentityServer4 Identity Template with Bootstrap 4 and Localization
 
-[![.NET](https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/actions/workflows/dotnet.yml/badge.svg)(https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/actions/workflows/dotnet.yml) [![NuGet Status](http://img.shields.io/nuget/v/IdentityServer4AspNetCoreIdentityTemplate.svg?style=flat-square)](https://www.nuget.org/packages/IdentityServer4AspNetCoreIdentityTemplate/) [Change log](https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/Changelog.md)
+[![.NET](https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/actions/workflows/dotnet.yml/badge.svg)](https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/actions/workflows/dotnet.yml) [![NuGet Status](http://img.shields.io/nuget/v/IdentityServer4AspNetCoreIdentityTemplate.svg?style=flat-square)](https://www.nuget.org/packages/IdentityServer4AspNetCoreIdentityTemplate/) [Change log](https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/Changelog.md)
 
 ## Features
 
