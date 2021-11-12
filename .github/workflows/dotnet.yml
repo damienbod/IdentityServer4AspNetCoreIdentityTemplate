@@ -22,5 +22,3 @@ jobs:
       run: dotnet restore ./content/StsServerIdentity
     - name: Build STS
       run: dotnet build ./content/StsServerIdentity/StsServerIdentity.csproj --no-restore
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
