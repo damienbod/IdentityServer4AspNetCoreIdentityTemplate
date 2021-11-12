@@ -4,7 +4,7 @@
 
 ## Features
 
-- ASP.NET Core 3.1
+- ASP.NET Core 6
 - Latest ASP.NET Core Identity
 - Bootstrap 4 UI
 - Localization en-US, de-DE, it-IT, fr-FR, zh-Hans, es-MX, de-CH, ga-IE, gsw-CH
@@ -53,7 +53,7 @@ dotnet new -i IdentityServer4AspNetCoreIdentityTemplate
 Locally built nupkg:
 
 ```
-dotnet new -i IdentityServer4AspNetCoreIdentityTemplate.5.1.1.nupkg
+dotnet new -i IdentityServer4AspNetCoreIdentityTemplate.6.0.0.nupkg
 ```
 
 Local folder:

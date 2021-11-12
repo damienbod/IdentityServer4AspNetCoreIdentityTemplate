@@ -2,6 +2,9 @@
 
 [Readme](https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/README.md) 
 
+2021-11-12 6.0.0
+- Updated to .NET 6
+
 2021-08-19 5.1.3
 - remove unused dependency
 - make CSP less restrictive for getting started

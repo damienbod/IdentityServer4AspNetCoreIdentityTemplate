@@ -40,7 +40,7 @@
       "node_modules/sweetalert2/dist/sweetalert2.all.min.js"
     ],
     "minify": {
-      "enabled": true,
+      "enabled": false,
       "renameLocals": true
     },
     "sourceMap": false
