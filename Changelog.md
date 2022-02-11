@@ -2,6 +2,11 @@
 
 [Readme](https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate/blob/master/README.md) 
 
+2022-02-11 6.0.1
+- Updated packages
+- Updated namespaces
+- Remove duplication from security headers
+
 2021-11-12 6.0.0
 - Updated to .NET 6
 

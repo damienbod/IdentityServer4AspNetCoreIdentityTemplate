@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
 	<metadata>
 		<id>IdentityServer4AspNetCoreIdentityTemplate</id>
-		<version>6.0.0</version>
+		<version>6.0.1</version>
 		<title>IdentityServer4.Identity.Template</title>
 		<license type="file">LICENSE</license>
 		<description>
@@ -15,9 +15,9 @@
 		<language>en-US</language>
 		<tags>ASP.NET Core Identity IdentityServer4 STS OIDC OpenID Bootstrap4</tags>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
-		<copyright>2020 damienbod</copyright>
+		<copyright>2022 damienbod</copyright>
 		<summary>This template provides a simle getting started for IdentityServer4 with Identity. Identity is Localized and the UI uses Bootstrap 4, Remove AllowAnonymous from the logout</summary>
-		<releaseNotes>Updated packages to .NET 6</releaseNotes>
+		<releaseNotes>Updated packages and namespaces</releaseNotes>
 		<repository type="git" url="https://github.com/damienbod/IdentityServer4AspNetCoreIdentityTemplate" />
 		<packageTypes>
 			<packageType name="Template" />
