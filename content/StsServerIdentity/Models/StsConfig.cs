@@ -1,8 +1,7 @@
-﻿namespace StsServerIdentity.Models
+﻿namespace StsServerIdentity.Models;
+
+public class StsConfig
 {
-    public class StsConfig
-    {
-        public string StsUrl { get; set; }
-        public string ClientUrl { get; set; }
-    }
+    public string StsUrl { get; set; }
+    public string ClientUrl { get; set; }
 }
